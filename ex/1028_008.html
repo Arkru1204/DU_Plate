@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>지역 변수와 전역 변수, 블록 변수</title>
+    
+</head>
+
+<body>
+    <h3>지역 변수와 전역 변수, 블록 변수</h3>
+    <hr>
+    <script>
+        let x;
+        function f() {
+            let y;
+            x = 10;
+            y = 20;
+            z = 30;
+            if (y == 20) {
+                let b = 40;
+                b++;
+                document.write("if 블록 내 블록변수 b = " + b + "<br>");
+            }
+
+            document.write("함수 f() 내 지역변수 y = " + y + "<br>");
+        }
+
+        f();
+        document.write("전역변수 x = " + x + "<br>");
+        document.write("전역변수 z = " + z);
+    </script>
+</body>
+</html>

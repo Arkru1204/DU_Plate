@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>데이터 목록을 가진 텍스트 입력</title>
+</head>
+
+<body>
+    <h3>가보고 싶은 곳</h3>
+    <hr>
+    <form>
+        나라 : <input type="text" list="countries"><br>
+        <datalist id="countries">
+            <option value="가나">
+            <option value="스위스">
+            <option value="브라질">
+        </datalist>
+
+        보고싶은 것 : <input type="text" list="what"><br>
+        <datalist id="what">
+            <option value="산">
+            <option value="바다">
+            <option value="도시">
+        </datalist>
+
+        최대값 : <input type="text" list="maxNum"><br>
+        <datalist id="maxNum">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+            <option value="6">
+            <option value="7">
+            <option value="8">
+            <option value="9">
+            <option value="10">
+            <option value="11">
+            <option value="12">
+            <option value="13">
+            <option value="14">
+            <option value="15">
+            <option value="16">
+            <option value="17">
+            <option value="18">
+            <option value="19">
+            <option value="20">
+            <option value="21">
+            <option value="22">
+        </datalist>
+
+        아이콘 : <input type="image" src="media//phone.png" list="img"><br>
+        <datalist id="img">
+            <option value="media//cake">
+            <option value="바다">
+            <option value="도시">
+        </datalist>
+
+
+        <img src="media//phone.png">
+    </form>
+</body>
+
+</html>

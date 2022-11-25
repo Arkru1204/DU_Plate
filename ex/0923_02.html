@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>0923 web programming_2</title>
+    <script>
+        function show1() {
+            document.getElementById("fig1").src = "media\\01.png"
+        }
+
+        function show2() {
+            document.getElementById("fig2").src = "media\\02.png"
+        }
+
+        function show3() {
+            document.getElementById("fig3").src = "media\\03.png"
+        }
+    </script>
+</head>
+
+<body>
+    <h1>한컴 스페이스 Web 사용 방법</h1>
+    <hr>
+    <h3 onmouseover = "show1()">1.</h3>
+    <p>
+        삳단의 사이트를 들어갑니다.
+    </p>
+    <div><img id="fig1" src=""></div>
+    <hr>
+    <h3 onmouseover = "show2()">2.</h3>
+    <p>
+        <b><i>&quot;체험하기&quot;</i></b> 를 클릭합니다.
+    </p>
+    <div><img id="fig2" src=""></div>
+    <hr>
+    <h3 onmouseover = "show3()">3.</h3>
+    <p>
+        <b><i>&quot;무료로 시작하기&quot;</i></b> 를 클릭한 다음<br>
+        <span style = "color:red">회원가입/로그인</span>을 하고 사용하시면 됩니다!
+    </p>
+    <div><img id = "fig3" src = ""></div>
+    <div style = "background-color:skyblue;padding:20px;">
+        <pre><mark>감사합니다!</mark></pre>
+    </div>
+</body>
+
+</html>

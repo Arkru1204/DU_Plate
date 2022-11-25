@@ -1,0 +1,61 @@
+<!DOCTYPE html>   <!-- html 5로 선언 -->
+<html lang="ko">  <!-- 웹페이지 시작과 끝, html 기본 언어로 korean 선택 -->
+
+<head>            <!-- 문서의 메타데이터의 잡합 -->
+    <meta charset="UTF-8">                <!-- 문자 인코딩 방식을 UTF-8로 -->
+    <title>웹 페이지의 구성 요소</title>    <!-- 문서의 제목을 정의 -->
+    <style>
+        body {
+            background-color : linen;
+            color : green;
+            margin-left : 40px;
+            margin-right : 40px
+        }
+    
+        h1 {
+            text-align : center;
+            color : darkred;
+        }
+    
+        hr {
+            height : 5px;
+            border : solid grey;
+            background-color : grey
+        }
+    
+        span {
+            color : blue;
+            font-size : 20px
+        }
+    </style>
+    <script>
+        function show() {
+            document.getElementById("fig").src = 
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFjF080AHpkLO-5kSgfXf3VAA2Gx5y7imtEA&usqp=CAU"
+        }
+  
+        function hide() {
+            document.getElementById("fig").src = "media\\ElvisPresley.png"
+        }
+    </script>
+</head>
+  
+<body>
+    <h1 onmouseover="show()" onmouseout="hide()">Elvis Presley</h1>
+    <hr>
+    <div><img id="fig" src=""></div>
+    <span>
+    Elvis Aaron Presley[a] (January 8, 1935 - August 16, 1977),
+    or simply Elvis, was an American singer and actor.
+    Dubbed the "King of Rock and Roll",
+    </span>
+    he is regarded as one of the most significant cultural figures of the 20th century.
+    His energized interpretations of songs and sexually provocative performance style,
+    combined with a singularly potent mix of influences across color
+    lines during a transformative era in race relations,
+    <span>
+    led him to both great success and initial controversy.
+    </span>
+</body>
+
+</html>

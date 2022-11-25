@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 메타 파일이나 css(style) 넣는 곳 -->
+    <meta charset="UTF-8">
+    <title>Cover Letter</title>
+    <style>
+        #CL {
+            margin: auto;
+            width: 750px;
+            text-align: center;
+            background-color: rgb(247, 244, 240);
+        }
+
+        #CL-title {
+            padding-top: 2.5%;
+            color: rgb(90, 38, 34)
+        }
+
+        main {
+            padding: 2.5%;
+            background-color: rgb(247, 244, 240);
+        }
+
+        #CL-profileArea {
+            height: 200px;
+            padding: 2.5%;
+            /* background-color: lightblue; */
+        }
+
+        .CL-profile {
+            float: left;
+            padding-left: 45px;
+            line-height: 10px;
+            text-align: left;
+            /* background-color: rgb(223, 194, 250); */
+        }
+
+        .CL-profile>ul {
+            list-style: none;
+            line-height: 30px;
+        }
+
+        #CL-introductionArea {
+            clear: both;
+            height: 200px;
+            padding-left: 100px;
+            line-height: 25px;
+            /* background-color: lavender; */
+        }
+
+        .CL-introduction {
+            float: left;
+            padding-right: 150px;
+            line-height: 25px;
+            text-align: left;
+            /* background-color: rgb(168, 168, 231); */
+        }
+
+        .CL-introduction>h3 {
+            color: rgb(201, 56, 56)
+        }
+
+        #CL-contentArea {
+            clear: both;
+            height: 200px;
+            padding: 2%;
+            /* background-color: rgba(0, 0, 0, 0.151); */
+        }
+
+        .CL-content {
+            float: left;
+            padding-left: 30px;
+            margin: auto;
+            /* background-color: rgb(255, 122, 148); */
+        }
+
+        #CL-video {
+            text-align: left;
+            /* background-color: lightblue; */
+        }
+
+        #CL-table>table, th, td {
+            margin: 3px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 7.5px;
+        }
+
+        #CL-table>table>thead {
+            background-color: rgba(0, 0, 0, 0.212);
+        }
+
+        .popUp{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<script>
+    function show() {document.getElementById("fig").src = "media//face_2.jpg"}
+    function hide() {document.getElementById("fig").src = ""}
+  </script>
+
+<body>
+    <div id="CL">
+        <header>
+            <h1 id="CL-title">자기소개서</h1>
+            <hr>
+        </header>
+
+        <main>
+            <div id="CL-profileArea">
+                <div class="CL-profile">
+                    <img src="media//face_2.jpg" id="CL-img" width="120" onmouseover="show()" onmouseout="hide()">
+                    <div class="popUp"><img id="fig" src=""></div>
+                </div>
+                <div class="CL-profile">
+                    <div id="CL-info">
+                        <h1 >박경록</h1>
+                        <p>
+                            대구대학교 3학년
+                        </p>
+                        <br><br>
+                        <P>
+                            <img src="media//cake.png"> 1999년 12월 4일 
+                        </P>
+                    </div>
+                </div>
+                <div class="CL-profile">
+                    <ul>
+                        <li> <img src="media//phone.png"> 010-2691-2498
+                        <li> <img src="media//email.png"> parkkr1204@naver.com
+                    </ul>                                
+                </div>
+            </div>
+            <br>
+            <div id="CL-introductionArea">
+                <div class="CL-introduction">
+                    <h3><img src="media//school.png" width="20"> 학교</h3>
+                    <ul>
+                        <li> 삼산초등학교
+                        <li> 태화중학교
+                        <li> 강남고등학교
+                        <li> 대구대학교
+                    </ul>
+                </div>
+                <div class="CL-introduction">
+                    <h3><img src="media//calendar.png" width="20"> 시간표</h3>
+                    <ul>
+                        <li> 소프트웨어 공학
+                        <li> 데이터마이닝
+                        <li> 게임프로그래밍
+                        <li> 정보처리실무
+                        <li> 웹프로그래밍
+                    </ul>
+                </div>
+            </div>
+            <br><br>
+            <div id="CL-contentArea">
+                <div class="CL-content">
+                    <div id="CL-video">
+                        <video width="300" controls autoplay>
+                            <source src="" type="">
+                        </video>
+                    </div>
+                </div>
+                <div class="CL-content">
+                    <div id="CL-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>취미</th>
+                                    <th>좋아하는 음식</th>
+                                    <th>장래희망</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>게임</td>
+                                    <td>라멘</td>
+                                    <td>네이버</td>
+                                </tr>
+                                <tr>
+                                    <td>수면</td>
+                                    <td>마라탕</td>
+                                    <td>게임사</td>
+                                </tr>
+                                <tr>
+                                    <td>유니티</td>
+                                    <td>고등어봉초밥</td>
+                                    <td>?</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

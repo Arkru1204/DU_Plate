@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> <!-- 메타 파일이나 css(style) 넣는 곳 -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cover Letter</title>
+        
+        <style>
+            #CL {
+                width: 100%;
+                text-align: center;
+                background-color: lightpink;
+            }
+
+            header {
+                margin: auto;
+                background-color: antiquewhite;
+            }
+
+            main {
+                width: 700px;
+                padding: 2.5%;
+                margin: auto;
+                background-color: bisque;
+            }
+
+            #CL-profile {
+                margin: auto;
+                padding: 1%;
+                background-color: lightblue;
+            }
+
+            /* #CL-img {
+                position: relative; /* 원래 위치에서 상대적으로 배치 가능
+                background-color: lightblue;
+            } */
+
+            #CL-table {
+                float: right;
+                margin-top: 2%;
+                background-color: lightpink;
+            }
+
+            #CL-table>table, th, td {
+                /* width: fit-content; */
+                margin: 5px;
+                border: 1px solid black;
+                border-collapse: collapse; /* collapse : border를 한 줄로 */
+                padding: 10px;
+                background-color: lavender;
+            }
+
+            #CL-Introduction {
+                padding: 15px;
+                background-color: lavender;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="CL">
+            <header> <!-- div의 시멘틱 태그 중 하나 -->
+                <h1 id="CL-title">자기소개서</h1>
+                <hr>
+            </header>
+
+            <main> <!-- div의 시멘틱 태그 중 하나 -->
+                <div id="CL-profile">
+                    <img src="media//profile.jpg" id="CL-img">
+                    
+                    <div id="CL-table">
+                        <table>
+                            <caption>
+                                표오오
+                            </caption>
+
+                            <thead>
+                                <tr>
+                                    <th>이름</th>
+                                    <th>속성1</th>
+                                    <th>속성2</th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody>
+                                <tr>
+                                    <td>이름1</td>
+                                    <td>저녁뭐먹지???</td>
+                                    <td>낙곱새</td>
+                                </tr>
+                                <tr>
+                                    <td>이름2</td>
+                                    <td>아요즘할만한겜없나</td>
+                                    <td>접고 갓생ㄱ</td>
+                                </tr>
+                                <tr>
+                                    <td>이름3</td>
+                                    <td>염병ㅋㅋ</td>
+                                    <td>뭐하지맨됐어ㅜㅜㅜ</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <div id="CL-Introduction">
+                    아민럼닐
+                </div>
+
+                <hr>
+
+                <div id="CL-video">
+                    <video width="500" controls autoplay>
+                        <source src="" type="">
+                    </video>
+                </div>
+
+            </main>
+        </div>
+
+    </body>
+</html>

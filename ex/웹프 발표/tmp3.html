@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>대구 맛집</title>
+    </head>
+    <body>
+        <center>
+            <header class="header">
+                <h1>대구 맛집 정보 no.1</h1>
+            </header>
+
+            <nav class="nav">
+                <form name="fo" method="get">
+                    <label>위치 검색 : <input type="text" size="20" value=""></label>
+                    <input type="submit" value="검색">
+                </form>
+            </nav>
+
+            <section class="section">
+                section
+
+                <script>
+                    let = xmltext
+
+                    parser = new DOMParser();
+                    
+                    xmlDoc = parser.parseFromString(xml,"tmpXml.xml");
+                    
+                    // 특정 테그를 기준으로 변수에 담는다
+                    var xml = xmlDoc.getElementsByTagName('sample');
+                    
+                    // getElementsByTagName : 태그 호출
+                    // childNodes : 자식 노드
+                    // nodeValue : 해당 노드의 값(text)
+                    var name = xml[0].getElementsByTagName('restaurant')[0].getElementsByTagName('name')[0].childNodes[0].nodeValue;
+                    
+                    alert(name);
+
+                    document.getElementById("demo1").innerHTML = xmlDoc.getElementsByTagName("restaurant")[0].childNodes[1].nodeName;
+                </script>
+
+                <p id="demo"></p>
+            </section>
+
+            <footer class="footer">
+                footer
+            </footer>
+        </center>
+    </body>
+</html>

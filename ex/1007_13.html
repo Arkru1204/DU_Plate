@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>설문지</title>
+
+    <style>
+        main {
+            width: 600px;
+            margin: auto;
+        }
+
+        hr {
+            width: 300px;
+            margin-left: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>설문조사</h2>
+        <hr><br>
+        <fieldset>
+            <legend>IRB</legend>
+            귀하의 학교생활 실태조사를 실시 하고 있습니다. <mark>이유는 없습니다.</mark><br>
+            설문은 <mark>저장되지 않을 것이며,</mark> 당연히 제 3자에게 공개되지 못합니다. <br>
+        </fieldset>
+        <small>문의사항 : Tel. 010-111-1111</small><br>
+        <hr><br>
+        <form>
+            <h4>설문자 정보</h4><hr>
+            성명 : <input type="email"><br>
+            나이  : <input type="url"><br>
+            고향  : <input type="tel">
+        </form>
+        <br><br>
+        <form>
+            <h4>통학 수단</h4><hr>
+            <label>
+                <input type="radio" name="commuting" value="1">
+                비행기 <img src="media/airplane.png" width="20"><br>
+            </label>
+            <label>
+                <input type="radio" name="commuting" value="2">
+                대중교통 <img src="media/bus.png" width="20"><br>
+            </label>
+            <label>
+                <input type="radio" name="commuting" value="3" checked>
+                도보 <img src="media/man.png" width="20"><br>
+            </label>
+            <label>
+                <input type="radio" name="commuting" value="4">
+                자가용 <img src="media/car.png" width="20"><br>
+            </label>
+        </form>
+        <br><br>
+        <form>
+            <h4>선호 음식</h4><hr>
+            <select name="mara">
+                <option value="1" selected>마라탕</option>
+                <option value="2">마라샹궈</option>
+                <option value="3">훠궈</option>
+                <option value="4">꿔바로우</option>
+            </select>
+        </form>
+        <br><br>
+        <form>
+            <h4>선호 동물</h4><hr>
+            알파카 <input type="checkbox" value="1"><br>
+            강아지 <input type="checkbox" value="2"><br>
+            고양이 <input type="checkbox" value="3" checked><br>
+            병아리 <input type="checkbox" value="4"><br>
+        </form>
+        <br><br>
+        <form>
+            <h4>끝</h4><hr>
+            본 설문조사를 추천 하시겠습니까?
+            <button type="button">
+                <img src="media/thumb.png" alt="이미지 버튼">
+            </button>
+        </form>
+    </main>
+</body>
+
+</html>

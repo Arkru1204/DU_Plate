@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>this로 전역변수 접근</title>
+    
+</head>
+
+<body>
+    <h3>this로 전역변수 접근</h3>
+    <hr>
+    <script>
+        var x;  // 전역
+        function f() {
+            var x;  // 지역
+            x = 1;  // 지역
+            this.x = 100;   // 전역변수 x에 100 저장
+        }
+    </script>
+</body>
+</html>

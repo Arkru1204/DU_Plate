@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Insert title here</title>
+    </head>
+
+<body>
+    <script type="text/javascript">
+        const rowCnt = 5;
+        const columnCnt = 2;
+
+        document.write('<table border="1">');
+        for (let i = 0; i < rowCnt; i++) {
+            document.write('<tr>');
+            for (let j = 0; j < columnCnt; j++) {
+                document.write('<td>');
+                document.write(i + ", " + j);
+                document.write('</td>');
+            }
+            document.write('</tr>')
+        }
+    </script>
+</body>
+
+</html>

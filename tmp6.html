@@ -3,52 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>Insert title here</title>
-
 </head>
 <body>
-    <p id='demo'></p>
-
+    <h1>하양</h1>
+    
     <script type="text/javascript">
         let xhttp = new XMLHttpRequest(); //XML 통신을 하기 위한 것 (요청)
-    
+        
         xhttp.onreadystatechange = function() {
             if(this.readyState == 4 && this.status == 200) {
                 //alert(this.responseXML);
-                nodeValFunc( this );
-            }    
+                nodeValFunc(this);
+            }
         }
         xhttp.open("GET", "xml/restaurant.xml", true);
         xhttp.send();
-    
+        
         function nodeValFunc( xml ) {
             let num, name, address, classification;
             let txt, nametxt, xmlDoc;
-    
+            
             txt = nametxt = '';
-    
-            xmlDoc = xml.responseXML; //위에서 this를 통해서 넘겨 받음
-    
+            
+            xmlDoc = xml.responseXML; // 위에서 this를 통해서 넘겨 받음
+            
             // 특정 태그에 맞는 태그만 파싱해야함, 아래는 전체 파싱임
             // 그냥 전체 받고, 출력 할 때만 그냥 if 문으로 걸러서 내야할듯?
             num = xmlDoc.getElementsByTagName("num");
             name = xmlDoc.getElementsByTagName("name");
             classification = xmlDoc.getElementsByTagName("classification");
             address = xmlDoc.getElementsByTagName("address");
-            console.log(num.length);
-    
+            //console.log(num.length);
+            
+            // 출력부
+            //document.writeln("<h1>하양</h1>");
             for(let i = 0; i < num.length; i++) {
                 if (address[i].childNodes[0].nodeValue == "하양") {
                     txt = num[i].childNodes[0].nodeValue + " / "
                     + name[i].childNodes[0].nodeValue + " / "
                     + classification[i].childNodes[0].nodeValue + " / "
-                    + address[i].childNodes[0].nodeValue + "<br><hr>";
+                    + address[i].childNodes[0].nodeValue;
                     
                     //document.getElementById('demo').innerHTML = txt + nametxt;
+                    
+                    //document.writeln(txt);
 
-                    document.write(txt);
+                    var tag = document.createElement('div');
+                    var tagText = document.createTextNode(txt);
+                    tag.appendChild(tagText);
+                    document.body.appendChild(tag);
                 }
             }
         }
-        </script>
+    </script>
+    <p id="demo"></p>
 </body>
 </html>

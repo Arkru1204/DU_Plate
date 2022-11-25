@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Insert title here</title>
+
+</head>
+<body>
+    <p id='demo'></p>
+
     <script type="text/javascript">
         let xhttp = new XMLHttpRequest(); //XML 통신을 하기 위한 것 (요청)
     
-        xhttp.onreadystatechange = function(){
-            if(this.readyState == 4 && this.status == 200){
+        xhttp.onreadystatechange = function() {
+            if(this.readyState == 4 && this.status == 200) {
                 //alert(this.responseXML);
                 nodeValFunc( this );
             }    
@@ -23,30 +28,27 @@
     
             xmlDoc = xml.responseXML; //위에서 this를 통해서 넘겨 받음
     
+            // 특정 태그에 맞는 태그만 파싱해야함, 아래는 전체 파싱임
+            // 그냥 전체 받고, 출력 할 때만 그냥 if 문으로 걸러서 내야할듯?
             num = xmlDoc.getElementsByTagName("num");
             name = xmlDoc.getElementsByTagName("name");
             classification = xmlDoc.getElementsByTagName("classification");
             address = xmlDoc.getElementsByTagName("address");
             console.log(num.length);
     
-            for(let i=0; i < num.length; i++){
-                // txt += num[i].childNodes[0].nodeValue + "<br>";
-                // nametxt += name[i].childNodes[0].nodeValue + "<br>";
-                txt += num[i].childNodes[0].nodeValue + " / "
-                + name[i].childNodes[0].nodeValue + " / "
-                + classification[i].childNodes[0].nodeValue + " / "
-                + address[i].childNodes[0].nodeValue + "<br>";
-                
-                document.getElementById('demo').innerHTML = txt + nametxt;
-            }
-    
-            
-        } // https://jhost.tistory.com/68
-        </script>
-</head>
-<body>
-    <p id='demo'></p>
-    
+            for(let i = 0; i < num.length; i++) {
+                if (address[i].childNodes[0].nodeValue == "하양") {
+                    txt = num[i].childNodes[0].nodeValue + " / "
+                    + name[i].childNodes[0].nodeValue + " / "
+                    + classification[i].childNodes[0].nodeValue + " / "
+                    + address[i].childNodes[0].nodeValue + "<br><hr>";
+                    
+                    //document.getElementById('demo').innerHTML = txt + nametxt;
 
+                    document.write(txt);
+                }
+            }
+        }
+        </script>
 </body>
 </html>

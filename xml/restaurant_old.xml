@@ -1024,7 +1024,7 @@
             <tag>스시</tag>
         </tags>
     </restaurant>
-    <restaurant>
+        <restaurant>
         <num>14</num>
         <name>새벽닭이울떄까지</name>
         <category>한식</category>
@@ -1055,7 +1055,7 @@
         <name>에스파냐</name>
         <category>양식</category>
         <address>수성구</address>
-        <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2Fa7c558e38570c05b40059986bd66e37685a77793%3Foriginal</img>
+        <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F1779B1374FDABF972F.jpg</img>
         <introduction>스페인 요리점 에스파냐</introduction>
         <embed>https://place.map.kakao.com/10568392</embed>
         <tags>
@@ -1069,7 +1069,7 @@
         <name>로우에디션</name>
         <category>양식</category>
         <address>수성구</address>
-        <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Ffiy_reboot%2Fplace%2F46FCC57E0448411B9377EACBC43DA80D</img>
+        <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Ffiy_reboot%2Fplace%2F9C9B9332230748D5902018A2CA320410.jpg</img>
         <introduction>양식점 로우에디션</introduction>
         <embed>https://place.map.kakao.com/1722006984</embed>
         <tags>
@@ -1181,7 +1181,7 @@
         <name>효탄</name>
         <category>일식</category>
         <address>수성구</address>
-        <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocalfiy%2F40C72DA9F659471A9B481F1E0DBD1D57</img>
+        <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocalfiy%2F40C72DA9F659471A9B481F1E0DBD1D57.jpg</img>
         <introduction>이자카야 선술집</introduction>
         <embed>https://place.map.kakao.com/1112317625</embed>
         <tags>
@@ -1209,7 +1209,7 @@
         <name>스완네</name>
         <category>카페</category>
         <address>수성구</address>
-        <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Fmystore%2F1F208303E29148728DF5D7786411860E</img>
+        <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Fmystore%2F1F208303E29148728DF5D7786411860E.jpg</img>
         <introduction>빈티지 분위기 감성 카페 스완네</introduction>
         <embed>https://place.map.kakao.com/1621069822</embed>
         <tags>
@@ -1350,7 +1350,7 @@
         <name>루시드</name>
         <category>카페</category>
         <address>중구</address>
-        <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2Fc5deaca249600dce681c0e2e7336ef8c4e2f241c%3Foriginal</img>
+        <img>https://img1.kakaocdn.net/cthumb/local/R1920x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F207150474F6065C906.jpg</img>
         <introduction>푸딩빙수가 유명한 카페 루시드</introduction>
         <embed>https://place.map.kakao.com/10348734</embed>
         <tags>
@@ -1364,7 +1364,7 @@
         <name>마리포사</name>
         <category>베이커리</category>
         <address>중구</address>
-        <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyMjA4MTJfNDgg%2FMDAxNjYwMjY4NzU0NjU3.gAGdXXRbiZFtwZ8mZ-aqOKddkKQBMFSiR_7gjHxFc2Qg.h8TaK_s95o7u0iaD_sKh-1SrmRlCa1bFR4w6_NXtOswg.JPEG.ckduswjd93%2FIMG_4328.JPG%3Ftype%3Dw773</img>
+        <img>https://img1.kakaocdn.net/cthumb/local/R1920x0/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyMjA4MTJfMjg2%2FMDAxNjYwMjM0NTU5NzE2.Hr6UgGBD0d4ZrjHjhf1zSAyc5pB2_nJz07Wom9eO8CQg.u_anFyNA4bMOBPAHS-mHYszPnKqFmmjkE6hwCcKLzbIg.JPEG.idsua%2FIMG_8833.JPG%3Ftype%3Dw773.jpg</img>
         <introduction>부산에서 올라온 베이커리 맛집 마리포사</introduction>
         <embed>https://place.map.kakao.com/457736367</embed>
         <tags>
@@ -1406,7 +1406,7 @@
         <name>혜옥당</name>
         <category>한식</category>
         <address>중구</address>
-        <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fplace%2FEA359002E7114FD9BC31C4D3BB7F6A46</img>
+        <img>https://img1.kakaocdn.net/cthumb/local/R1920x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fplace%2FEA359002E7114FD9BC31C4D3BB7F6A46.jpg</img>
         <introduction>대구 삼겹살 맛집 혜옥당</introduction>
         <embed>https://place.map.kakao.com/287156559</embed>
         <tags>

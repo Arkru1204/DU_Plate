@@ -8,11 +8,11 @@
         <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F1779B1374FDABF972F.jpg</img>
         <introduction>스페인 요리점 에스파냐</introduction>
         <embed>https://place.map.kakao.com/10568392</embed>
-        <tag>
+        <tags>
             <tag>코스요리</tag>
             <tag>파에야</tag>
             <tag>샐러드</tag>
-        </tag>
+        </tags>
     </restaurant>
     <restaurant>
         <num>2</num>
@@ -22,11 +22,11 @@
         <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Ffiy_reboot%2Fplace%2F9C9B9332230748D5902018A2CA320410.jpg</img>
         <introduction>양식점 로우에디션</introduction>
         <embed>https://place.map.kakao.com/1722006984</embed>
-        <tag>
+        <tags>
             <tag>스테이크</tag>
             <tag>파스타</tag>
             <tag>리조토</tag>
-        </tag>
+        </tags>
     </restaurant>
     <restaurant>
         <num>3</num>
@@ -36,11 +36,11 @@
         <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2Fbdf1cd5c9709c1aba8e575cb28b6ba1fc0d591e9%3Foriginal.jpg</img>
         <introduction>대구 수성구 돼지국밥 전문점</introduction>
         <embed>https://place.map.kakao.com/1873721735</embed>
-        <tag>
+        <tags>
             <tag>국밥</tag>
             <tag>돼지국밥</tag>
             <tag>수육</tag>
-        </tag>
+        </tags>
     </restaurant>
     <restaurant>
         <num>4</num>
@@ -48,13 +48,13 @@
         <category>해산물</category>
         <address>수성구</address>
         <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F3543429092de380acf8ab249f0fa380aec8d2052%3Foriginal.jpg</img>
-        <introduction>쭈꾸미 낚지 볶음 전문 대성 본점</introduction>
+        <introduction>쭈꾸미 낙지 볶음 전문 대성 본점</introduction>
         <embed>https://place.map.kakao.com/1668292141</embed>
-        <tag>
+        <tags>
             <tag>쭈꾸미</tag>
             <tag>낚지</tag>
             <tag>왕새우튀김</tag>
-        </tag>
+        </tags>
     </restaurant>
     <restaurant>
         <num>5</num>
@@ -64,11 +64,11 @@
         <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F1d30d1b320588a57eee142a1dc37d2112004a7a6%3Foriginal.jpg</img>
         <introduction>중화요리 전문점 리안</introduction>
         <embed>https://place.map.kakao.com/7863898</embed>
-        <tag>
+        <tags>
             <tag>야끼우동</tag>
             <tag>탕수육</tag>
             <tag>짜장면</tag>
-        </tag>
+        </tags>
     </restaurant>
     <restaurant>
         <num>6</num>
@@ -78,11 +78,11 @@
         <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F7880eda1d44c88aeed7ed9b696f303710db25c1f%3Foriginal.jpg</img>
         <introduction>한식 퓨전요리 전문점 양문이</introduction>
         <embed>https://place.map.kakao.com/1690481520</embed>
-        <tag>
+        <tags>
             <tag>스테이크</tag>
             <tag>파스타</tag>
             <tag>된장찌개</tag>
-        </tag>
+        </tags>
     </restaurant>
     <restaurant>
         <num>7</num>
@@ -92,11 +92,11 @@
         <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F64981242375fc080e41245e5684e1f80732657d1%3Foriginal.jpg</img>
         <introduction>조조칼국수 본점</introduction>
         <embed>https://place.map.kakao.com/1305530650</embed>
-        <tag>
+        <tags>
             <tag>칼국수</tag>
             <tag>해물파전</tag>
             <tag>물총</tag>
-        </tag>
+        </tags>
     </restaurant>
     <restaurant>
         <num>8</num>
@@ -106,11 +106,11 @@
         <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F14f97fb1c068f426ee3fdc3fbb7c80120c1debdb%3Foriginal.jpg</img>
         <introduction>대구 윤옥연할매떢복이 본점</introduction>
         <embed>https://place.map.kakao.com/9340428</embed>
-        <tag>
+        <tags>
             <tag>떡볶이</tag>
             <tag>튀김</tag>
             <tag>순대</tag>
-        </tag>
+        </tags>
     </restaurant>
     <restaurant>
         <num>9</num>
@@ -120,11 +120,11 @@
         <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2Fc466c5b7c857077924408e59a0c6765beb1492be%3Foriginal.jpg</img>
         <introduction>애견동반가능 일식당</introduction>
         <embed>https://place.map.kakao.com/1660299316</embed>
-        <tag>
+        <tags>
             <tag>덮밥</tag>
             <tag>파스타</tag>
             <tag>연어</tag>
-        </tag>
+        </tags>
     </restaurant>
     <restaurant>
         <num>10</num>
@@ -134,11 +134,11 @@
         <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocalfiy%2F40C72DA9F659471A9B481F1E0DBD1D57.jpg</img>
         <introduction>이자카야 선술집</introduction>
         <embed>https://place.map.kakao.com/1112317625</embed>
-        <tag>
+        <tags>
             <tag>사시미</tag>
             <tag>구이</tag>
             <tag>스키야키</tag>
-        </tag>
+        </tags>
     </restaurant>
     <restaurant>
         <num>11</num>
@@ -148,11 +148,11 @@
         <img>https://ldb-phinf.pstatic.net/20220618_63/1655540525843dhKL1_JPEG/39DFF6D4-BE88-499D-8868-293A1ACC31F7.jpeg</img>
         <introduction>인도요리 전문점 푸나왈라</introduction>
         <embed>https://place.map.kakao.com/869104156</embed>
-        <tag>
+        <tags>
             <tag>치킨</tag>
             <tag>카레</tag>
             <tag>쿠쉬탈리</tag>
-        </tag>
+        </tags>
     </restaurant>
     <restaurant>
         <num>12</num>
@@ -162,11 +162,11 @@
         <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Fmystore%2F1F208303E29148728DF5D7786411860E.jpg</img>
         <introduction>빈티지 분위기 감성 카페 스완네</introduction>
         <embed>https://place.map.kakao.com/1621069822</embed>
-        <tag>
+        <tags>
             <tag>빙수</tag>
             <tag>스콘</tag>
             <tag>뱅쇼</tag>
-        </tag>
+        </tags>
     </restaurant>
     <restaurant>
         <num>13</num>
@@ -176,11 +176,11 @@
         <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F11e5334f6226482f7c434bcfcabb4d3acf1eebbd%3Foriginal.jpg</img>
         <introduction>이탈리아 요리 전문점</introduction>
         <embed>https://place.map.kakao.com/1314598350</embed>
-        <tag>
+        <tags>
             <tag>카팰리니</tag>
             <tag>딸리아뗄레</tag>
             <tag>리조토</tag>
-        </tag>
+        </tags>
     </restaurant>
     <restaurant>
         <num>14</num>
@@ -190,11 +190,11 @@
         <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F637797f03e67fd6456d3c71dd3e784540a91f1f9%3Foriginal.jpg</img>
         <introduction>초밥 전문점 후꾸스시</introduction>
         <embed>https://place.map.kakao.com/1030018055</embed>
-        <tag>
+        <tags>
             <tag>연어초밥</tag>
             <tag>광어초밥</tag>
             <tag>회</tag>
-        </tag>
+        </tags>
     </restaurant>
     <restaurant>
         <num>15</num>
@@ -204,9 +204,10 @@
         <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F8ebce1b8cf9b2b13ce01fc318e4daa0dd6c61793%3Foriginal.jpg</img>
         <introduction>대구 미성복어불고기 본점</introduction>
         <embed>https://place.map.kakao.com/8991526</embed>
-        <tag>
+        <tags>
             <tag>복어</tag>
             <tag>콩나물복어불고기</tag>
             <tag>튀김</tag>
-        </tag>
+        </tags>
     </restaurant>
+</data>

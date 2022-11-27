@@ -187,6 +187,7 @@
                         nodeValFunc(this);
                     }
                 }
+                //xhttp.open("GET", "xml/restaurant.xml", true);
                 xhttp.open("GET", "xml/restaurant.xml", true);
                 xhttp.send();
                 
@@ -208,21 +209,10 @@
                     introduction = xmlDoc.getElementsByTagName("introduction");
                     embed = xmlDoc.getElementsByTagName("embed");
                     tag = xmlDoc.getElementsByTagName("tag");
-
-                    // document.write(address[1].childNodes[0].nodeValue);
                     
                     // 출력부
                     for(let i = 0; i < num.length; i++) {
-                        if (address[i].childNodes[0].nodeValue == "하양") {
-                            // txt = num[i].childNodes[0].nodeValue + " / "
-                            // + name[i].childNodes[0].nodeValue + " / "
-                            // + category[i].childNodes[0].nodeValue + " / "
-                            // + address[i].childNodes[0].nodeValue + " / " 
-                            // // + img[i].childNodes[0].nodeValue + " / " 
-                            // // + introduction[i].childNodes[0].nodeValue + " / " 
-                            // // + embed[i].childNodes[0].nodeValue + "<br>";
-                            // document.write(txt);
-                            
+                        if (address[i].childNodes[0].nodeValue == "북구") {
                             var card = document.createElement('div');
                             card.className = "card";
                             card.onclick = "location.href='https://naver.com'";

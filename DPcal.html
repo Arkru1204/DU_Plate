@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            N빵 계산기
+        </title>
+    </head>
+    <body>
+        <!--N빵 계산기 : 시작-->
+        <h1>
+            이제 정산하자!
+        </h1>
+        <section>
+            <!--N빵 계산기 : 금액 input 칸 & 동적 생성-->
+        <p>
+            총액
+            <br>
+            <form>
+                <div id="box">
+                    <input type="text" id="cash">
+                    <input type="button" value="+" onclick="addbox()">
+                 </div>
+            </form>
+        </p>
+            <!--N빵 계산기 : 인원수 지정-->
+        <p>
+            인원수
+            <br>
+            <input type="text" id="peo">
+        </p>
+            <!--N빵 계산기 : 정산 버튼-->
+        <p>
+            <input type="button" value="정산" onclick="getDutch()">
+        </p>
+        <hr>
+            <!--N빵 계산기 : 정산 결과 표시-->
+        <p id="dutch">
+        </p>
+        </section>
+        <script>
+            //정산 계산 수식
+            function getDutch() {
+                var cash = document.getElementById('cash').value;
+                var peo = document.getElementById('peo').value;
+                var ncash = document.getElementsByName('ncash').value;
+                
+                document.write(ncash);
+                
+                if (ncash.length == 0)
+                {
+                    var a = (cash);
+                }
+                else
+                {
+                    var a = (cash + ncash);
+                }
+                var d = Math.floor(cash / peo);
+                var t = (cash % peo);
+
+                //정산 결과 값 출력
+                document.getElementById('dutch').innerHTML =
+                '총액 : '+a+'원'+'<br>'+'1인당 금액 : '+d+'원'+'<br>'+'남는 값 : '+t+'원';
+            }
+
+            //금액 박스 생성
+            function addbox() {
+                var box=document.getElementById("box");
+                var nbox=document.createElement('p');
+                
+                nbox.innerHTML=
+                "<input type='text' name='ncash'> <input type='button' value='-' onclick='remove(this)'>";
+                box.appendChild(nbox);
+            }
+
+            //금액 박스 지우기
+            var remove=(obj) => {
+                document.getElementById('box').removeChild(obj.parentNode);
+            }
+            
+        </script>
+    </body>
+</html>

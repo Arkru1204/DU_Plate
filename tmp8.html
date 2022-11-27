@@ -148,36 +148,8 @@
         <h1>DU PLATE - 하양</h1>
     </header>
     
-    <nav role="navigation">
-        <ul id="main-menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="#">지역</a>
-                <ul id="sub-menu">
-                    <li><a href="#" aria-label="subemnu">달서구</a></li>
-                    <li><a href="#" aria-label="subemnu">북구</a></li>
-                    <li><a href="#" aria-label="subemnu">수성구</a></li>
-                    <li><a href="#" aria-label="subemnu">동구</a></li>
-                    <li><a href="#" aria-label="subemnu">달성군</a></li>
-                    <li><a href="#" aria-label="subemnu">서구</a></li>
-                    <li><a href="#" aria-label="subemnu">남구</a></li>
-                    <li><a href="#" aria-label="subemnu">중구</a></li>
-                </ul>
-            </li>
-            <li><a href="#">뭐먹지?</a></li>
-            <li><a href="#">맛집순위</a></li>
-            <li><a href="#">더치페이계산</a></li>
-            <li>
-                <form name="search" method="get">
-                    <label><input type="text" size="20" value="" placeholder="맛집 이름"></label>
-                    <input type="submit" value="찾기">
-                </form>
-            </li>
-        </ul>
-    </nav>
-    
     <section id="section">
         <div>
-            <img src="src/map.png" usemap="#image-map" width="200px">
             <script type="text/javascript">
                 let xhttp = new XMLHttpRequest(); //XML 통신을 하기 위한 것 (요청)
                 
@@ -187,7 +159,7 @@
                         nodeValFunc(this);
                     }
                 }
-                xhttp.open("GET", "xml/restaurant.xml", true);
+                xhttp.open("GET", "xml/tmp2.xml", true);
                 xhttp.send();
                 
                 function nodeValFunc( xml ) {
@@ -204,70 +176,62 @@
                     name = xmlDoc.getElementsByTagName("name");
                     category = xmlDoc.getElementsByTagName("category");
                     address = xmlDoc.getElementsByTagName("address");
-                    img = xmlDoc.getElementsByTagName("img");
+                    // img = xmlDoc.getElementsByTagName("img");
                     introduction = xmlDoc.getElementsByTagName("introduction");
                     embed = xmlDoc.getElementsByTagName("embed");
-                    tag = xmlDoc.getElementsByTagName("tag");
-
-                    // document.write(address[1].childNodes[0].nodeValue);
+                    // tag = xmlDoc.getElementsByTagName("tag");
                     
+                    //document.write(address[1].childNodes[0].nodeValue);
+
                     // 출력부
                     for(let i = 0; i < num.length; i++) {
-                        if (address[i].childNodes[0].nodeValue == "하양") {
-                            // txt = num[i].childNodes[0].nodeValue + " / "
-                            // + name[i].childNodes[0].nodeValue + " / "
-                            // + category[i].childNodes[0].nodeValue + " / "
-                            // + address[i].childNodes[0].nodeValue + " / " 
-                            // // + img[i].childNodes[0].nodeValue + " / " 
-                            // // + introduction[i].childNodes[0].nodeValue + " / " 
-                            // // + embed[i].childNodes[0].nodeValue + "<br>";
-                            // document.write(txt);
-                            
-                            var card = document.createElement('div');
-                            card.className = "card";
-                            card.onclick = "location.href='https://naver.com'";
-                            //document.body.appendChild(card);
-                            document.getElementById('section').appendChild(card);
-                            
-                            var cropping = document.createElement('div');
-                            cropping.className = "cropping";
-                            card.appendChild(cropping);
-                            
-                            var cardImg = document.createElement('img');
-                            cardImg.src = img[i].childNodes[0].nodeValue;
-                            cardImg.alt = "...";
-                            cropping.appendChild(cardImg);
-                            
-                            var cardBody = document.createElement('div');
-                            cardBody.className = "card-body";
-                            card.appendChild(cardBody);
+                        // txt = num[i].childNodes[0].nodeValue + " / "
+                        // + name[i].childNodes[0].nodeValue + " / "
+                        // + category[i].childNodes[0].nodeValue + " / "
+                        // + address[i].childNodes[0].nodeValue + " / " 
+                        // + img[i].childNodes[0].nodeValue + " / " 
+                        // + introduction[i].childNodes[0].nodeValue + " / " 
+                        // + embed[i].childNodes[0].nodeValue + "<br>";
+                        
+                        var card = document.createElement('div');
+                        card.className = "card";
+                        card.onclick = "location.href='https://naver.com'";
+                        //document.body.appendChild(card);
+                        document.getElementById('section').appendChild(card);
+                        
+                        var cropping = document.createElement('div');
+                        cropping.className = "cropping";
+                        card.appendChild(cropping);
+                        
+                        var cardImg = document.createElement('img');
+                        cardImg.src = "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA1MTlfMjE2%2FMDAxNTg5ODU1MjIyNDUz.64589N7HqPzGE_4bn4SACE8W2OQg_jSlJaYEi0IIh7Eg.C-7VVhsSqIz2rcLV4j9OgLu7uthHtFoCfabbxszkF_Yg.JPEG.hjy071067%2FKakaoTalk_20200519_110355033_14.jpg";
+                        cardImg.alt = "...";
+                        cropping.appendChild(cardImg);
+                        
+                        var cardBody = document.createElement('div');
+                        cardBody.className = "card-body";
+                        card.appendChild(cardBody);
         
-                            var cardTitle = document.createElement('h2');
-                            cardTitle.className = "card-title";
-                            var cardTitleText = document.createTextNode(name[i].childNodes[0].nodeValue);
-                            cardTitle.appendChild(cardTitleText);
-                            cardBody.appendChild(cardTitle);
-                            
-                            var cardCategory = document.createElement('p');
-                            cardCategory.className = "card-category";
-                            var cardCategoryText = document.createTextNode(category[i].childNodes[0].nodeValue);
-                            cardCategory.appendChild(cardCategoryText);
-                            cardBody.appendChild(cardCategory);
+                        var cardTitle = document.createElement('h2');
+                        cardTitle.className = "card-title";
+                        var cardTitleText = document.createTextNode(name[i].childNodes[0].nodeValue);
+                        cardTitle.appendChild(cardTitleText);
+                        cardBody.appendChild(cardTitle);
+                        
+                        var cardCategory = document.createElement('p');
+                        cardCategory.className = "card-category";
+                        var cardCategoryText = document.createTextNode(category[i].childNodes[0].nodeValue);
+                        cardCategory.appendChild(cardCategoryText);
+                        cardBody.appendChild(cardCategory);
         
-                            var cardText = document.createElement('p');
-                            cardText.className = "card-text";
-                            var cardTextText = document.createTextNode(introduction[i].childNodes[0].nodeValue);
-                            cardText.appendChild(cardTextText);
-                            cardBody.appendChild(cardText);
-                        }
+                        var cardText = document.createElement('p');
+                        cardText.className = "card-text";
+                        var cardTextText = document.createTextNode(introduction[i].childNodes[0].nodeValue);
+                        cardText.appendChild(cardTextText);
+                        cardBody.appendChild(cardText);
+                        
                     }
                 }
             </script>
         </div>
     </section>
-
-    <footer>
-        <p>웹프로그래밍 3조 부드다기 박경록 박솔규 박준현 서예원</p>
-    </footer>
-</body>
-</html>

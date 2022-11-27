@@ -16,7 +16,7 @@
         xhttp.send();
     
         function nodeValFunc( xml ) {
-            let num, name, address, classification;
+            let num, name, address, category;
             let txt, nametxt, xmlDoc;
     
             txt = nametxt = '';
@@ -25,17 +25,17 @@
     
             num = xmlDoc.getElementsByTagName("num");
             name = xmlDoc.getElementsByTagName("name");
-            classification = xmlDoc.getElementsByTagName("classification");
+            category = xmlDoc.getElementsByTagName("category");
             address = xmlDoc.getElementsByTagName("address");
             console.log(num.length);
     
             for(let i=0; i < num.length; i++){
                 // txt += num[i].childNodes[0].nodeValue + "<br>";
                 // nametxt += name[i].childNodes[0].nodeValue + "<br>";
-                txt += num[i].childNodes[0].nodeValue + " / "
-                + name[i].childNodes[0].nodeValue + " / "
-                + classification[i].childNodes[0].nodeValue + " / "
-                + address[i].childNodes[0].nodeValue + "<br>";
+                txt += num[i].childNodes[0].nodeValue + " / " // 숫자
+                + name[i].childNodes[0].nodeValue + " / " // 식당 이름
+                + category[i].childNodes[0].nodeValue + " / " // 카테고리
+                + address[i].childNodes[0].nodeValue + "<br>"; // 주소
                 
                 document.getElementById('demo').innerHTML = txt + nametxt;
             }

@@ -3,181 +3,181 @@
 	<restaurant>
 		<num>1</num>
 		<name>미즈컨테이너</name>
-		<classification>양식</classification>
+		<category>양식</category>
 		<address>대구대</address>
 	</restaurant>
 	<restaurant>
 		<num>2</num>
 		<name>먹으면좋으리순대국밥1번지</name>
-		<classification>한식</classification>
+		<category>한식</category>
 		<address>대구대</address>
 	</restaurant>
 	<restaurant>
 		<num>3</num>
 		<name>쪼닭</name>
-		<classification>한식</classification>
+		<category>한식</category>
 		<address>대구대</address>
 	</restaurant>
 	<restaurant>
 		<num>4</num>
 		<name>통큰감자탕</name>
-		<classification>한식</classification>
+		<category>한식</category>
 		<address>대구대</address>
 	</restaurant>
 	<restaurant>
 		<num>5</num>
 		<name>우당탕반점</name>
-		<classification>중식</classification>
+		<category>중식</category>
 		<address>대구대</address>
 	</restaurant>
 	<restaurant>
 		<num>6</num>
 		<name>카츠데이</name>
-		<classification>일식</classification>
+		<category>일식</category>
 		<address>대구대</address>
 	</restaurant>
 	<restaurant>
 		<num>7</num>
 		<name>일미닭갈비 대구대점</name>
-		<classification>한식</classification>
+		<category>한식</category>
 		<address>대구대</address>
 	</restaurant>
 	<restaurant>
 		<num>8</num>
 		<name>오덕후</name>
-		<classification>한식</classification>
+		<category>한식</category>
 		<address>대구대</address>
 	</restaurant>
 	<restaurant>
 		<num>9</num>
 		<name>핸즈커피 대구대점</name>
-		<classification>카페</classification>
+		<category>카페</category>
 		<address>대구대</address>
 	</restaurant>
 	<restaurant>
 		<num>10</num>
 		<name>왕이모네식당</name>
-		<classification>한식</classification>
+		<category>한식</category>
 		<address>대구대</address>
 	</restaurant>
 	<restaurant>
 		<num>11</num>
 		<name>마고플레인 대구대삼거리점</name>
-		<classification>베이커리</classification>
+		<category>베이커리</category>
 		<address>대구대</address>
 	</restaurant>
 	<restaurant>
 		<num>12</num>
 		<name>촛대바위</name>
-		<classification>한식</classification>
+		<category>한식</category>
 		<address>대구대</address>
 	</restaurant>
 	<restaurant>
 		<num>13</num>
 		<name>대구닭고치</name>
-		<classification>야식</classification>
+		<category>야식</category>
 		<address>대구대</address>
 	</restaurant>
 	<restaurant>
 		<num>14</num>
 		<name>오위커피</name>
-		<classification>카페</classification>
+		<category>카페</category>
 		<address>대구대</address>
 	</restaurant>
 	<restaurant>
 		<num>15</num>
 		<name>밤마실</name>
-		<classification>한식</classification>
+		<category>한식</category>
 		<address>대구대</address>
 	</restaurant>
 	<restaurant>
 		<num>1</num>
 		<name>퀴다 하양 본점</name>
-		<classification>양식</classification>
+		<category>양식</category>
 		<address>하양</address>
 	</restaurant>
 	<restaurant>
 		<num>2</num>
 		<name>교동면옥 하양점</name>
-		<classification>한식</classification>
+		<category>한식</category>
 		<address>하양</address>
 	</restaurant>
 	<restaurant>
 		<num>3</num>
 		<name>오이시</name>
-		<classification>일식</classification>
+		<category>일식</category>
 		<address>하양</address>
 	</restaurant>
 	<restaurant>
 		<num>4</num>
 		<name>키햐아 하양점</name>
-		<classification>일식</classification>
+		<category>일식</category>
 		<address>하양</address>
 	</restaurant>
 	<restaurant>
 		<num>5</num>
 		<name>스시카츠 하양점</name>
-		<classification>일식</classification>
+		<category>일식</category>
 		<address>하양</address>
 	</restaurant>
 	<restaurant>
 		<num>6</num>
 		<name>혁돈</name>
-		<classification>한식</classification>
+		<category>한식</category>
 		<address>하양</address>
 	</restaurant>
 	<restaurant>
 		<num>7</num>
 		<name>숲 케이크</name>
-		<classification>카페</classification>
+		<category>카페</category>
 		<address>하양</address>
 	</restaurant>
 	<restaurant>
 		<num>8</num>
 		<name>제이네공방</name>
-		<classification>카페</classification>
+		<category>카페</category>
 		<address>하양</address>
 	</restaurant>
 	<restaurant>
 		<num>9</num>
 		<name>또오고 마라탕 하양점</name>
-		<classification>중식</classification>
+		<category>중식</category>
 		<address>하양</address>
 	</restaurant>
 	<restaurant>
 		<num>10</num>
 		<name>후라이드 참 잘하는집 하양점</name>
-		<classification>치킨</classification>
+		<category>치킨</category>
 		<address>하양</address>
 	</restaurant>
 	<restaurant>
 		<num>11</num>
 		<name>블루웨이 샐러드</name>
-		<classification>기타</classification>
+		<category>기타</category>
 		<address>하양</address>
 	</restaurant>
 	<restaurant>
 		<num>12</num>
 		<name>요거트월드 하양점</name>
-		<classification>카페</classification>
+		<category>카페</category>
 		<address>하양</address>
 	</restaurant>
 	<restaurant>
 		<num>13</num>
 		<name>주유천하</name>
-		<classification>한식</classification>
+		<category>한식</category>
 		<address>하양</address>
 	</restaurant>
 	<restaurant>
 		<num>14</num>
 		<name>다니상점 하양점</name>
-		<classification>기타</classification>
+		<category>기타</category>
 		<address>하양</address>
 	</restaurant>
 	<restaurant>
 		<num>15</num>
 		<name>소곱창전문점 곱창폭식 하양점</name>
-		<classification>한식</classification>
+		<category>한식</category>
 		<address>하양</address>
 	</restaurant>
 </data>

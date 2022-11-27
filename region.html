@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <style>
+        .card {
+            width: 300px;
+            border: 1px solid rgb(164, 177, 189);
+            border-radius: 10px;
+            background-color:rgb(222, 252, 252);
+            cursor:pointer;
+        }
+
+        .card-body {
+            padding: 10px;
+            background-color:#cae7e7;
+            border-radius: 10px;
+        }
+
+        .cropping {
+            height: 150px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .cropping img {
+            width: 300px;
+            margin-top: -20px;
+        }
+
+        .card-title {
+            margin-top: 5px;
+            margin-bottom: 0px;
+            font-family: 'Gamja Flower';
+        }
+
+        .card-category {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 13px;
+            color: rgb(122, 122, 122);
+        }
+
+        .card-text {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>하양</h1>
+    
+    <script type="text/javascript">
+        let xhttp = new XMLHttpRequest(); //XML 통신을 하기 위한 것 (요청)
+        
+        xhttp.onreadystatechange = function() {
+            if(this.readyState == 4 && this.status == 200) {
+                //alert(this.responseXML);
+                nodeValFunc(this);
+            }
+        }
+        xhttp.open("GET", "xml/restaurant.xml", true);
+        xhttp.send();
+        
+        function nodeValFunc( xml ) {
+            let num, name, address, category;
+            let txt, nametxt, xmlDoc;
+            
+            txt = nametxt = '';
+            
+            xmlDoc = xml.responseXML; // 위에서 this를 통해서 넘겨 받음
+            
+            // 특정 태그에 맞는 태그만 파싱해야함, 아래는 전체 파싱임
+            // 그냥 전체 받고, 출력 할 때만 그냥 if 문으로 걸러서 내야할듯?
+            num = xmlDoc.getElementsByTagName("num");
+            name = xmlDoc.getElementsByTagName("name");
+            category = xmlDoc.getElementsByTagName("category");
+            address = xmlDoc.getElementsByTagName("address");
+            //console.log(num.length);
+            
+            // 출력부
+            for(let i = 0; i < num.length; i++) {
+                if (address[i].childNodes[0].nodeValue == "하양") {
+                    txt = num[i].childNodes[0].nodeValue + " / "
+                    + name[i].childNodes[0].nodeValue + " / "
+                    + category[i].childNodes[0].nodeValue + " / "
+                    + address[i].childNodes[0].nodeValue;
+                    
+                    var card = document.createElement('div');
+                    card.className = "card";
+                    card.onclick = "location.href='https://naver.com'";
+                    document.body.appendChild(card);
+
+                    var cropping = document.createElement('div');
+                    cropping.className = "cropping";
+                    card.appendChild(cropping);
+
+                    var img = document.createElement('img');
+                    img.src = "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA1MTlfMjE2%2FMDAxNTg5ODU1MjIyNDUz.64589N7HqPzGE_4bn4SACE8W2OQg_jSlJaYEi0IIh7Eg.C-7VVhsSqIz2rcLV4j9OgLu7uthHtFoCfabbxszkF_Yg.JPEG.hjy071067%2FKakaoTalk_20200519_110355033_14.jpg";
+                    img.alt = "..."
+                    cropping.appendChild(img);
+
+                    var cardBody = document.createElement('div');
+                    cardBody.className = "card-body";
+                    card.appendChild(cardBody);
+
+                    var cardTitle = document.createElement('h2');
+                    cardTitle.className = "card-title"
+                    var cardTitleText = document.createTextNode(name[i].childNodes[0].nodeValue);
+                    cardTitle.appendChild(cardTitleText);
+                    cardBody.appendChild(cardTitle);
+                    
+                    var cardCategory = document.createElement('p');
+                    cardCategory.className = "card-category"
+                    var cardCategoryText = document.createTextNode(category[i].childNodes[0].nodeValue);
+                    cardCategory.appendChild(cardCategoryText);
+                    cardBody.appendChild(cardCategory);
+
+                    var cardText = document.createElement('p');
+                    cardText.className = "card-text"
+                    var cardTextText = document.createTextNode("양식 맛집인듯 하다<br>대구대가 본점임");
+                    cardText.appendChild(cardTextText);
+                    cardBody.appendChild(cardText);
+                }
+            }
+        }
+    </script>
+    <p id="demo"></p>
+</body>
+</html>

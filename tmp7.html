@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower:400" rel="stylesheet">
+    <style>
+        .card {
+            width: 300px;
+            border: 1px solid rgb(164, 177, 189);
+            border-radius: 10px;
+            background-color:rgb(222, 252, 252);
+            cursor:pointer;
+        }
+
+        .card-body {
+            padding: 10px;
+            background-color:#cae7e7;
+            border-radius: 10px;
+        }
+
+        .cropping {
+            height: 150px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .cropping img {
+            width: 300px;
+            margin-top: -20px;
+        }
+
+        .card-title {
+            margin-top: 5px;
+            margin-bottom: 0px;
+            font-family: 'Gamja Flower';
+        }
+
+        .card-category {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 13px;
+            color: rgb(122, 122, 122);
+        }
+
+        .card-text {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>카드 테스트</h1>
+    <div class="card" onclick="location.href='https://naver.com'">
+        <div class="cropping">
+            <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA1MTlfMjE2%2FMDAxNTg5ODU1MjIyNDUz.64589N7HqPzGE_4bn4SACE8W2OQg_jSlJaYEi0IIh7Eg.C-7VVhsSqIz2rcLV4j9OgLu7uthHtFoCfabbxszkF_Yg.JPEG.hjy071067%2FKakaoTalk_20200519_110355033_14.jpg" alt="...">
+        </div>
+        
+        <div class="card-body">
+            <h2 class="card-title">미즈 컨테이너</h2>
+            <p class="card-category">양식</p>
+            <p class="card-text">
+                양식 맛집인듯 하다<br>
+                대구대가 본점임
+            </p>
+        </div>
+      </div>
+</body>
+</html>

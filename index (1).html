@@ -50,7 +50,6 @@
                 padding: 14px 36px;
                 border-right: 1px solid rgba(0,0,0,0.15);
             }
-
             #main-menu > li > form {
                 font-size: 0.85rem;
                 color: rgba(0, 0, 0, 0.85);
@@ -114,31 +113,25 @@
                 padding: 30px;
             }
             /*--------- 풋터 영역 끝 ---------*/
-
-            /*--------- 퀵 메뉴 시작 ---------*/
             #section_left{
                 position:relative;
                 padding-right: 30px;
                 justify-content: center;
                 padding-top: 10px;
             }
-
             #logo_box{
                 padding-top: 30px;
             }
-
             #search_box{
                 padding-top: 30px;
                 text-align: center;
             }
-
             #section_left_left{
                 float: left;
                 display: flex;
                 padding-top: 35px;
                 padding-right: 14px;
             }
-
             #section_left_right{
                 float: left;
                 display: flex;
@@ -151,15 +144,9 @@
                 display: flex;
             }
         </style>
-        
-        <script>
-            // 로컬스토리지 저장
-            function a(value) {
-                window.localStorage.setItem('region', value);
-                location.href = "region.html";
-            }
-        </script>
     </head>
+
+
 
     <body>
         <nav role="navigation">
@@ -167,16 +154,14 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="#">지역</a>
                     <ul id="sub-menu">
-                        <li><a href="javascript:a('달서구');" aria-label="subemnu" onclick="return false;">달서구</a></li>
-                        <li><a href="javascript:a('북구')" aria-label="subemnu" onclick="return false;">북구</a></li>
-                        <li><a href="javascript:a('수성구')" aria-label="subemnu" onclick="return false;">수성구</a></li>
-                        <li><a href="javascript:a('동구')" aria-label="subemnu" onclick="return false;">동구</a></li>
-                        <li><a href="javascript:a('달성군')" aria-label="subemnu" onclick="return false;">달성군</a></li>
-                        <li><a href="javascript:a('서구')" aria-label="subemnu" onclick="return false;">서구</a></li>
-                        <li><a href="javascript:a('남구')" aria-label="subemnu" onclick="return false;">남구</a></li>
-                        <li><a href="javascript:a('중구')" aria-label="subemnu" onclick="return false;">중구</a></li>
-                        <li><a href="javascript:a('대구대')" aria-label="subemnu" onclick="return false;">대구대</a></li>
-                        <li><a href="javascript:a('하양')" aria-label="subemnu" onclick="return false;">하양</a></li>
+                        <li><a href="#" aria-label="subemnu">달서구</a></li>
+                        <li><a href="#" aria-label="subemnu">북구</a></li>
+                        <li><a href="#" aria-label="subemnu">수성구</a></li>
+                        <li><a href="#" aria-label="subemnu">동구</a></li>
+                        <li><a href="#" aria-label="subemnu">달성군</a></li>
+                        <li><a href="#" aria-label="subemnu">서구</a></li>
+                        <li><a href="#" aria-label="subemnu">남구</a></li>
+                        <li><a href="#" aria-label="subemnu">중구</a></li>
                     </ul>
                 </li>
                 <li><a href="#">뭐먹지?</a></li>
@@ -193,7 +178,7 @@
         <section>
             <div id="section_left">
                 <div id="logo_box">
-                    <img src="src/map.png" usemap="#image-map" width="375px" height="160px">
+                    <img src="map.png" usemap="#image-map" width="375px" height="160px">
                 </div>
                 <div id="search_box">
                     <form name="search" method="get">
@@ -203,15 +188,15 @@
                 </div>
                 <div>
                     <div id="section_left_left">
-                        <img src="src/button1.png" usemap="#image-map" width="215px" height="185px">
+                        <img src="button1.png" usemap="#image-map" width="215px" height="185px">
                     </div>
                     <div id="section_left_right">
-                        <img src="src/butten2.png" usemap="#image-map" width="150px" height="185px">
+                        <img src="butten2.png" usemap="#image-map" width="150px" height="185px">
                     </div>
                 </div>
             </div>
             <div id="section_right">
-                <img src="src/map.png" usemap="#image-map">
+                <img src="map.png" usemap="#image-map">
             </div>
         </section>
         <footer>

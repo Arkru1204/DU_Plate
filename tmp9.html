@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+
+<body>
+    <h1>테스트</h1>
+    <script type="text/javascript">
+        let xhttp = new XMLHttpRequest(); //XML 통신을 하기 위한 객체 (요청)
+        
+        xhttp.onreadystatechange = function() { // xml 파싱을 위해 ajax 비동기식 처리
+            if(this.readyState == 4 && this.status == 200) { // 진행 상태 : 처리 완료 && 상태 : 성공일 때
+                nodeValFunc(this);
+            }
+        }
+        xhttp.open("GET", "xml/restaurant.xml", true);
+        xhttp.send();
+        
+        function nodeValFunc( xml ) {
+            let num, name, address, category, img, introduction, embed, tag;
+            let txt, nametxt, xmlDoc;
+            
+            txt = nametxt = '';
+            
+            xmlDoc = xml.responseXML; // 위에서 this를 통해서 넘겨 받음
+            
+            // xml 문서에서 해당 태그 객체 참조
+            num = xmlDoc.getElementsByTagName("num");
+            name = xmlDoc.getElementsByTagName("name");
+            category = xmlDoc.getElementsByTagName("category");
+            address = xmlDoc.getElementsByTagName("address");
+            img = xmlDoc.getElementsByTagName("img");
+            introduction = xmlDoc.getElementsByTagName("introduction");
+            embed = xmlDoc.getElementsByTagName("embed");
+            tags = xmlDoc.getElementsByTagName("tags");
+
+            // 출력부
+            document.write(tags[1].getElementsByTagName("tag")[0].childNodes[0].nodeValue + "<br>");
+            tag = tags[1].getElementsByTagName("tag");
+            document.write(tag.length + "<br>");
+            var i = 5;
+            document.write("asdf" + i);
+        }
+    </script>
+</body>
+
+</html>

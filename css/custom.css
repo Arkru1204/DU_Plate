@@ -1,0 +1,4 @@
+/* 부트스트랩 수정 */
+.offcanvas {
+    --bs-offcanvas-width: 1000px;
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DU PLATE</title>
+        <link href="css/nav.css" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+            /*body 초기화*/
+            /**/
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: "Roboto", serif;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                overflow-x: hidden;
+                width: 1980;
+                height: 1080;
+            }
+
+            /*--------- 섹션 영역 시작---------*/
+            section {
+                width: 100%;
+                height: 100%;
+                min-height: 620px;
+                min-width: 1980px;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                padding: 90px;
+                background-color:  #F4D3CB;
+            }
+
+            /*--------- 섹션 영역 끝 ---------*/
+
+            /*--------- 풋터 영역 시작 ---------*/
+            footer{
+                display: flex;
+                justify-content: center;
+                position: relative;
+                font-size: small;
+                width:100%;
+                height: 10%;
+                padding: 70px;
+                background-color:  #F4D3CB;
+            }
+            /*--------- 풋터 영역 끝 ---------*/
+
+            /*--------- 퀵 메뉴 시작 ---------*/
+            #section_left{
+                position: relative;
+                padding-right: 100px;
+                justify-content: center;
+                padding-top: 10px;
+            }
+
+            #logo_box{
+                padding-top: 30px;
+            }
+
+            #search_box{
+                padding-top: 30px;
+                text-align: center;
+            }
+
+            #section_left_left{
+                float: left;
+                display: flex;
+                padding-top: 35px;
+                padding-right: 14px;
+            }
+
+            #section_left_right{
+                float: left;
+                display: flex;
+                padding-right: 7px;
+                padding-top: 35px;
+            }
+
+            #section_right{
+                padding-top: 50px;
+                width: 400px;
+                float: left;
+            }
+
+            .popUp{
+                position: absolute;
+                top: 140px;
+                left: 1135px;
+                pointer-events: none;
+            }
+        </style>
+        
+        <script>
+            // 로컬스토리지 저장
+            function a(value) {
+                window.localStorage.setItem('region', value);
+                location.href = "region.html";
+            }
+
+            // 검색 로컬스토리지 읽기/저장
+            var keyVal = localStorage.getItem('search')
+            function getKeyVal(value) {
+                svalue = document.getElementById('key').value;
+                window.localStorage.setItem('search', svalue);
+                window.location.href = "search.html";
+                //임력 안했으면 alert message 뜨기
+                if (svalue.length == 0){
+                    alert("검색어를 입력하시오!");
+                }
+            }
+
+            function showImg(region) {
+                if (region == '대구대') {
+                    document.getElementById("fig").src = "src/대구지도 대구대.png"
+                } else if (region == '하양') {
+                    document.getElementById("fig").src = "src/대구지도 하양.png"
+                } else if (region == '북구') {
+                    document.getElementById("fig").src = "src/대구지도 북구.png"
+                } else if (region == '서구') {
+                    document.getElementById("fig").src = "src/대구지도 서구.png"
+                } else if (region == '중구') {
+                    document.getElementById("fig").src = "src/대구지도 중구.png"
+                } else if (region == '남구') {
+                    document.getElementById("fig").src = "src/대구지도 남구.png"
+                } else if (region == '달성군') {
+                    document.getElementById("fig").src = "src/대구지도 달성군.png"
+                } else if (region == '달서구') {
+                    document.getElementById("fig").src = "src/대구지도 달서구.png"
+                } else if (region == '동구') {
+                    document.getElementById("fig").src = "src/대구지도 동구.png"
+                } else if (region == '수성구') {
+                    document.getElementById("fig").src = "src/대구지도 수성구.png"
+                }
+            }
+
+            function hideImg() {
+                document.getElementById("fig").src = ""
+            }
+        </script>
+    </head>
+
+    <body>
+        <nav role="navigation">
+            <ul id="main-menu">
+                <li><a href="index.html" id="navLogo">
+                    <img src="src/navLogo.png" width="60px"></a>
+                </li>
+                <li><a href="#">지역</a>
+                    <ul id="sub-menu">
+                        <li><a href="javascript:a('달서구');" aria-label="subemnu" onclick="return false;">달서구</a></li>
+                        <li><a href="javascript:a('북구')" aria-label="subemnu" onclick="return false;">북구</a></li>
+                        <li><a href="javascript:a('수성구')" aria-label="subemnu" onclick="return false;">수성구</a></li>
+                        <li><a href="javascript:a('동구')" aria-label="subemnu" onclick="return false;">동구</a></li>
+                        <li><a href="javascript:a('달성군')" aria-label="subemnu" onclick="return false;">달성군</a></li>
+                        <li><a href="javascript:a('서구')" aria-label="subemnu" onclick="return false;">서구</a></li>
+                        <li><a href="javascript:a('남구')" aria-label="subemnu" onclick="return false;">남구</a></li>
+                        <li><a href="javascript:a('중구')" aria-label="subemnu" onclick="return false;">중구</a></li>
+                        <li><a href="javascript:a('대구대')" aria-label="subemnu" onclick="return false;">대구대</a></li>
+                        <li><a href="javascript:a('하양')" aria-label="subemnu" onclick="return false;">하양</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">뭐먹지?</a></li>
+                <li><a href="DPcal.html">더치페이</a></li>
+                <li id="navSearch">
+                    <form onsubmit="getKeyVal()" name="search" method="get">
+                        <label><input type="text" size="20" id="key" value="" placeholder="맛집 이름"></label>
+                        <input type="submit" value="찾기">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <div id="section_left">
+                <div id="logo_box">
+                    <img src="src/Logo.png" width="400px">
+                </div>
+                <div id="search_box">
+                    <form name="search" method="get">
+                        <input type="text" size="20" value="" placeholder="맛집 이름" style="width:330px; height:30px; font-size:10px;">
+                        <input type="submit" value="찾기">
+                    </form>
+                </div>
+                <div>
+                    <div id="section_left_left">
+                        <img src="src/button1.png">
+                    </div>
+                    <div id="section_left_right">
+                        <img src="src/butten2.png">
+                    </div>
+                </div>
+            </div>
+            <div id="section_right">
+                <!-- Image Map Generated by http://www.image-map.net/ -->
+                <img src="src/map.png" usemap="#image-map">
+                <map name="image-map">
+                    <area onmouseover="showImg('대구대')" onmouseout="hideImg()" target="" alt="대구대" title="대구대" href="javascript:a('대구대');" coords="171,495,39" shape="circle">
+                    <area onmouseover="showImg('하양')" onmouseout="hideImg()" target="" alt="하양" title="하양" href="javascript:a('하양');" coords="245,536,257,535,273,525,282,522,286,514,299,513,307,508,308,501,317,490,316,482,323,479,324,466,338,462,348,460,356,461,362,458,357,453,360,446,357,439,353,434,358,422,354,416,345,418,341,406,336,401,330,400,324,396,318,404,311,403,305,404,296,400,291,394,281,399,273,406,268,407,259,403,252,404,222,398,216,406,211,417,212,422,211,428,217,432,218,440,224,446,230,449,235,452,243,460,242,468,240,477,243,488,248,498,246,507,244,514,242,520,248,522,242,532" shape="poly">
+                    <area onmouseover="showImg('북구')" onmouseout="hideImg()" target="" alt="북구" title="북구" href="javascript:a('북구');" coords="146,144,152,148,167,150,198,150,206,153,218,154,220,160,222,162,232,161,237,163,242,163,248,161,251,154,257,150,263,145,266,138,267,126,268,97,260,73,262,64,256,51,246,37,230,47,206,49,196,64,177,48,176,73,176,91,173,103,168,113,155,128" shape="poly">
+                    <area onmouseover="showImg('서구')" onmouseout="hideImg()" target="" alt="서구" title="서구" href="javascript:a('서구');" coords="169,151,165,160,161,165,161,173,171,180,179,185,186,187,200,187,214,185,215,176,221,163,220,160,217,155,205,154,198,151" shape="poly">
+                    <area onmouseover="showImg('중구')" onmouseout="hideImg()" target="" alt="중구" title="중구" href="javascript:a('중구');" coords="215,184,216,175,222,162,231,161,238,163,243,163,249,161,260,177,257,182,254,186,252,193,243,193,232,192,224,190,218,189" shape="poly">
+                    <area onmouseover="showImg('남구')" onmouseout="hideImg()" target="" alt="남구" title="남구" href="javascript:a('남구');" coords="251,194,248,201,249,214,244,229,240,240,233,248,211,227,204,216,211,203,216,195,219,190,233,193" shape="poly">
+                    <area onmouseover="showImg('달성군')" onmouseout="hideImg()" target="" alt="달성군" title="달성군" href="javascript:a('달성군');" coords="146,144,133,142,121,140,122,129,125,116,119,98,106,86,92,89,81,95,66,109,57,122,51,138,47,152,41,167,34,178,33,187,38,192,49,193,62,195,80,198,100,205,110,211,118,220,123,226,119,212,117,199,117,192,121,178,130,176,137,178,144,176,154,172,160,172,160,165,166,158,168,150,150,148" shape="poly">
+                    <area onmouseover="showImg('달서구')" onmouseout="hideImg()" target="" alt="달서구" title="달서구" href="javascript:a('달서구');" coords="123,226,120,212,117,194,122,178,130,177,136,179,154,173,160,173,179,186,185,188,198,188,215,185,218,190,203,216,211,228,232,248,217,257,212,262,208,272,201,279,192,284,178,271,166,259,153,246,143,236,137,232" shape="poly">
+                    <area onmouseover="showImg('달성군')" onmouseout="hideImg()" target="" alt="달성군" title="달성군" href="javascript:a('달성군');" coords="123,226,124,232,117,241,98,241,84,243,70,244,62,250,54,262,47,274,39,291,36,306,40,316,46,324,54,330,66,339,75,349,79,355,78,362,68,369,60,372,46,370,31,367,14,362,5,363,2,371,3,380,9,388,20,402,30,418,41,437,43,446,40,451,33,459,27,469,24,478,32,480,47,475,64,469,79,462,90,455,102,452,125,450,141,447,151,443,158,437,159,427,160,414,163,403,172,394,179,384,181,368,180,356,185,344,195,338,208,333,224,328,242,326,249,332,251,342,254,353,257,361,263,367,270,368,284,363,300,354,314,342,327,332,332,317,333,297,333,284,327,273,318,269,301,259,291,254,271,250,255,248,234,248,219,257,212,262,209,272,201,280,192,284,177,270,154,247,142,235,130,229" shape="poly">
+                    <area onmouseover="showImg('수성구')" onmouseout="hideImg()" target="" alt="수성구" title="수성구" href="javascript:a('수성구');" coords="234,248,240,240,249,214,249,200,252,192,260,176,276,171,293,167,309,166,318,173,324,180,330,184,342,185,352,186,364,195,370,199,361,211,353,228,350,242,348,252,343,260,335,264,331,266,324,271,316,267,301,258,289,253,255,247" shape="poly">
+                    <area onmouseover="showImg('동구')" onmouseout="hideImg()" target="" alt="동구" title="동구" href="javascript:a('동구');" coords="249,160,252,154,263,146,266,139,268,97,261,73,262,63,256,50,246,36,252,22,260,16,275,9,291,4,309,2,326,3,339,4,348,10,360,22,375,37,382,51,382,62,379,75,374,91,373,103,375,109,382,116,389,124,392,137,397,153,398,167,396,181,387,193,380,197,370,198,352,185,330,183,323,178,319,173,309,165,298,166,289,167,273,172,259,175" shape="poly">
+                </map>
+                <div class="popUp"><img id="fig" src=""></div>
+            </div>
+        </section>
+        <footer>
+            <p>웹프로그래밍 3조 부드다기 박경록 박솔규 박준현 서예원</p>
+        </footer>
+    </body>
+</html>

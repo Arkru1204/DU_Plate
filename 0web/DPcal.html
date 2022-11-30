@@ -5,61 +5,399 @@
     <title>
         N빵 계산기
     </title>
+    <link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
     <link href="css/nav.css" rel="stylesheet">
     <style>
-    /*--------- 섹션 영역 시작---------*/
-    section {
-        width: 100%;
-        height: 100%;
-        min-height: 620px;
-        min-width: 1980px;
-        display: flex;
-        justify-content: center;
-        position: relative;
-        padding: 90px;
-        background-color:  #F4D3CB;
-    }
-
-    /*--------- 섹션 영역 끝 ---------*/
-
-    /*--------- 풋터 영역 시작 ---------*/
-    footer {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        font-size: small;
-        width:100%;
-        height: 10%;
-        padding: 70px;
-        background-color:  #F4D3CB;
-    }
-    /*--------- 풋터 영역 끝 ---------*/
-    h1{
-        margin-top: 600px;
-    }
-    #Dutchpay{
-        margin-top: 600px;
-    }
-    </style>
-    <script type="text/javascript">
-        // 로컬스토리지 읽기/저장
-        var lastRegion = localStorage.getItem('region')
-        function a(value) {
-            window.localStorage.setItem('region', value);
-            location.href = "region.html";
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;  
+            background-color: #FFF8EE;
+            font-family: 'Jua';
+            width: 1980;
+            height: 1080;
         }
 
-        // 검색 로컬스토리지 읽기/저장
-        var keyVal = localStorage.getItem('search')
-        function getKeyVal(value) {
-            svalue = document.getElementById('key').value;
-            window.localStorage.setItem('search', svalue);
-            location.href = "search.html";
-            //임력 안했으면 alert message 뜨기
-            if (svalue.length == 0) {
-                alert("검색어를 입력하시오!");
+        header {
+            margin-top: 80px;
+        }
+
+        /*--------- 네비게이션 바 영역 시작---------*/
+        nav {
+            position: fixed;
+            top: 0%;
+            z-index: 2;
+            width: 100%;
+            min-width: 1280px;
+            display: flex;
+            justify-content: center;
+            background: #F6D4CB;
+        }
+
+        ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #main-menu > li {
+            float: left;
+            position: relative;
+        }
+
+        #main-menu > li > a {
+            font-size: 1rem;
+            font-family: 'Jua';
+            font-weight: 700;
+            color: rgb(88, 90, 92);
+            text-align: center;
+            text-decoration: none;
+            /* letter-spacing: 0.1em; */
+            display: block;
+            padding: 14px 36px;
+            transition: all .5s ease-out;
+        }
+
+        #main-menu > li > a:hover {
+            color: #2C5994;
+        }
+
+        #main-menu > li > form {
+            font-size: 0.85rem;
+            color: #F6D4CB;
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            display: block;
+            padding: 11px 17px;
+            /* border-right: 1px solid #F6D4CB */
+        }
+
+        /* #main-menu > li:nth-child(1) > a {
+
+        } */
+
+        #sub-menu {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.15s ease-in;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: row;
+            left: -250px;
+            width: 1200px;
+        }
+
+        #sub-menu > li {
+            padding: 15px 30px;
+            /* border: 1px solid #2C5994; */
+            background: #F9E6E2;
+        }
+
+        #sub-menu > li > a {
+            font-family: 'Jua';
+            color: #2C5994;
+            text-decoration: none;
+        }
+
+        #main-menu > li:hover #sub-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #sub-menu > li > a:hover {
+            text-decoration: underline;
+        }
+
+        #navLogo {
+            margin-top: -19px;
+            margin-bottom: -50px;
+            margin-right: 0px;
+        }
+
+        #navSearch {
+            margin-left: 130px;
+        }
+
+        .navSelect {
+            position: relative;
+            left: 70px;
+            /* width: 70px; */
+            min-width: 80px;
+            max-height: 52px;
+        }
+
+        .navSelect::after {
+            content: "";
+            position: absolute;
+            bottom: 6px;
+            height: 4px;
+            left: 75px;
+            transform: translateX(-50%);
+            width: 0%;
+            background: #2C5994;
+            transition: all .5s ease-out;
+        }
+
+        .navSelect:hover::after {
+            width: 50%
+        }
+
+        .inputBox {
+            border: none;
+            background-color: #FFF8EE;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            height:18px;
+            
+        }
+
+        .inputBox::placeholder{
+            color:rgb(105, 145, 185);
+            font-family: 'Jua';
+        }
+
+        #navForm {
+            position: relative;
+        }
+
+        #navSearchBtn {
+            margin-top: 0px;
+            position: absolute;
+            top:10px;
+        }
+        /*--------- 네비게이션 바 영역 끝---------*/
+    
+        /*--------- 섹션 영역 시작---------*/
+        section {
+            width: 90%;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /*--------- 섹션 영역 끝 ---------*/
+
+        /*--------- 풋터 영역 시작 ---------*/
+        footer {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            font-size: small;
+            width:100%;
+            height: 10%;
+            padding: 70px;
+            background-color:  #FFF8EE;
+            font-family: 'Jua';
+        }
+        
+        /*--------- 풋터 영역 끝 ---------*/
+        #cash{
+            border: none;
+            background-color: #F6D4CB;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            width:400px;
+            height:30px;
+        }
+        #ncash1{
+            border: none;
+            background-color: #F6D4CB;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            width:400px;
+            height:30px;
+        }
+        #ncash2{
+            border: none;
+            background-color: #F6D4CB;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            width:400px;
+            height:30px;
+        }
+        #ncash3{
+            border: none;
+            background-color: #F6D4CB;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            width:400px;
+            height:30px;
+        }
+        #ncash4{
+            border: none;
+            background-color: #F6D4CB;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            width:400px;
+            height:30px;
+        }
+        #ncash5{
+            border: none;
+            background-color: #F6D4CB;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            width:400px;
+            height:30px;
+        }
+        #ncash6{
+            border: none;
+            background-color: #F6D4CB;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            width:400px;
+            height:30px;
+        }
+        #peo{
+            border: none;
+            background-color: #F6D4CB;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            width:400px;
+            height:30px;
+        }
+        #cp{
+            background:none;
+            color:#2C5994;
+            font-size:30px;
+            border:none;
+            
+        }
+        #ncp1{
+            background:none;
+            color:#2C5994;
+            font-size:30px;
+            border:none;
+            
+        }
+        #ncp2{
+            background:none;
+            color:#2C5994;
+            font-size:30px;
+            border:none;
+            
+        }
+        #ncp3{
+            background:none;
+            color:#2C5994;
+            font-size:30px;
+            border:none;
+            
+        }
+        #ncp4{
+            background:none;
+            color:#2C5994;
+            font-size:30px;
+            border:none;
+            
+        }
+        #ncp5{
+            background:none;
+            color:#2C5994;
+            font-size:30px;
+            border:none;
+            
+        }
+        #ncm1{
+            background:none;
+            color:#2C5994;
+            font-size:50px;
+            border:none;
+            
+        }
+        #ncm2{
+            background:none;
+            color:#2C5994;
+            font-size:50px;
+            border:none;
+            
+        }
+        #ncm3{
+            background:none;
+            color:#2C5994;
+            font-size:50px;
+            border:none;
+            
+        }
+        #ncm4{
+            background:none;
+            color:#2C5994;
+            font-size:50px;
+            border:none;
+            
+        }
+        #ncm5{
+            background:none;
+            color:#2C5994;
+            font-size:50px;
+            border:none;
+            
+        }
+        #ncm6{
+            background:none;
+            color:#2C5994;
+            font-size:50px;
+            border:none;
+            
+        }
+        #dutchbtn{
+            background-color:#F6D4CB;
+            color:#2C5994;
+            font-size:18px;
+            border:none;
+            border-radius: 30px;
+            font-weight: bold;
+            width:60px;
+        }
+        #dutch{
+            color :#2C5994;
+            font-size:18px;
+            font-weight: bold;
+        }
+
+        </style>
+        <script type="text/javascript">
+            // 로컬스토리지 읽기/저장
+            var lastRegion = localStorage.getItem('region')
+            function a(value) {
+                window.localStorage.setItem('region', value);
+                location.href = "region.html";
             }
-        }
+
+            // 검색 로컬스토리지 읽기/저장
+            var keyVal = localStorage.getItem('search')
+            function getKeyVal(value) {
+                svalue = document.getElementById('key').value;
+                window.localStorage.setItem('search', svalue);
+                location.href = "search.html";
+                //임력 안했으면 alert message 뜨기
+                if (svalue.length == 0) {
+                    alert("검색어를 입력하시오!");
+                }
+            }
     </script>
     <script>
         //금액 박스 생성
@@ -67,7 +405,7 @@
             var box=document.getElementById("box");
             var nbox=document.createElement('p');
             nbox.innerHTML=
-            "<input type='text' id='ncash1' value='0'><input type='button' id='ncp1' value='+' onclick='addbox2()'><input type='button' id='ncm1' value='-' onclick='remove1(this)'>";
+            "<input type='text' id='ncash1' value='0'><br><input type='button' id='ncp1' value='+' onclick='addbox2()'><input type='button' id='ncm1' value='-' onclick='remove1(this)'>";
             box.appendChild(nbox);
             document.getElementById('cp').style.display='none';
         }
@@ -75,7 +413,7 @@
             var box=document.getElementById("box");
             var nbox=document.createElement('p');
             nbox.innerHTML=
-            "<input type='text' id='ncash2' value='0'><input type='button' id='ncp2' value='+' onclick='addbox3()'><input type='button' id='ncm2' value='-' onclick='remove2(this)'>";
+            "<input type='text' id='ncash2' value='0'><br><input type='button' id='ncp2' value='+' onclick='addbox3()'><input type='button' id='ncm2' value='-' onclick='remove2(this)'>";
             box.appendChild(nbox);
             document.getElementById('ncp1').style.display='none';
             document.getElementById('ncm1').style.display='none';
@@ -84,7 +422,7 @@
             var box=document.getElementById("box");
             var nbox=document.createElement('p');
             nbox.innerHTML=
-            "<input type='text' id='ncash3' value='0'><input type='button' id='ncp3' value='+' onclick='addbox4()'><input type='button' id='ncm3' value='-' onclick='remove3(this)'>";
+            "<input type='text' id='ncash3' value='0'><br><input type='button' id='ncp3' value='+' onclick='addbox4()'><input type='button' id='ncm3' value='-' onclick='remove3(this)'>";
             box.appendChild(nbox);
             document.getElementById('ncp2').style.display='none';
             document.getElementById('ncm2').style.display='none';
@@ -93,7 +431,7 @@
             var box=document.getElementById("box");
             var nbox=document.createElement('p');
             nbox.innerHTML=
-            "<input type='text' id='ncash4' value='0'><input type='button' id='ncp4' value='+' onclick='addbox5()'><input type='button' id='ncm4' value='-' onclick='remove4(this)'>";
+            "<input type='text' id='ncash4' value='0'><br><input type='button' id='ncp4' value='+' onclick='addbox5()'><input type='button' id='ncm4' value='-' onclick='remove4(this)'>";
             box.appendChild(nbox);
             document.getElementById('ncp3').style.display='none';
             document.getElementById('ncm3').style.display='none';
@@ -102,7 +440,7 @@
             var box=document.getElementById("box");
             var nbox=document.createElement('p');
             nbox.innerHTML=
-            "<input type='text' id='ncash5' value='0'><input type='button' id='ncp5' value='+' onclick='addbox6()'> <input type='button' id='ncm5' value='-' onclick='remove5(this)'>";
+            "<input type='text' id='ncash5' value='0'><br><input type='button' id='ncp5' value='+' onclick='addbox6()'> <input type='button' id='ncm5' value='-' onclick='remove5(this)'>";
             box.appendChild(nbox);
             document.getElementById('ncp4').style.display='none';
             document.getElementById('ncm4').style.display='none';
@@ -111,7 +449,7 @@
             var box=document.getElementById("box");
             var nbox=document.createElement('p');
             nbox.innerHTML=
-            "<input type='text' id='ncash6' value='0'><input type='button' id='ncm6' value='-' onclick='remove6(this)'>";
+            "<input type='text' id='ncash6' value='0'><br><input type='button' id='ncm6' value='-' onclick='remove6(this)'>";
             box.appendChild(nbox);
             document.getElementById('ncp5').style.display='none';
             document.getElementById('ncm5').style.display='none';
@@ -207,7 +545,7 @@
             <li><a href="index.html" id="navLogo">
                 <img src="src/navLogo.png" width="60px"></a>
             </li>
-            <li><a href="#">지역</a>
+            <li><a href="#" class="navSelect">지역</a>
                 <ul id="sub-menu">
                     <li><a href="javascript:a('달서구');" aria-label="subemnu" onclick="return false;">달서구</a></li>
                     <li><a href="javascript:a('북구')" aria-label="subemnu" onclick="return false;">북구</a></li>
@@ -221,48 +559,53 @@
                     <li><a href="javascript:a('하양')" aria-label="subemnu" onclick="return false;">하양</a></li>
                 </ul>
             </li>
-            <li><a href="#">뭐먹지?</a></li>
-            <li><a href="DPcal.html">더치페이</a></li>
+            <li><a href="whateat.html" class="navSelect">뭐먹지?</a></li>
+            <li><a href="DPcal.html" class="navSelect">더치페이</a></li>
             <li id="navSearch">
-                <form onsubmit="getKeyVal()" name="search" method="get">
-                    <label><input type="text" size="20" id="key" value="" placeholder="맛집 이름"></label>
-                    <input type="submit" value="찾기">
+                <form onsubmit="getKeyVal()" name="search" method="get" action="search.html">
+                    <label><input type="text" class="inputBox" size="20" id="key" value="" placeholder=" 맛집 이름" style="height:25px;"></label>
+                    <input type="image" id="navSearchBtn" src="src/searchBtn.png" width="28px">
                 </form>
             </li>
         </ul>
     </nav>
+
+    <header>
+        <h1 style="font-family: 'Jua'; color:#2C5994; font-weight: bold;">
+            이제 정산하자!
+        </h1>
+    </header>
     
     <!--N빵 계산기 : 시작-->
-        <section id="Dutchpay">
-            <h1>
-                이제 정산하자!
-            </h1>
-            <!--N빵 계산기 : 금액 input 칸 & 동적 생성-->
-            <p>
-                총액
-                <br>
-                <form>
-                    <div id="box">
-                        <input type="text" id="cash" value="0">
-                        <input type="button" id="cp" value="+" onclick="addbox1()">
-                    </div>
-                </form>
-            </p>
-            <!--N빵 계산기 : 인원수 지정-->
-            <p>
-                인원수
-                <br>
-                <input type ="text" id="peo">
-            </p>
-            <!--N빵 계산기 : 정산 버튼-->
-            <p>
-                <input type="button" value="정산" onclick="getDutch()">
-            </p>
-            <hr>
-            <!--N빵 계산기 : 정산 결과 표시-->
-            <p id="dutch">
-            </p>
-        </section>
+    <section id="Dutchpay">
+        <!--N빵 계산기 : 금액 input 칸 & 동적 생성-->
+        <p style="font-family: 'Jua'; color:#2C5994; ">
+            총액
+            <br>
+            <form>
+                <div id="box">
+                    <input type="text" id="cash" value="0"><br>
+                    <input type="button" id="cp" value="+" onclick="addbox1()">
+                </div>
+            </form>
+        </p>
+        <!--N빵 계산기 : 인원수 지정-->
+        <p style="font-family: 'Jua'; color:#2C5994; ">
+            인원수
+            <br>
+            <form></form>
+            <input type ="text" id="peo" value="0">
+        </form>
+        </p>
+        <!--N빵 계산기 : 정산 버튼-->
+        <p id="dutch_result">
+            <input type="button" id="dutchbtn" value="정산" onclick="getDutch()">
+        </p>
+        <hr style="width: 800px;">
+        <!--N빵 계산기 : 정산 결과 표시-->
+        <p id="dutch">
+        </p>
+    </section>
 
 
     <footer>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>DU PLATE</title>
-    <link href="css/nav.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -12,15 +12,163 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Gamja Flower';
+            font-family: 'Jua';
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
             overflow-x: hidden;
             width: 1980;
-            height: 1080;
+            height: 1080px;
         }
+        /*--------- 네비게이션 바 영역 시작---------*/
+        nav {
+            position: fixed;
+            top: 0%;
+            z-index: 2;
+            width: 100%;
+            min-width: 1280px;
+            display: flex;
+            justify-content: center;
+            background: #F6D4CB;
+        }
+
+        ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #main-menu > li {
+            float: left;
+            position: relative;
+        }
+
+        #main-menu > li > a {
+            font-size: 1rem;
+            font-family: 'Jua';
+            font-weight: 700;
+            color: rgb(88, 90, 92);
+            text-align: center;
+            text-decoration: none;
+            /* letter-spacing: 0.1em; */
+            display: block;
+            padding: 14px 36px;
+            transition: all .5s ease-out;
+        }
+
+        #main-menu > li > a:hover {
+            color: #2C5994;
+        }
+
+        #main-menu > li > form {
+            font-size: 0.85rem;
+            color: #F6D4CB;
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            display: block;
+            padding: 11px 17px;
+            /* border-right: 1px solid #F6D4CB */
+        }
+
+        /* #main-menu > li:nth-child(1) > a {
+
+        } */
+
+        #sub-menu {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.15s ease-in;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: row;
+            left: -250px;
+            width: 1200px;
+        }
+
+        #sub-menu > li {
+            padding: 15px 30px;
+            /* border: 1px solid #2C5994; */
+            background: #F9E6E2;
+        }
+
+        #sub-menu > li > a {
+            font-family: 'Jua';
+            color: #2C5994;
+            text-decoration: none;
+        }
+
+        #main-menu > li:hover #sub-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #sub-menu > li > a:hover {
+            text-decoration: underline;
+        }
+
+        #navLogo {
+            margin-top: -19px;
+            margin-bottom: -50px;
+            margin-right: 0px;
+        }
+
+        #navSearch {
+            margin-left: 130px;
+            
+        }
+
+        .navSelect {
+            position: relative;
+            left: 70px;
+            /* width: 170px; */
+            min-width: 150px;
+            max-height: 52px;
+        }
+
+        .navSelect::after {
+            content: "";
+            position: absolute;
+            bottom: 6px;
+            height: 4px;
+            left: 75px;
+            transform: translateX(-50%);
+            width: 0%;
+            background: #2C5994;
+            transition: all .5s ease-out;
+        }
+
+        .navSelect:hover::after {
+            width: 50%
+        }
+
+        .inputBox {
+            border: none;
+            background-color: #FFF8EE;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            
+        }
+
+        .inputBox::placeholder{
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+        }
+
+        #navForm {
+            position: relative;
+        }
+
+        #navSearchBtn {
+            margin-top: 0px;
+            position: absolute;
+            top:11px;
+        }
+        /*--------- 네비게이션 바 영역 끝---------*/
         /*--------- 섹션 영역 시작---------*/
         section {
             width: 100%;
@@ -53,42 +201,52 @@
             justify-content: center;
             padding-top: 10px;
         }
+
         #logo_box {
             padding-top: 30px;
         }
+
         #search_box {
             padding-top: 30px;
             text-align: center;
         }
+
         #section_left_left {
             float: left;
             display: flex;
             padding-top: 35px;
             padding-right: 14px;
         }
+
         #section_left_right {
             float: left;
             display: flex;
             padding-right: 7px;
             padding-top: 35px;
         }
+
+        .sectionBtn {
+            box-shadow: 0px 0px 5px 5px rgba(204, 192, 192, 0.582);
+        }
+        
         #section_right {
             padding-top: 50px;
             width: 400px;
             float: left;
             position: relative;
         }
+
         .popUp {
             position: absolute;
             top: 50px;
             left: 0px;
             pointer-events: none;
-        }z
+        }
         /* input */
 
-        /* .inputBtn {
-            background-image: url('../images/confirm.gif');  
-        } */
+        #serchBtn {
+            margin-top: -500px;
+        }
     </style>
     
     <script>
@@ -97,17 +255,20 @@
             window.localStorage.setItem('region', value);
             location.href = "region.html";
         }
+
         // 검색 로컬스토리지 읽기/저장
         var keyVal = localStorage.getItem('search')
-        function getKeyVal(value) {
-            svalue = document.getElementById('key').value;
-            window.localStorage.setItem('search', svalue);
-            window.location.href = "search.html";
-            //임력 안했으면 alert message 뜨기
-            if (svalue.length == 0){
-                alert("검색어를 입력하시오!");
+            function getKeyVal(value) {
+                navVal = document.getElementById('key').value;
+                mainVal = document.getElementById('keyMain').value;
+                window.localStorage.setItem('search', navVal);
+                window.localStorage.setItem('search', mainVal);
+                window.location.href = "ajilna.html";
+                //입력 안했으면 alert message 뜨기
+                if (svalue.length == 0){
+                    alert("검색어를 입력하시오!");
+                }
             }
-        }
         function showImg(region) {
             if (region == '대구대') {
                 document.getElementById("fig").src = "src/대구지도 대구대.png"
@@ -159,9 +320,9 @@
             <li><a href="whateat.html" class="navSelect">뭐먹지?</a></li>
             <li><a href="DPcal.html" class="navSelect">더치페이</a></li>
             <li id="navSearch">
-                <form onsubmit="getKeyVal()" name="search" method="get">
-                    <label><input type="text" class="inputBox" size="20" id="key" value="" placeholder=" 맛집 이름"></label>
-                    <input type="submit" class="inputBtn" value="찾기">
+                <form onsubmit="getKeyVal()" id="navForm" name="search" method="post" action="search.html">
+                    <label><input type="text" class="inputBox" size="20" id="key" value="" placeholder="맛집 이름" style="width:200px; height: 30px;"></label>
+                    <input type="image" id="navSearchBtn" src="src/searchBtn.png" width="32px">
                 </form>
             </li>
         </ul>
@@ -172,19 +333,18 @@
                 <img src="src/Logo.png" width="400px">
             </div>
             <div id="search_box">
-                <form name="search" method="get">
-                    <input type="text" class="inputBox" size="50" value="" placeholder="맛집 이름" style="width:330px; height:30px; font-size:20px;">
-                    <input type="submit" value="찾기">
+                <form onsubmit="getKeyVal()" name="search" method="post" action="search.html">
+                    <label><input type="text" class="inputBox" size="50" id="keyMain" value="" placeholder="음식점 이름" style="width:330px; height:30px; font-size:20px;"></label>
                 </form>
             </div>
             <div>
                 <div id="section_left_left">
                     <a href="whateat.html">
-                        <img src="src/button1.png"></a>
+                        <img src="src/button1.png" class="sectionBtn"></a>
                 </div>
                 <div id="section_left_right">
                     <a href="DPcal.html">
-                        <img src="src/butten2.png"></a>
+                        <img src="src/butten2.png" class="sectionBtn"></a>
                 </div>
             </div>
         </div>

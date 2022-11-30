@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>DU PLATE</title>
-    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
@@ -13,16 +13,20 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: "Roboto", serif;
+            font-family: 'Jua';
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
-            overflow-x: hidden;  
+            overflow-x: hidden;
+            width: 1980;
+            height: 1080;
+            background-color: #FFF8EE;  
         }
 
         header {
-            margin: 2em 0 1.5em 0;
+            margin-top: 100px;
+            margin-bottom: 60px;
         }
 
         /* 섹션 */
@@ -30,6 +34,7 @@
             width: 90%;
             padding: 30px;
             text-align: center;
+            background-color: #FFF8EE;
         }
 
         #cardArea {
@@ -38,22 +43,178 @@
             flex-wrap: wrap;
         }
 
+        /*--------- 네비게이션 바 영역 시작---------*/
+        nav {
+            position: fixed;
+            top: 0%;
+            z-index: 2;
+            width: 100%;
+            min-width: 1280px;
+            display: flex;
+            justify-content: center;
+            background: #F6D4CB;
+        }
+
+        ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #main-menu > li {
+            float: left;
+            position: relative;
+        }
+
+        #main-menu > li > a {
+            font-size: 1rem;
+            font-family: 'Jua';
+            font-weight: 700;
+            color: rgb(88, 90, 92);
+            text-align: center;
+            text-decoration: none;
+            /* letter-spacing: 0.1em; */
+            display: block;
+            padding: 14px 36px;
+            transition: all .5s ease-out;
+        }
+
+        #main-menu > li > a:hover {
+            color: #2C5994;
+        }
+
+        #main-menu > li > form {
+            font-size: 0.85rem;
+            color: #F6D4CB;
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            display: block;
+            padding: 11px 17px;
+            /* border-right: 1px solid #F6D4CB */
+        }
+
+        /* #main-menu > li:nth-child(1) > a {
+
+        } */
+
+        #sub-menu {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.15s ease-in;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: row;
+            left: -250px;
+            width: 1200px;
+        }
+
+        #sub-menu > li {
+            padding: 15px 30px;
+            /* border: 1px solid #2C5994; */
+            background: #F9E6E2;
+        }
+
+        #sub-menu > li > a {
+            font-family: 'Jua';
+            color: #2C5994;
+            text-decoration: none;
+        }
+
+        #main-menu > li:hover #sub-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #sub-menu > li > a:hover {
+            text-decoration: underline;
+        }
+
+        #navLogo {
+            margin-top: -19px;
+            margin-bottom: -50px;
+            margin-right: 0px;
+        }
+
+        #navSearch {
+            margin-left: 130px;
+        }
+
+        .navSelect {
+            position: relative;
+            left: 70px;
+            /* width: 170px; */
+            min-width: 150px;
+            max-height: 52px;
+        }
+
+        .navSelect::after {
+            content: "";
+            position: absolute;
+            bottom: 6px;
+            height: 4px;
+            left: 75px;
+            transform: translateX(-50%);
+            width: 0%;
+            background: #2C5994;
+            transition: all .5s ease-out;
+        }
+
+        .navSelect:hover::after {
+            width: 50%
+        }
+
+        .inputBox {
+            border: none;
+            background-color: #FFF8EE;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            
+        }
+
+        .inputBox::placeholder{
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+        }
+
+        #navForm {
+            position: relative;
+        }
+
+        #navSearchBtn {
+            margin-top: 0px;
+            position: absolute;
+            top:11px;
+        }
+        /*--------- 네비게이션 바 영역 끝---------*/
+
         /* 카드 레이아웃 */
+        #cardArea {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
         .card {
             width: 300px;
-            border: 1px solid rgb(164, 177, 189);
+            border: 1px solid rgb(189, 184, 164);
             border-radius: 10px;
-            background-color:rgb(222, 252, 252);
+            background-color: #F6D4CB;
             cursor: pointer;
             float: left;
             margin: 50px;
+            box-shadow: 0px 0px 5px 5px rgba(204, 192, 192, 0.582);
         }
 
         .card-body {
             padding: 10px;
-            background-color:#cae7e7;
+            background-color: #F6D4CB;
             border-radius: 10px;
-            text-align:left
+            text-align: left;
+            font-family: 'Malgun Gothic';
         }
 
         .cropping {
@@ -70,14 +231,17 @@
         .card-title {
             margin-top: 5px;
             margin-bottom: 0px;
-            font-family: 'Gamja Flower';
+            font-family: 'Jua';
+            color:#c9695c;
+     
         }
 
         .card-category {
             margin-top: 0px;
             margin-bottom: 0px;
             font-size: 13px;
-            color: rgb(122, 122, 122);
+            color: #8d827a;
+            font-weight: 900px;
         }
 
         .card-text {
@@ -141,6 +305,7 @@
             tags = xmlDoc.getElementsByTagName("tags");
             
             // 출력부
+            document.getElementById("header").innerHTML = "'"+ keyVal + "'" + " 검색결과 : ";
             for(let i = 0; i < num.length; i++) {
                 if (name[i].childNodes[0].nodeValue.indexOf(keyVal) != -1 || category[i].childNodes[0].nodeValue == keyVal || 
                 address[i].childNodes[0].nodeValue == keyVal || tags[i].childNodes[0].nodeValue.indexOf(keyVal) != -1) {
@@ -234,7 +399,7 @@
             <li><a href="index.html" id="navLogo">
                 <img src="src/navLogo.png" width="60px"></a>
             </li>
-            <li><a href="#">지역</a>
+            <li><a href="#" class="navSelect">지역</a>
                 <ul id="sub-menu">
                     <li><a href="javascript:a('달서구');" aria-label="subemnu" onclick="return false;">달서구</a></li>
                     <li><a href="javascript:a('북구')" aria-label="subemnu" onclick="return false;">북구</a></li>
@@ -248,19 +413,18 @@
                     <li><a href="javascript:a('하양')" aria-label="subemnu" onclick="return false;">하양</a></li>
                 </ul>
             </li>
-            <li><a href="#">뭐먹지?</a></li>
-            <li><a href="DPcal.html">더치페이</a></li>
+            <li><a href="whateat.html" class="navSelect">뭐먹지?</a></li>
+            <li><a href="DPcal.html" class="navSelect">더치페이</a></li>
             <li id="navSearch">
-                <form onsubmit="getKeyVal()" name="search" method="get">
-                    <label><input type="text" size="20" id="key" value="" placeholder="맛집 이름"></label>
-                    <input type="submit" value="찾기">
+                <form onsubmit="getKeyVal()" name="search" method="get" action="search.html">
+                    <label><input type="text" class="inputBox" size="20" id="key" value="" placeholder=" 맛집 이름" style="width:200px; height: 30px;"></label>
+                    <input type="image" id="navSearchBtn" src="src/searchBtn.png" width="32px">
                 </form>
             </li>
         </ul>
     </nav>
     
     <section id="section">
-        <img src="src/map.png" usemap="#image-map" width="200px">
         <div id="cardArea"></div>
         <div id="offcanvasArea"></div>
     </section>

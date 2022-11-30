@@ -3,25 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>DU PLATE</title>
-    <link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link href="css/custom.css" rel="stylesheet">
-    <link href="css/nav.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower:400" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Roboto');
 
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Jua';
+            font-family: "Roboto", serif;
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
-            overflow-x: hidden;
-            width: 1980;
-            height: 1080; 
-            background-color: #FFF8EE;
+            overflow-x: hidden;  
         }
 
         header {
@@ -30,14 +24,13 @@
 
         /*--------- 네비게이션 바 영역 시작---------*/
         nav {
-            position: fixed;
-            top: 0%;
+            position:fixed;
+            top:0%;
             z-index: 2;
             width: 100%;
-            min-width: 1280px;
             display: flex;
             justify-content: center;
-            background: #F6D4CB;
+            background: #1DDB16;
         }
 
         ul, li {
@@ -52,58 +45,45 @@
         }
 
         #main-menu > li > a {
-            font-size: 1rem;
-            font-family: 'Jua';
-            font-weight: 700;
-            color: rgb(88, 90, 92);
+            font-size: 0.85rem;
+            color: rgba(0, 0, 0, 0.85);
             text-align: center;
             text-decoration: none;
-            /* letter-spacing: 0.1em; */
+            letter-spacing: 0.05em;
             display: block;
             padding: 14px 36px;
-            transition: all .5s ease-out;
+            border-right: 1px solid rgba(0,0,0,0.15);
         }
-
-        #main-menu > li > a:hover {
-            color: #2C5994;
-        }
-
         #main-menu > li > form {
             font-size: 0.85rem;
-            color: #F6D4CB;
+            color: rgba(0, 0, 0, 0.85);
             text-align: center;
             text-decoration: none;
             letter-spacing: 0.05em;
             display: block;
             padding: 11px 17px;
-            /* border-right: 1px solid #F6D4CB */
+            border-right: 1px solid rgba(0,0,0,0.15);
         }
 
-        /* #main-menu > li:nth-child(1) > a {
-
-        } */
+        #main-menu > li:nth-child(1) > a {
+            border-left: 1px solid rgba(0,0,0,0.15);
+        }
 
         #sub-menu {
             position: absolute;
+            background: #1DDB16;
             opacity: 0;
             visibility: hidden;
             transition: all 0.15s ease-in;
-            flex-wrap: wrap;
-            display: flex;
-            flex-direction: row;
-            left: -250px;
-            width: 1200px;
         }
 
         #sub-menu > li {
-            padding: 15px 30px;
-            /* border: 1px solid #2C5994; */
-            background: #F9E6E2;
+            padding: 16px 28px;
+            border-bottom: 1px solid rgba(0,0,0,0.15);
         }
 
-        #sub-menu > li > a {
-            font-family: 'Jua';
-            color: #2C5994;
+        #sub-menu > li >  a {
+            color: rgba(0, 0, 0, 0.85);
             text-decoration: none;
         }
 
@@ -112,67 +92,8 @@
             visibility: visible;
         }
 
-        #sub-menu > li > a:hover {
+        #sub-menu > li >  a:hover {
             text-decoration: underline;
-        }
-
-        #navLogo {
-            margin-top: -19px;
-            margin-bottom: -50px;
-            margin-right: 0px;
-        }
-
-        #navSearch {
-            margin-left: 130px;
-        }
-
-        .navSelect {
-            position: relative;
-            left: 70px;
-            /* width: 170px; */
-            min-width: 150px;
-            max-height: 52px;
-        }
-
-        .navSelect::after {
-            content: "";
-            position: absolute;
-            bottom: 6px;
-            height: 4px;
-            left: 75px;
-            transform: translateX(-50%);
-            width: 0%;
-            background: #2C5994;
-            transition: all .5s ease-out;
-        }
-
-        .navSelect:hover::after {
-            width: 50%
-        }
-
-        .inputBox {
-            border: none;
-            background-color: #FFF8EE;
-            border-radius: 30px;
-            text-align: center;
-            color:rgb(105, 145, 185);
-            font-weight: bold;
-            
-        }
-
-        .inputBox::placeholder{
-            color:rgb(105, 145, 185);
-            font-weight: bold;
-        }
-
-        #navForm {
-            position: relative;
-        }
-
-        #navSearchBtn {
-            margin-top: 0px;
-            position: absolute;
-            top:11px;
         }
         /*--------- 네비게이션 바 영역 끝---------*/
 
@@ -187,32 +108,25 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            
         }
 
         /* 카드 레이아웃 */
-        #cardArea {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
         .card {
             width: 300px;
-            border: 1px solid rgb(189, 184, 164);
+            border: 1px solid rgb(164, 177, 189);
             border-radius: 10px;
-            background-color: #F6D4CB;
+            background-color:rgb(222, 252, 252);
             cursor: pointer;
             float: left;
             margin: 50px;
-            box-shadow: 0px 0px 5px 5px rgba(204, 192, 192, 0.582);
         }
 
         .card-body {
             padding: 10px;
-            background-color: #F6D4CB;
+            background-color:#cae7e7;
             border-radius: 10px;
-            text-align: left;
-            font-family: 'Malgun Gothic';
+            text-align:left
         }
 
         .cropping {
@@ -229,17 +143,14 @@
         .card-title {
             margin-top: 5px;
             margin-bottom: 0px;
-            font-family: 'Jua';
-            color:#c9695c;
-     
+            font-family: 'Gamja Flower';
         }
 
         .card-category {
             margin-top: 0px;
             margin-bottom: 0px;
             font-size: 13px;
-            color: #8d827a;
-            font-weight: 900px;
+            color: rgb(122, 122, 122);
         }
 
         .card-text {
@@ -247,21 +158,13 @@
         }
 
         /*테이블*/
-        table { 
-            margin-left:auto; margin-right:auto;
-        }
+        table { margin-left:auto; margin-right:auto;}
 
         /*이미지*/
-        .imgBtn { 
-            width: 300px; height: 160px;
-        }
-    </style>
+        img { width: 300px; height: 160px;}
+        
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous">
-        // 부트스트랩 삽입
-    </script>
+    </style>
 
     <script type="text/javascript">
         // 로컬스토리지 읽기/저장
@@ -365,7 +268,7 @@
             if(document.getElementById("cardArea").style.display == "none")    //안보여지는지 확인
                 document.getElementById("cardArea").style.display = "";        //안보여지면 보이게
             else{
-                location.href = "whateat.html";
+                location.href = "whateat(up).html";
                 document.getElementById("cardArea").style.display = "none";  //보여지면 안보이게
             }
 
@@ -386,10 +289,8 @@
     
     <nav role="navigation">
         <ul id="main-menu">
-            <li><a href="index.html" id="navLogo">
-                <img src="src/navLogo.png" width="60px"></a>
-            </li>
-            <li><a href="#" class="navSelect">지역</a>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">지역</a>
                 <ul id="sub-menu">
                     <li><a href="javascript:a('달서구');" aria-label="subemnu" onclick="return false;">달서구</a></li>
                     <li><a href="javascript:a('북구')" aria-label="subemnu" onclick="return false;">북구</a></li>
@@ -399,16 +300,15 @@
                     <li><a href="javascript:a('서구')" aria-label="subemnu" onclick="return false;">서구</a></li>
                     <li><a href="javascript:a('남구')" aria-label="subemnu" onclick="return false;">남구</a></li>
                     <li><a href="javascript:a('중구')" aria-label="subemnu" onclick="return false;">중구</a></li>
-                    <li><a href="javascript:a('대구대')" aria-label="subemnu" onclick="return false;">대구대</a></li>
-                    <li><a href="javascript:a('하양')" aria-label="subemnu" onclick="return false;">하양</a></li>
                 </ul>
             </li>
-            <li><a href="whateat.html" class="navSelect">뭐먹지?</a></li>
-            <li><a href="DPcal.html" class="navSelect">더치페이</a></li>
-            <li id="navSearch">
-                <form onsubmit="getKeyVal()" name="search" method="get" action="search.html">
-                    <label><input type="text" class="inputBox" size="20" id="key" value="" placeholder=" 맛집 이름" style="width:200px; height: 30px;"></label>
-                    <input type="image" id="navSearchBtn" src="src/searchBtn.png" width="32px">
+            <li><a href="#">뭐먹지?</a></li>
+            <li><a href="#">맛집순위</a></li>
+            <li><a href="#">더치페이계산</a></li>
+            <li>
+                <form name="search" method="get">
+                    <label><input type="text" size="20" value="" placeholder="맛집 이름"></label>
+                    <input type="submit" value="찾기">
                 </form>
             </li>
         </ul>
@@ -420,21 +320,21 @@
         <table class="tg">
             <thead>
               <tr>
-                <td class="tg-0pky"><button class="imButton" id="양식" onclick="setD('파스타')"><img class="imgBtn" src="https://sjnfzdfjrjgl1655541.cdn.ntruss.com/goods/3/2019/07/158_tmp_d0edbc1371ecb3575266e8215e5e16961570view.jpg"></a></td>
-                <td class="tg-0pky"><button class="imButton" id="중식" onclick="setD('짜장면')"><img class="imgBtn" src="https://t1.daumcdn.net/cfile/tistory/9928F7345DD5007724"></a></td>
-                <td class="tg-0pky"><button class="imButton" id="고기" onclick="setD('돼지고기')"><img class="imgBtn" src="https://post-phinf.pstatic.net/MjAxODAxMTZfMTk4/MDAxNTE2MDcwNTYyMTU2.11cOlXQAGScpVD7MZLhMQb8IMcKLqWgokLum0lcUt8gg.iJgGhd0sIYKwEl66wc8R-jUHfzn23zXPevk8-pqvsxUg.JPEG/GettyImages-jv10961134.jpg?type=w1200"></a></td>
+                <td class="tg-0pky"><button class="imButton" id="양식" onclick="setD('파스타')"><img src="https://sjnfzdfjrjgl1655541.cdn.ntruss.com/goods/3/2019/07/158_tmp_d0edbc1371ecb3575266e8215e5e16961570view.jpg"></a></td>
+                <td class="tg-0pky"><button class="imButton" id="중식" onclick="setD('짜장면')"><img src="https://t1.daumcdn.net/cfile/tistory/9928F7345DD5007724"></a></td>
+                <td class="tg-0pky"><button class="imButton" id="고기" onclick="setD('돼지고기')"><img src="https://post-phinf.pstatic.net/MjAxODAxMTZfMTk4/MDAxNTE2MDcwNTYyMTU2.11cOlXQAGScpVD7MZLhMQb8IMcKLqWgokLum0lcUt8gg.iJgGhd0sIYKwEl66wc8R-jUHfzn23zXPevk8-pqvsxUg.JPEG/GettyImages-jv10961134.jpg?type=w1200"></a></td>
               </tr>
               <tr>
-                <td class="tg-0pky"><button class="imButton" id="국밥" onclick="setD('국밥')"><img class="imgBtn" src="https://cdn.mindgil.com/news/photo/202008/69679_4073_1653.jpg"></a></td>
-                <td class="tg-0pky"><button class="imButton" id="한정식" onclick="setD('한정식')"><img class="imgBtn" src="https://s3.ap-northeast-2.amazonaws.com/event-localnaeil/FileData/Article/201710/c0b8c1b7-dbeb-45a4-bf79-d50d67ec78e9.JPG"></a></td>
-                <td class="tg-0pky"><button class="imButton" id="카페" onclick="setD('카페')"><img class="imgBtn" src="https://dimg.donga.com/wps/NEWS/IMAGE/2021/02/08/105325025.1.jpg"></a></td>
+                <td class="tg-0pky"><button class="imButton" id="국밥" onclick="setD('국밥')"><img src="https://cdn.mindgil.com/news/photo/202008/69679_4073_1653.jpg"></a></td>
+                <td class="tg-0pky"><button class="imButton" id="한정식" onclick="setD('한정식')"><img src="https://s3.ap-northeast-2.amazonaws.com/event-localnaeil/FileData/Article/201710/c0b8c1b7-dbeb-45a4-bf79-d50d67ec78e9.JPG"></a></td>
+                <td class="tg-0pky"><button class="imButton" id="카페" onclick="setD('카페')"><img src="https://dimg.donga.com/wps/NEWS/IMAGE/2021/02/08/105325025.1.jpg"></a></td>
               </tr>
             </thead>
         </table>
         </fieldset>
 
         <div id="cardArea" style="display: none;"></div>
-        <div id="offcanvasArea"></div>
+
     </section>
 
     <footer>

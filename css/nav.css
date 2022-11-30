@@ -89,18 +89,19 @@ ul, li {
 #navLogo {
     margin-top: -19px;
     margin-bottom: -50px;
-    margin-right: 100px;
+    margin-right: 0px;
 }
 
 #navSearch {
-    margin-left: 100px;
+    margin-left: 130px;
 }
 
 .navSelect {
     position: relative;
-    width: 140px;
-    /* min-width: 80px; */
-    /* max-height: 20px; */
+    left: 70px;
+    /* width: 170px; */
+    min-width: 150px;
+    max-height: 52px;
 }
 
 .navSelect::after {
@@ -108,7 +109,7 @@ ul, li {
     position: absolute;
     bottom: 6px;
     height: 4px;
-    left: 70px;
+    left: 75px;
     transform: translateX(-50%);
     width: 0%;
     background: #2C5994;
@@ -132,5 +133,15 @@ ul, li {
 .inputBox::placeholder{
     color:rgb(105, 145, 185);
     font-weight: bold;
+}
+
+#navForm {
+    position: relative;
+}
+
+#navSearchBtn {
+    margin-top: 0px;
+    position: absolute;
+    top:11px;
 }
 /*--------- 네비게이션 바 영역 끝---------*/

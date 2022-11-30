@@ -4,7 +4,7 @@ nav {
     top: 0%;
     z-index: 2;
     width: 100%;
-    min-width : 1280px;
+    min-width: 1280px;
     display: flex;
     justify-content: center;
     background: #F6D4CB;
@@ -35,7 +35,7 @@ ul, li {
 }
 
 #main-menu > li > a:hover {
-    color: #0a74fd;
+    color: #2C5994;
 }
 
 #main-menu > li > form {
@@ -89,16 +89,19 @@ ul, li {
 #navLogo {
     margin-top: -19px;
     margin-bottom: -50px;
-    margin-right: 100px;
+    margin-right: 0px;
 }
 
 #navSearch {
-    margin-left: 100px;
+    margin-left: 130px;
 }
 
 .navSelect {
     position: relative;
-    width: 80px;
+    left: 70px;
+    /* width: 170px; */
+    min-width: 150px;
+    max-height: 52px;
 }
 
 .navSelect::after {
@@ -106,14 +109,39 @@ ul, li {
     position: absolute;
     bottom: 6px;
     height: 4px;
-    left: 76px;
-    transform: translateX(-50%);;
+    left: 75px;
+    transform: translateX(-50%);
     width: 0%;
-    background: #0a74fd;
+    background: #2C5994;
     transition: all .5s ease-out;
 }
 
 .navSelect:hover::after {
     width: 50%
+}
+
+.inputBox {
+    border: none;
+    background-color: #FFF8EE;
+    border-radius: 30px;
+    text-align: center;
+    color:rgb(105, 145, 185);
+    font-weight: bold;
+    
+}
+
+.inputBox::placeholder{
+    color:rgb(105, 145, 185);
+    font-weight: bold;
+}
+
+#navForm {
+    position: relative;
+}
+
+#navSearchBtn {
+    margin-top: 0px;
+    position: absolute;
+    top:11px;
 }
 /*--------- 네비게이션 바 영역 끝---------*/

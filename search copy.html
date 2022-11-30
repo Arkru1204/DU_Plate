@@ -104,7 +104,7 @@
         function getKeyVal(value) {
             svalue = document.getElementById('key').value;
             window.localStorage.setItem('search', svalue);
-            location.href = "search.html";
+            location.href = "search copy.html";
             //임력 안했으면 alert message 뜨기
             if (svalue.length == 0) {
                 alert("검색어를 입력하시오!");
@@ -118,7 +118,7 @@
                 nodeValFunc(this);
             }
         }
-        xhttp.open("GET", "xml/restaurant.xml", true);
+        xhttp.open("GET", "xml/restaurant_tagx.xml", true);
         xhttp.send();
         
         // 출력 함수

@@ -9,9 +9,9 @@
 		<introduction>대구 미즈컨테이너 본점</introduction>
 		<embed>https://place.map.kakao.com/27462086</embed>
 		<tags>
-			<tag>스파게티</tag>
-			<tag>스테이크</tag>
-			<tag>샐러드</tag>
+			스파게티
+			스테이크
+			샐러드
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -23,9 +23,9 @@
 		<introduction>두툼한 고기 순대에 고소하고 깊은 국물 맛</introduction>
 		<embed>https://place.map.kakao.com/1831107992</embed>
 		<tags>
-			<tag>순대</tag>
-			<tag>국밥</tag>
-			<tag>고기</tag>
+			순대
+			국밥
+			고기
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -37,9 +37,9 @@
 		<introduction>닭을 감칠맛 나는 양념에 쪼려 만든 쪼닭</introduction>
 		<embed>https://place.map.kakao.com/724173971</embed>
 		<tags>
-			<tag>닭</tag>
-			<tag>찜닭</tag>
-			<tag>고기</tag>
+			닭
+			찜닭
+			고기
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -51,9 +51,9 @@
 		<introduction>해장하러 왔다가 술 먹고 갈지도 모를 집</introduction>
 		<embed>https://place.map.kakao.com/27235757</embed>
 		<tags>
-			<tag>고기</tag>
-			<tag>해장국</tag>
-			<tag>감자탕</tag>
+			고기
+			해장국
+			감자탕
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -65,10 +65,10 @@
 		<introduction>탕수육 맛집</introduction>
 		<embed>https://place.map.kakao.com/10078404</embed>
 		<tags>
-			<tag>중국집</tag>
-			<tag>짜장면</tag>
-			<tag>짬뽕</tag>
-			<tag>탕수육</tag>
+			중국집
+			짜장면
+			짬뽕
+			탕수육
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -80,10 +80,10 @@
 		<introduction>엄청 큰 치즈 돈까스</introduction>
 		<embed>https://m.place.naver.com/restaurant/1002667908/home</embed>
 		<tags>
-			<tag>돈까스</tag>
-			<tag>라멘</tag>
-			<tag>카레</tag>
-			<tag>치즈</tag>
+			돈까스
+			라멘
+			카레
+			치즈
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -95,9 +95,9 @@
 		<introduction>밥까지 긁어 먹어야 하는 닭갈비 맛집</introduction>
 		<embed>https://place.map.kakao.com/23700491</embed>
 		<tags>
-			<tag>닭갈비</tag>
-			<tag>닭</tag>
-			<tag>고기</tag>
+			닭갈비
+			닭
+			고기
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -109,9 +109,9 @@
 		<introduction>훈제 오리 맛집</introduction>
 		<embed>https://place.map.kakao.com/61782666</embed>
 		<tags>
-			<tag>오리</tag>
-			<tag>고기</tag>
-			<tag>훈제</tag>
+			오리
+			고기
+			훈제
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -123,10 +123,10 @@
 		<introduction>분위기 있고 디저트가 맛있는 카페</introduction>
 		<embed>https://place.map.kakao.com/14838023</embed>
 		<tags>
-			<tag>커피</tag>
-			<tag>디저트</tag>
-			<tag>커피</tag>
-			<tag>아메리카노</tag>
+			커피
+			디저트
+			커피
+			아메리카노
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -138,11 +138,11 @@
 		<introduction>밑반찬 무한 리필에 저렴한 한식집</introduction>
 		<embed>https://place.map.kakao.com/1157219576</embed>
 		<tags>
-			<tag>된장찌개</tag>
-			<tag>제육볶음</tag>
-			<tag>김치찌개</tag>
-			<tag>순두부찌개</tag>
-			<tag>백반</tag>
+			된장찌개
+			제육볶음
+			김치찌개
+			순두부찌개
+			백반
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -154,11 +154,11 @@
 		<introduction>경산 최대 규모의 베이커리 카페</introduction>
 		<embed>https://place.map.kakao.com/1290947163</embed>
 		<tags>
-			<tag>빵</tag>
-			<tag>커피</tag>
-			<tag>크로와상</tag>
-			<tag>케이크</tag>
-			<tag>아메리카노</tag>
+			빵
+			커피
+			크로와상
+			케이크
+			아메리카노
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -170,12 +170,12 @@
 		<introduction>술집인데 양 많고 밥이 맛있는 곳</introduction>
 		<embed>https://place.map.kakao.com/16236084</embed>
 		<tags>
-			<tag>오징어덮밥</tag>
-			<tag>제육</tag>
-			<tag>두루치기</tag>
-			<tag>닭발</tag>
-			<tag>부침개</tag>
-			<tag>술</tag>
+			오징어덮밥
+			제육
+			두루치기
+			닭발
+			부침개
+			술
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -187,9 +187,9 @@
 		<introduction>정문 지나갈 때 마다 냄새에 홀려서 들어가게 되는 곳</introduction>
 		<embed>https://place.map.kakao.com/1530758742</embed>
 		<tags>
-			<tag>닭꼬치</tag>
-			<tag>닭</tag>
-			<tag>고기</tag>
+			닭꼬치
+			닭
+			고기
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -201,11 +201,11 @@
 		<introduction>조용하고 이쁘고 디저트가 전부 맛있는 카페</introduction>
 		<embed>https://place.map.kakao.com/1409037064</embed>
 		<tags>
-			<tag>커피</tag>
-			<tag>애플망고스무디</tag>
-			<tag>빵</tag>
-			<tag>디저트</tag>
-			<tag>크로플</tag>
+			커피
+			애플망고스무디
+			빵
+			디저트
+			크로플
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -217,10 +217,10 @@
 		<introduction>숨겨진 위치의 뭉티기, 육회 맛집</introduction>
 		<embed>https://place.map.kakao.com/14855034</embed>
 		<tags>
-			<tag>고기</tag>
-			<tag>육회</tag>
-			<tag>뭉티기</tag>
-			<tag>술</tag>
+			고기
+			육회
+			뭉티기
+			술
 		</tags>
 	</restaurant>
 
@@ -233,9 +233,9 @@
 		<introduction>트러플 크림 리조또 맛집</introduction>
 		<embed>https://place.map.kakao.com/1024387303</embed>
 		<tags>
-			<tag>알리오올리오</tag>
-			<tag>파스타</tag>
-			<tag>리조또</tag>
+			알리오올리오
+			파스타
+			리조또
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -247,11 +247,11 @@
 		<introduction>육전냉면도 맛있고 특냉면에 명태회무침 맛짐</introduction>
 		<embed>https://place.map.kakao.com/2090192089</embed>
 		<tags>
-			<tag>갈비찜</tag>
-			<tag>물냉면</tag>
-			<tag>비빔냉면</tag>
-			<tag>갈비탕</tag>
-			<tag>육전</tag>
+			갈비찜
+			물냉면
+			비빔냉면
+			갈비탕
+			육전
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -263,9 +263,9 @@
 		<introduction>일식 돈까스 맛집</introduction>
 		<embed>https://place.map.kakao.com/21255865</embed>
 		<tags>
-			<tag>돈까스</tag>
-			<tag>라멘</tag>
-			<tag>히레</tag>
+			돈까스
+			라멘
+			히레
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -277,10 +277,10 @@
 		<introduction>자극적인 덮밥 맛집</introduction>
 		<embed>https://place.map.kakao.com/892895848</embed>
 		<tags>
-			<tag>규동</tag>
-			<tag>우동</tag>
-			<tag>하라미동</tag>
-			<tag>나가사키</tag>
+			규동
+			우동
+			하라미동
+			나가사키
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -292,8 +292,8 @@
 		<introduction>참치타다끼 특히 맛있음</introduction>
 		<embed>https://place.map.kakao.com/1204477350</embed>
 		<tags>
-			<tag>스시</tag>
-			<tag>초밥</tag>
+			스시
+			초밥
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -305,9 +305,9 @@
 		<introduction>연어장덮밥 맛집</introduction>
 		<embed>https://place.map.kakao.com/1173802356</embed>
 		<tags>
-			<tag>연어</tag>
-			<tag>닭볶음탕</tag>
-			<tag>덮밥</tag>
+			연어
+			닭볶음탕
+			덮밥
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -319,11 +319,11 @@
 		<introduction>소금빵, 버터바, 생크림딸기케잌 등 디저트 다 맛있는 집</introduction>
 		<embed>https://place.map.kakao.com/1845954090</embed>
 		<tags>
-			<tag>커피</tag>
-			<tag>소금빵</tag>
-			<tag>버터바</tag>
-			<tag>케잌</tag>
-			<tag>케이크</tag>
+			커피
+			소금빵
+			버터바
+			케잌
+			케이크
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -335,10 +335,10 @@
 		<introduction>차돌박이 맛집</introduction>
 		<embed>https://place.map.kakao.com/131231299</embed>
 		<tags>
-			<tag>고기</tag>
-			<tag>차돌박이</tag>
-			<tag>우삼겹</tag>
-			<tag>부채살</tag>
+			고기
+			차돌박이
+			우삼겹
+			부채살
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -350,9 +350,9 @@
 		<introduction>마라탕도 맛있고 마라샹궈가 진짜 맛있는 맛집</introduction>
 		<embed>https://place.map.kakao.com/1427038563</embed>
 		<tags>
-			<tag>마라탕</tag>
-			<tag>마라샹궈</tag>
-			<tag>마라</tag>
+			마라탕
+			마라샹궈
+			마라
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -364,9 +364,9 @@
 		<introduction>요 근처 후라이드 제일 맛있는 집</introduction>
 		<embed>https://place.map.kakao.com/317183184</embed>
 		<tags>
-			<tag>치킨</tag>
-			<tag>닭</tag>
-			<tag>후라이드</tag>
+			치킨
+			닭
+			후라이드
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -378,10 +378,10 @@
 		<introduction>샐러드, 포케 맛집. 그릭요거트도 꾸덕하고 맛있음</introduction>
 		<embed>https://place.map.kakao.com/1276558432</embed>
 		<tags>
-			<tag>포케</tag>
-			<tag>샐러드</tag>
-			<tag>그릭요거트</tag>
-			<tag>참치크래커</tag>
+			포케
+			샐러드
+			그릭요거트
+			참치크래커
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -393,8 +393,8 @@
 		<introduction>허비니 그릭요거트 최고</introduction>
 		<embed>https://place.map.kakao.com/148260882</embed>
 		<tags>
-			<tag>그릭요거트</tag>
-			<tag>허비니</tag>
+			그릭요거트
+			허비니
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -406,9 +406,9 @@
 		<introduction>모든 메뉴가 실패 없는 베트남 맛집</introduction>
 		<embed>https://place.map.kakao.com/1966109701</embed>
 		<tags>
-			<tag>쌀국수</tag>
-			<tag>팟타이</tag>
-			<tag>분짜</tag>
+			쌀국수
+			팟타이
+			분짜
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -420,7 +420,7 @@
 		<introduction>블루베리, 리코타치즈, 치킨랩 다 맛있는 샌드위치 맛집</introduction>
 		<embed>https://place.map.kakao.com/2755775</embed>
 		<tags>
-			<tag>샌드위치</tag>
+			샌드위치
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -432,9 +432,9 @@
 		<introduction>크로플 맛집인 대형 감성 카페</introduction>
 		<embed>https://place.map.kakao.com/1846047345</embed>
 		<tags>
-			<tag>커피</tag>
-			<tag>크로플</tag>
-			<tag>라떼</tag>
+			커피
+			크로플
+			라떼
 		</tags>
 	</restaurant>
 
@@ -447,10 +447,10 @@
         <introduction>백종원의 3대천왕에 소개된 중화비빔밥 맛집</introduction>
         <embed>https://place.map.kakao.com/9870379</embed>
         <tags>
-            <tag>짜장면</tag>
-            <tag>짬뽕</tag>
-            <tag>중화비빔밥</tag>
-            <tag>탕수육</tag>
+            짜장면
+            짬뽕
+            중화비빔밥
+            탕수육
         </tags>
     </restaurant>
     <restaurant>
@@ -462,7 +462,7 @@
         <introduction>연탄불고기 전문점</introduction>
         <embed>https://place.map.kakao.com/8835317</embed>
         <tags>
-            <tag>불고기</tag>
+            불고기
         </tags>
     </restaurant>
     <restaurant>
@@ -474,10 +474,10 @@
         <introduction>깔끔하고 맛있는 고기</introduction>
         <embed>https://place.map.kakao.com/1049594915</embed>
         <tags>
-            <tag>돼지고기</tag>
-            <tag>소고기</tag>
-            <tag>대창</tag>
-            <tag>특양구이</tag>
+            돼지고기
+            소고기
+            대창
+            특양구이
         </tags>
     </restaurant>
     <restaurant>
@@ -489,8 +489,8 @@
         <introduction>푸짐한 해물탕 맛집</introduction>
         <embed>https://place.map.kakao.com/27410628</embed>
         <tags>
-            <tag>해물탕</tag>
-            <tag>매운탕</tag>
+            해물탕
+            매운탕
         </tags>
     </restaurant>
     <restaurant>
@@ -502,8 +502,8 @@
         <introduction>더덕구이 맛집</introduction>
         <embed>https://place.map.kakao.com/15711350</embed>
         <tags>
-            <tag>불고기</tag>
-            <tag>더덕</tag>
+            불고기
+            더덕
         </tags>
     </restaurant>
     <restaurant>
@@ -515,9 +515,9 @@
         <introduction>감미로운 맛의 이탈리안 음식점</introduction>
         <embed>https://place.map.kakao.com/11520580</embed>
         <tags>
-            <tag>파스타</tag>
-            <tag>스테이크</tag>
-            <tag>피자</tag>
+            파스타
+            스테이크
+            피자
         </tags>
     </restaurant>
     <restaurant>
@@ -529,7 +529,7 @@
         <introduction>참나무를 사용한 돼지고기</introduction>
         <embed>https://place.map.kakao.com/12351221</embed>
         <tags>
-            <tag>돼지고기</tag>
+            돼지고기
         </tags>
     </restaurant>
     <restaurant>
@@ -541,8 +541,8 @@
         <introduction>화덕피자 맛집</introduction>
         <embed>https://place.map.kakao.com/27460007</embed>
         <tags>
-            <tag>피자</tag>
-            <tag>화덕피자</tag>
+            피자
+            화덕피자
         </tags>
     </restaurant>
     <restaurant>
@@ -554,8 +554,8 @@
         <introduction>북구 최고의 가성비 맛집!!</introduction>
         <embed>https://place.map.kakao.com/358519035</embed>
         <tags>
-            <tag>소고기</tag>
-            <tag>육회</tag>
+            소고기
+            육회
         </tags>
     </restaurant>
     <restaurant>
@@ -567,8 +567,8 @@
         <introduction>북구 최고의 숯불갈비 맛집!!</introduction>
         <embed>https://place.map.kakao.com/277305341</embed>
         <tags>
-            <tag>갈비</tag>
-            <tag>돼지고기</tag>
+            갈비
+            돼지고기
         </tags>
     </restaurant>
     <restaurant>
@@ -580,8 +580,8 @@
         <introduction>북구 최고의 국수 맛집!!</introduction>
         <embed>https://place.map.kakao.com/15510319</embed>
         <tags>
-            <tag>국수</tag>
-            <tag>칼국수</tag>
+            국수
+            칼국수
         </tags>
     </restaurant>
     <restaurant>
@@ -593,7 +593,7 @@
         <introduction>사르르 녹는 돈까스 맛집</introduction>
         <embed>https://place.map.kakao.com/1779257151</embed>
         <tags>
-            <tag>돈까스</tag>
+            돈까스
         </tags>
     </restaurant>
     <restaurant>
@@ -605,10 +605,10 @@
         <introduction>깔끔하고 맛있는 중화요리</introduction>
         <embed>https://place.map.kakao.com/14861857</embed>
         <tags>
-            <tag>짜장면</tag>
-            <tag>짬뽕</tag>
-            <tag>야끼우동</tag>
-            <tag>탕수육</tag>
+            짜장면
+            짬뽕
+            야끼우동
+            탕수육
         </tags>
     </restaurant>
     <restaurant>
@@ -620,9 +620,9 @@
         <introduction>닭 육수로 우린 칼국수 맛집</introduction>
         <embed>https://place.map.kakao.com/9284667</embed>
         <tags>
-            <tag>칼국수</tag>
-            <tag>수육</tag>
-            <tag>순대</tag>
+            칼국수
+            수육
+            순대
         </tags>
     </restaurant>
     <restaurant>
@@ -634,9 +634,9 @@
         <introduction>세련미가 있는 보쌈 맛집</introduction>
         <embed>https://place.map.kakao.com/57698167</embed>
         <tags>
-            <tag>보쌈</tag>
-            <tag>쭈꾸미</tag>
-            <tag>불고기</tag>
+            보쌈
+            쭈꾸미
+            불고기
         </tags>
     </restaurant>
 
@@ -649,9 +649,9 @@
         <introduction>정갈하고 맛있는 한정식집</introduction>
         <embed>https://place.map.kakao.com/1714514689#review</embed>
         <tags>
-            <tag>보리굴비</tag>
-            <tag>곤드레밥</tag>
-            <tag>정식</tag>
+            보리굴비
+            곤드레밥
+            정식
         </tags>
     </restaurant>
     <restaurant>
@@ -663,9 +663,9 @@
         <introduction>깊은 풍미가 느껴지는 삼계탕 맛집</introduction>
         <embed>https://place.map.kakao.com/11023538</embed>
         <tags>
-            <tag>삼계탕</tag>
-            <tag>메로찜</tag>
-            <tag>닭도리탕</tag>
+            삼계탕
+            메로찜
+            닭도리탕
         </tags>
     </restaurant>
     <restaurant>
@@ -677,9 +677,9 @@
         <introduction>동태탕이 땡길땐? 녹수동태탕찜!</introduction>
         <embed>https://place.map.kakao.com/9035915</embed>
         <tags>
-            <tag>동태탕</tag>
-            <tag>동태찜</tag>
-            <tag>해물탕</tag>
+            동태탕
+            동태찜
+            해물탕
         </tags>
     </restaurant>
     <restaurant>
@@ -691,7 +691,7 @@
         <introduction>상다리가 휘어지는 추어탕 맛집</introduction>
         <embed>https://place.map.kakao.com/8541468</embed>
         <tags>
-            <tag>추어탕</tag>
+            추어탕
         </tags>
     </restaurant>
     <restaurant>
@@ -703,10 +703,10 @@
         <introduction> 가성비 좋은 한정식 맛집!</introduction>
         <embed>https://place.map.kakao.com/1141356517</embed>
         <tags>
-            <tag>보리밥</tag>
-            <tag>육회</tag>
-            <tag>돌솥밥</tag>
-            <tag>불고기</tag>
+            보리밥
+            육회
+            돌솥밥
+            불고기
         </tags>
     </restaurant>
     <restaurant>
@@ -718,9 +718,9 @@
         <introduction>한번 맛보면 빠져나올수 없는 중식 맛집</introduction>
         <embed>https://place.map.kakao.com/925277792</embed>
         <tags>
-            <tag>짜장면</tag>
-            <tag>짬뽕</tag>
-            <tag>탕수육</tag>
+            짜장면
+            짬뽕
+            탕수육
         </tags>
     </restaurant>
     <restaurant>
@@ -730,14 +730,14 @@
         <address>동구</address>
         <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyMjA2MjdfMTIz%2FMDAxNjU2MzM1NDU2Njc5.Dz-v-6syPam9BPzxRDCp-F0mVS34gPC2XSD0YaG-CYEg.3TfAupmEcFvNDDU_b4ftGtqVwGcE2aSS-k3dg-N3RWkg.JPEG.darams91%2F1656335456571.jpg%3Ftype%3Dw966</img>
         <introduction>최고품질의 다이닝 레스토랑</introduction>
-        <embed></embed>
+        <embed>https://place.map.kakao.com/1487609873</embed>
         <tags>
-            <tag>파스타</tag>
-            <tag>고기</tag>
-            <tag>해산물</tag>
-            <tag>와인</tag>
-            <tag>돼지고기</tag>
-            <tag>디저트</tag>
+            파스타
+            고기
+            해산물
+            와인
+            돼지고기
+            디저트
         </tags>
     </restaurant>
     <restaurant>
@@ -749,8 +749,8 @@
         <introduction>프리미엄 숙선 한우 오마카세!</introduction>
         <embed>https://place.map.kakao.com/1397389139</embed>
         <tags>
-            <tag>한우</tag>
-            <tag>소고기</tag>
+            한우
+            소고기
         </tags>
     </restaurant>
     <restaurant>
@@ -762,10 +762,10 @@
         <introduction>중국음식의 자존심...!</introduction>
         <embed>https://place.map.kakao.com/305204283</embed>
         <tags>
-            <tag>짜장면</tag>
-            <tag>짬뽕</tag>
-            <tag>탕수육</tag>
-            <tag>볶음밥</tag>
+            짜장면
+            짬뽕
+            탕수육
+            볶음밥
         </tags>
     </restaurant>
     <restaurant>
@@ -777,9 +777,9 @@
         <introduction>다채로운 계절감을 느낄수있는 한식 맛집</introduction>
         <embed>https://place.map.kakao.com/1377123063</embed>
         <tags>
-            <tag>매생이죽</tag>
-            <tag>계절식</tag>
-            <tag>문어</tag>
+            매생이죽
+            계절식
+            문어
         </tags>
     </restaurant>
     <restaurant>
@@ -791,7 +791,7 @@
         <introduction>깔끔하고 맛있는 평양 물냉면</introduction>
         <embed>https://place.map.kakao.com/305279600</embed>
         <tags>
-            <tag>냉면</tag>
+            냉면
         </tags>
     </restaurant>
     <restaurant>
@@ -803,7 +803,7 @@
         <introduction>신선하고 맛있는 장어구이!</introduction>
         <embed>https://place.map.kakao.com/12800028</embed>
         <tags>
-            <tag>장어</tag>
+            장어
         </tags>
     </restaurant>
     <restaurant>
@@ -815,9 +815,9 @@
         <introduction> 인기만점 코다리 맛집</introduction>
         <embed>https://place.map.kakao.com/11519378</embed>
         <tags>
-            <tag>코다리</tag>
-            <tag>코다리찜</tag>
-            <tag>코다리탕</tag>
+            코다리
+            코다리찜
+            코다리탕
         </tags>
     </restaurant>
     <restaurant>
@@ -829,7 +829,7 @@
         <introduction>둘이먹다 하나가 죽어도 모르는 복어요리 전문점!</introduction>
         <embed>https://place.map.kakao.com/19271195</embed>
         <tags>
-            <tag>복어</tag>
+            복어
         </tags>
     </restaurant>
     <restaurant>
@@ -841,9 +841,9 @@
         <introduction>스트레스받을땐 황소돌곱창!</introduction>
         <embed>https://place.map.kakao.com/967978046</embed>
         <tags>
-            <tag>곱창</tag>
-            <tag>대창</tag>
-            <tag>막창</tag>
+            곱창
+            대창
+            막창
         </tags>
     </restaurant>
 
@@ -856,10 +856,10 @@
         <introduction>바삭하고 고소한 감자전 맛집</introduction>
         <embed>https://place.map.kakao.com/16286575#none</embed>
         <tags>
-            <tag>감자전</tag>
-            <tag>돼지불고기</tag>
-            <tag>미나리전</tag>
-            <tag>수제비</tag>
+            감자전
+            돼지불고기
+            미나리전
+            수제비
         </tags>
     </restaurant>
     <restaurant>
@@ -871,9 +871,9 @@
         <introduction>심금을 울리는 맛</introduction>
         <embed>https://place.map.kakao.com/25776442</embed>
         <tags>
-            <tag>짜장면</tag>
-            <tag>짬뽕</tag>
-            <tag>탕수육</tag>
+            짜장면
+            짬뽕
+            탕수육
         </tags>
     </restaurant>
     <restaurant>
@@ -885,7 +885,7 @@
         <introduction>전통과 맛 모두 챙긴 맛집!!</introduction>
         <embed>https://place.map.kakao.com/25626265</embed>
         <tags>
-            <tag>불고기</tag>
+            불고기
         </tags>
     </restaurant>
     <restaurant>
@@ -897,9 +897,9 @@
         <introduction>다사에 소문난 맛집!</introduction>
         <embed>https://place.map.kakao.com/1983188057</embed>
         <tags>
-            <tag>돼지고기</tag>
-            <tag>삼겹살</tag>
-            <tag>목살</tag>
+            돼지고기
+            삼겹살
+            목살
         </tags>
     </restaurant>
     <restaurant>
@@ -911,7 +911,7 @@
         <introduction>소문난 감자탕 맛집!!</introduction>
         <embed>https://place.map.kakao.com/390342581</embed>
         <tags>
-            <tag>감자탕</tag>
+            감자탕
         </tags>
     </restaurant>
     <restaurant>
@@ -923,8 +923,8 @@
         <introduction>가성비 좋은 오리고기 전문점!</introduction>
         <embed>https://place.map.kakao.com/2003196329</embed>
         <tags>
-            <tag>오리고기</tag>
-            <tag>백숙</tag>
+            오리고기
+            백숙
         </tags>
     </restaurant>
     <restaurant>
@@ -936,11 +936,11 @@
         <introduction>생생한 계절감이 느껴지는 카페</introduction>
         <embed>https://place.map.kakao.com/1056707665</embed>
         <tags>
-            <tag>커피</tag>
-            <tag>디저트</tag>
-            <tag>케이크</tag>
-            <tag>마카롱</tag>
-            <tag>음료</tag>
+            커피
+            디저트
+            케이크
+            마카롱
+            음료
         </tags>
     </restaurant>
     <restaurant>
@@ -952,8 +952,8 @@
         <introduction>다사 샤브샤브는 더샤브샤브!</introduction>
         <embed>https://place.map.kakao.com/692296604</embed>
         <tags>
-            <tag>샤브샤브</tag>
-            <tag>쌈밥</tag>
+            샤브샤브
+            쌈밥
         </tags>
     </restaurant>
     <restaurant>
@@ -965,9 +965,9 @@
         <introduction>특별함을 만긱하고 싶다면...</introduction>
         <embed>https://place.map.kakao.com/2076488857</embed>
         <tags>
-            <tag>커피</tag>
-            <tag>디저트</tag>
-            <tag>케이크</tag>
+            커피
+            디저트
+            케이크
         </tags>
     </restaurant>
     <restaurant>
@@ -979,9 +979,9 @@
         <introduction>품격있는 돼지고기 맛집</introduction>
         <embed>https://place.map.kakao.com/2121408501</embed>
         <tags>
-            <tag>삼겹살</tag>
-            <tag>돼지고기</tag>
-            <tag>목살</tag>
+            삼겹살
+            돼지고기
+            목살
         </tags>
     </restaurant>
     <restaurant>
@@ -993,8 +993,8 @@
         <introduction>새콤달콤 맛있는 물회!</introduction>
         <embed>https://place.map.kakao.com/1570686635</embed>
         <tags>
-            <tag>물회</tag>
-            <tag>회</tag>
+            물회
+            회
         </tags>
     </restaurant>
     <restaurant>
@@ -1006,9 +1006,9 @@
         <introduction>대박 맛있는 소금구이집</introduction>
         <embed>https://place.map.kakao.com/1252986934</embed>
         <tags>
-            <tag>삼겹살</tag>
-            <tag>목살</tag>
-            <tag>돼지고기</tag>
+            삼겹살
+            목살
+            돼지고기
         </tags>
     </restaurant>
     <restaurant>
@@ -1020,8 +1020,8 @@
         <introduction>스시먹고 싶을땐 스시호</introduction>
         <embed>https://place.map.kakao.com/254048033</embed>
         <tags>
-            <tag>초밥</tag>
-            <tag>스시</tag>
+            초밥
+            스시
         </tags>
     </restaurant>
     <restaurant>
@@ -1033,8 +1033,8 @@
         <introduction>맵고 달달한 닭발 맛집!</introduction>
         <embed>https://place.map.kakao.com/26916768</embed>
         <tags>
-            <tag>닭발</tag>
-            <tag>닭갈비</tag>
+            닭발
+            닭갈비
         </tags>
     </restaurant>
     <restaurant>
@@ -1046,7 +1046,7 @@
         <introduction>맛있는 돼지찌개 전문점</introduction>
         <embed>https://place.map.kakao.com/26778418</embed>
         <tags>
-            <tag>돼지찌개</tag>
+            돼지찌개
         </tags>
     </restaurant>
 
@@ -1059,9 +1059,9 @@
         <introduction>스페인 요리점 에스파냐</introduction>
         <embed>https://place.map.kakao.com/10568392</embed>
         <tags>
-            <tag>코스요리</tag>
-            <tag>파에야</tag>
-            <tag>샐러드</tag>
+            코스요리
+            파에야
+            샐러드
         </tags>
     </restaurant>
     <restaurant>
@@ -1073,9 +1073,9 @@
         <introduction>양식점 로우에디션</introduction>
         <embed>https://place.map.kakao.com/1722006984</embed>
         <tags>
-            <tag>스테이크</tag>
-            <tag>파스타</tag>
-            <tag>리조토</tag>
+            스테이크
+            파스타
+            리조토
         </tags>
     </restaurant>
     <restaurant>
@@ -1087,9 +1087,9 @@
         <introduction>대구 수성구 돼지국밥 전문점</introduction>
         <embed>https://place.map.kakao.com/1873721735</embed>
         <tags>
-            <tag>국밥</tag>
-            <tag>돼지국밥</tag>
-            <tag>수육</tag>
+            국밥
+            돼지국밥
+            수육
         </tags>
     </restaurant>
     <restaurant>
@@ -1101,9 +1101,9 @@
         <introduction>쭈꾸미 낙지 볶음 전문 대성 본점</introduction>
         <embed>https://place.map.kakao.com/1668292141</embed>
         <tags>
-            <tag>쭈꾸미</tag>
-            <tag>낚지</tag>
-            <tag>왕새우튀김</tag>
+            쭈꾸미
+            낚지
+            왕새우튀김
         </tags>
     </restaurant>
     <restaurant>
@@ -1115,9 +1115,9 @@
         <introduction>중화요리 전문점 리안</introduction>
         <embed>https://place.map.kakao.com/7863898</embed>
         <tags>
-            <tag>야끼우동</tag>
-            <tag>탕수육</tag>
-            <tag>짜장면</tag>
+            야끼우동
+            탕수육
+            짜장면
         </tags>
     </restaurant>
     <restaurant>
@@ -1129,9 +1129,9 @@
         <introduction>한식 퓨전요리 전문점 양문이</introduction>
         <embed>https://place.map.kakao.com/1690481520</embed>
         <tags>
-            <tag>스테이크</tag>
-            <tag>파스타</tag>
-            <tag>된장찌개</tag>
+            스테이크
+            파스타
+            된장찌개
         </tags>
     </restaurant>
     <restaurant>
@@ -1143,9 +1143,9 @@
         <introduction>조조칼국수 본점</introduction>
         <embed>https://place.map.kakao.com/1305530650</embed>
         <tags>
-            <tag>칼국수</tag>
-            <tag>해물파전</tag>
-            <tag>물총</tag>
+            칼국수
+            해물파전
+            물총
         </tags>
     </restaurant>
     <restaurant>
@@ -1157,9 +1157,9 @@
         <introduction>대구 윤옥연할매떢복이 본점</introduction>
         <embed>https://place.map.kakao.com/9340428</embed>
         <tags>
-            <tag>떡볶이</tag>
-            <tag>튀김</tag>
-            <tag>순대</tag>
+            떡볶이
+            튀김
+            순대
         </tags>
     </restaurant>
     <restaurant>
@@ -1171,9 +1171,9 @@
         <introduction>애견동반가능 일식당</introduction>
         <embed>https://place.map.kakao.com/1660299316</embed>
         <tags>
-            <tag>덮밥</tag>
-            <tag>파스타</tag>
-            <tag>연어</tag>
+            덮밥
+            파스타
+            연어
         </tags>
     </restaurant>
     <restaurant>
@@ -1185,9 +1185,9 @@
         <introduction>이자카야 선술집</introduction>
         <embed>https://place.map.kakao.com/1112317625</embed>
         <tags>
-            <tag>사시미</tag>
-            <tag>구이</tag>
-            <tag>스키야키</tag>
+            사시미
+            구이
+            스키야키
         </tags>
     </restaurant>
     <restaurant>
@@ -1199,9 +1199,9 @@
         <introduction>인도요리 전문점 푸나왈라</introduction>
         <embed>https://place.map.kakao.com/869104156</embed>
         <tags>
-            <tag>치킨</tag>
-            <tag>카레</tag>
-            <tag>쿠쉬탈리</tag>
+            치킨
+            카레
+            쿠쉬탈리
         </tags>
     </restaurant>
     <restaurant>
@@ -1213,9 +1213,9 @@
         <introduction>빈티지 분위기 감성 카페 스완네</introduction>
         <embed>https://place.map.kakao.com/1621069822</embed>
         <tags>
-            <tag>빙수</tag>
-            <tag>스콘</tag>
-            <tag>뱅쇼</tag>
+            빙수
+            스콘
+            뱅쇼
         </tags>
     </restaurant>
     <restaurant>
@@ -1227,9 +1227,9 @@
         <introduction>이탈리아 요리 전문점</introduction>
         <embed>https://place.map.kakao.com/1314598350</embed>
         <tags>
-            <tag>카팰리니</tag>
-            <tag>딸리아뗄레</tag>
-            <tag>리조토</tag>
+            카팰리니
+            딸리아뗄레
+            리조토
         </tags>
     </restaurant>
     <restaurant>
@@ -1241,9 +1241,9 @@
         <introduction>초밥 전문점 후꾸스시</introduction>
         <embed>https://place.map.kakao.com/1030018055</embed>
         <tags>
-            <tag>연어초밥</tag>
-            <tag>광어초밥</tag>
-            <tag>회</tag>
+            연어초밥
+            광어초밥
+            회
         </tags>
     </restaurant>
     <restaurant>
@@ -1255,9 +1255,9 @@
         <introduction>대구 미성복어불고기 본점</introduction>
         <embed>https://place.map.kakao.com/8991526</embed>
         <tags>
-            <tag>복어</tag>
-            <tag>콩나물복어불고기</tag>
-            <tag>튀김</tag>
+            복어
+            콩나물복어불고기
+            튀김
         </tags>
     </restaurant>
 
@@ -1270,9 +1270,9 @@
         <introduction>일본풍 라면 츠케멘 전문점</introduction>
         <embed>https://place.map.kakao.com/140108348</embed>
         <tags>
-            <tag>츠케멘</tag>
-            <tag>교자</tag>
-            <tag>오니기리</tag>
+            츠케멘
+            교자
+            오니기리
         </tags>
     </restaurant>
     <restaurant>
@@ -1284,9 +1284,9 @@
         <introduction>갈비 전문점 회오리식당</introduction>
         <embed>https://place.map.kakao.com/1529679832</embed>
         <tags>
-            <tag>돼지갈비</tag>
-            <tag>소갈비</tag>
-            <tag>맥주</tag>
+            돼지갈비
+            소갈비
+            맥주
         </tags>
     </restaurant>
     <restaurant>
@@ -1298,9 +1298,9 @@
         <introduction>한식 백반 전문점 동아식당</introduction>
         <embed>https://place.map.kakao.com/1933999479</embed>
         <tags>
-            <tag>고등어정식</tag>
-            <tag>김치볶음밥</tag>
-            <tag>김밥</tag>
+            고등어정식
+            김치볶음밥
+            김밥
         </tags>
     </restaurant>
     <restaurant>
@@ -1312,9 +1312,9 @@
         <introduction>연어초밥 전문점 도마29</introduction>
         <embed>https://place.map.kakao.com/91896634</embed>
         <tags>
-            <tag>연어초밥</tag>
-            <tag>광어초밥</tag>
-            <tag>흐트러진덮밥</tag>
+            연어초밥
+            광어초밥
+            흐트러진덮밥
         </tags>
     </restaurant>
     <restaurant>
@@ -1326,9 +1326,9 @@
         <introduction>사시미 초밥 전문점 연어로</introduction>
         <embed>https://place.map.kakao.com/253516718</embed>
         <tags>
-            <tag>연어사시미</tag>
-            <tag>연어초밥</tag>
-            <tag>오코노미야끼</tag>
+            연어사시미
+            연어초밥
+            오코노미야끼
         </tags>
     </restaurant>
     <restaurant>
@@ -1340,9 +1340,9 @@
         <introduction>케이크 전문점 최가네케익</introduction>
         <embed>https://place.map.kakao.com/8577033</embed>
         <tags>
-            <tag>딸기케이크</tag>
-            <tag>오페라</tag>
-            <tag>치즈케이크</tag>
+            딸기케이크
+            오페라
+            치즈케이크
         </tags>
     </restaurant>
     <restaurant>
@@ -1354,9 +1354,9 @@
         <introduction>푸딩빙수가 유명한 카페 루시드</introduction>
         <embed>https://place.map.kakao.com/10348734</embed>
         <tags>
-            <tag>푸딩빙수</tag>
-            <tag>카페라떼</tag>
-            <tag>아메리카노</tag>
+            푸딩빙수
+            카페라떼
+            아메리카노
         </tags>
     </restaurant>
     <restaurant>
@@ -1368,9 +1368,9 @@
         <introduction>부산에서 올라온 베이커리 맛집 마리포사</introduction>
         <embed>https://place.map.kakao.com/457736367</embed>
         <tags>
-            <tag>빵</tag>
-            <tag>수제초콜릿</tag>
-            <tag>케이크</tag>
+            빵
+            수제초콜릿
+            케이크
         </tags>
     </restaurant>
     <restaurant>
@@ -1382,9 +1382,9 @@
         <introduction>샤오마이가 유명한 중식레스토랑 중화반점</introduction>
         <embed>https://place.map.kakao.com/24171572</embed>
         <tags>
-            <tag>샤오마이</tag>
-            <tag>샤오룽바오</tag>
-            <tag>탕수육</tag>
+            샤오마이
+            샤오룽바오
+            탕수육
         </tags>
     </restaurant>
     <restaurant>
@@ -1396,9 +1396,9 @@
         <introduction>몸도 마음도 뜨끈해지는 국밥집 국일따로국밥</introduction>
         <embed>https://place.map.kakao.com/21227749</embed>
         <tags>
-            <tag>따로국밥</tag>
-            <tag>따로국수</tag>
-            <tag>선지</tag>
+            따로국밥
+            따로국수
+            선지
         </tags>
     </restaurant>
     <restaurant>
@@ -1410,9 +1410,9 @@
         <introduction>대구 삼겹살 맛집 혜옥당</introduction>
         <embed>https://place.map.kakao.com/287156559</embed>
         <tags>
-            <tag>삼겹살</tag>
-            <tag>목살</tag>
-            <tag>항정살</tag>
+            삼겹살
+            목살
+            항정살
         </tags>
     </restaurant>
     <restaurant>
@@ -1424,9 +1424,9 @@
         <introduction>대구 인기 데이트코스 한식당 신라식당</introduction>
         <embed>https://place.map.kakao.com/15380037</embed>
         <tags>
-            <tag>순두부찌개</tag>
-            <tag>제육볶음</tag>
-            <tag>낙지볶음</tag>
+            순두부찌개
+            제육볶음
+            낙지볶음
         </tags>
     </restaurant>
     <restaurant>
@@ -1438,9 +1438,9 @@
         <introduction>퓨전 일식 전문점 알로하돈부리</introduction>
         <embed>https://place.map.kakao.com/27284818</embed>
         <tags>
-            <tag>가츠동</tag>
-            <tag>사케동</tag>
-            <tag>에비동</tag>
+            가츠동
+            사케동
+            에비동
         </tags>
     </restaurant>
     <restaurant>
@@ -1452,9 +1452,9 @@
         <introduction>일본풍 라멘 전문점 유타로</introduction>
         <embed>https://place.map.kakao.com/13063340</embed>
         <tags>
-            <tag>탄탄면</tag>
-            <tag>시로</tag>
-            <tag>쿠로</tag>
+            탄탄면
+            시로
+            쿠로
         </tags>
     </restaurant>
     <restaurant>
@@ -1466,9 +1466,9 @@
         <introduction>이탈리아 요리 전문점 부케</introduction>
         <embed>https://place.map.kakao.com/400535677</embed>
         <tags>
-            <tag>스테이크</tag>
-            <tag>리조토</tag>
-            <tag>파스타</tag>
+            스테이크
+            리조토
+            파스타
         </tags>
     </restaurant>
 
@@ -1481,9 +1481,9 @@
 		<introduction>분위기 좋은 맛집</introduction>
 		<embed>https://place.map.kakao.com/344223659</embed>
 		<tags>
-			<tag>파스타</tag>
-			<tag>필라프</tag>
-			<tag>돈가스</tag>
+			파스타
+			필라프
+			돈가스
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1495,9 +1495,9 @@
 		<introduction>무침회로 유명한 집</introduction>
 		<embed>https://place.map.kakao.com/21315532</embed>
 		<tags>
-			<tag>무침회</tag>
-			<tag>만두</tag>
-			<tag>가오리찜</tag>
+			무침회
+			만두
+			가오리찜
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1509,7 +1509,7 @@
 		<introduction>야들야들한 막창</introduction>
 		<embed>https://place.map.kakao.com/13133002</embed>
 		<tags>
-			<tag>막창</tag>
+			막창
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1521,7 +1521,7 @@
 		<introduction>베트남 쌀국수</introduction>
 		<embed>https://place.map.kakao.com/2081675469</embed>
 		<tags>
-			<tag>쌀국수</tag>
+			쌀국수
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1533,9 +1533,9 @@
 		<introduction>극한의 가성비 맛집</introduction>
 		<embed>https://place.map.kakao.com/11180271</embed>
 		<tags>
-			<tag>무침회</tag>
-			<tag>미주구리회</tag>
-			<tag>가오리회</tag>
+			무침회
+			미주구리회
+			가오리회
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1547,8 +1547,8 @@
 		<introduction>깔끔한 맛에 계속 손이 가는 우복당</introduction>
 		<embed>https://place.map.kakao.com/16458571</embed>
 		<tags>
-			<tag>국밥</tag>
-			<tag>보쌈</tag>
+			국밥
+			보쌈
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1560,9 +1560,9 @@
 		<introduction>재료 본연의 맛</introduction>
 		<embed>https://place.map.kakao.com/7953290</embed>
 		<tags>
-			<tag>산낙지볶음</tag>
-			<tag>산낙지회</tag>
-			<tag>낙곱전골</tag>
+			산낙지볶음
+			산낙지회
+			낙곱전골
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1574,9 +1574,9 @@
 		<introduction>가성비 좋은 맛집</introduction>
 		<embed>https://place.map.kakao.com/1647932116</embed>
 		<tags>
-			<tag>수욕</tag>
-			<tag>순대</tag>
-			<tag>국밥</tag>
+			수욕
+			순대
+			국밥
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1588,9 +1588,9 @@
 		<introduction>가득한 짬뽕</introduction>
 		<embed>https://place.map.kakao.com/1530294934</embed>
 		<tags>
-			<tag>짬뽕</tag>
-			<tag>짜장면</tag>
-			<tag>탕수욕</tag>
+			짬뽕
+			짜장면
+			탕수욕
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1602,10 +1602,10 @@
 		<introduction>구성이 알차고 맛있는 집</introduction>
 		<embed>https://place.map.kakao.com/1352788256</embed>
 		<tags>
-			<tag>칼국수</tag>
-			<tag>국밥</tag>
-			<tag>보쌈</tag>
-			<tag>냉면</tag>
+			칼국수
+			국밥
+			보쌈
+			냉면
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1617,10 +1617,10 @@
 		<introduction>가성비 좋은 집</introduction>
 		<embed>https://place.map.kakao.com/2129209078</embed>
 		<tags>
-			<tag>새우</tag>
-			<tag>오징어</tag>
-			<tag>대게</tag>
-			<tag>홍게</tag>
+			새우
+			오징어
+			대게
+			홍게
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1632,9 +1632,9 @@
 		<introduction>매력적이고 분위기 좋은 집</introduction>
 		<embed>https://place.map.kakao.com/201849967</embed>
 		<tags>
-			<tag>돼지고기 덮밥</tag>
-			<tag>돈가츠</tag>
-			<tag>우동</tag>
+			돼지고기 덮밥
+			돈가츠
+			우동
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1646,9 +1646,9 @@
 		<introduction>나만 알고 싶은 닭도라탕</introduction>
 		<embed>https://place.map.kakao.com/1020281406</embed>
 		<tags>
-			<tag>간장쪼림닭</tag>
-			<tag>닭도리탕</tag>
-			<tag>쭈꾸미닭도리탕</tag>
+			간장쪼림닭
+			닭도리탕
+			쭈꾸미닭도리탕
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1660,8 +1660,8 @@
 		<introduction>언제 먹어도 맜있는 감자탕</introduction>
 		<embed>https://place.map.kakao.com/16496965</embed>
 		<tags>
-			<tag>뼈전골</tag>
-			<tag>감자탕</tag>
+			뼈전골
+			감자탕
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1673,11 +1673,11 @@
 		<introduction>20년 전통 냉면맛집</introduction>
 		<embed>https://place.map.kakao.com/18336818</embed>
 		<tags>
-			<tag>물냉면</tag>
-			<tag>비빔냉면</tag>
-			<tag>회냉면</tag>
-			<tag>칼국수</tag>
-			<tag>갈비찜</tag>
+			물냉면
+			비빔냉면
+			회냉면
+			칼국수
+			갈비찜
 		</tags>
 	</restaurant>
 	
@@ -1690,10 +1690,10 @@
 		<introduction>규카츠로 유명한 집</introduction>
 		<embed>https://place.map.kakao.com/1626665062</embed>
 		<tags>
-			<tag>오므라이스</tag>
-			<tag>우동</tag>
-			<tag>덮밥</tag>
-			<tag>규카츠</tag>
+			오므라이스
+			우동
+			덮밥
+			규카츠
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1705,9 +1705,9 @@
 		<introduction>신선한 동죽조개로 만든 칼국수</introduction>
 		<embed>https://place.map.kakao.com/167701452</embed>
 		<tags>
-			<tag>칼국수</tag>
-			<tag>물총</tag>
-			<tag>낙지파전</tag>
+			칼국수
+			물총
+			낙지파전
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1719,9 +1719,9 @@
 		<introduction>진짜 너무 맛있는 쭈구미집</introduction>
 		<embed>https://place.map.kakao.com/1994271258</embed>
 		<tags>
-			<tag>쭈구미</tag>
-			<tag>볶음밥</tag>
-			<tag>계란찜</tag>
+			쭈구미
+			볶음밥
+			계란찜
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1733,9 +1733,9 @@
 		<introduction>스테이크 파스타 맛집</introduction>
 		<embed>https://place.map.kakao.com/351709972</embed>
 		<tags>
-			<tag>스테이크</tag>
-			<tag>파스타</tag>
-			<tag>필라프</tag>
+			스테이크
+			파스타
+			필라프
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1747,10 +1747,10 @@
 		<introduction>깔끔하고 가성비 좋은 집</introduction>
 		<embed>https://place.map.kakao.com/11512812</embed>
 		<tags>
-			<tag>짬뽕</tag>
-			<tag>짬뽕밥</tag>
-			<tag>볶음밥</tag>
-			<tag>짜장면</tag>
+			짬뽕
+			짬뽕밥
+			볶음밥
+			짜장면
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1762,9 +1762,9 @@
 		<introduction>분위기 좋은 맛집</introduction>
 		<embed>https://place.map.kakao.com/782774410</embed>
 		<tags>
-			<tag>파스타</tag>
-			<tag>샐러드</tag>
-			<tag>샌드위치</tag>
+			파스타
+			샐러드
+			샌드위치
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1773,13 +1773,14 @@
 		<category>해산물</category>
 		<address>남구</address>
 		<img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fplace%2FC423A9886E2D44BEB233CE0146D989AE</img>
-		<introduction>웨팅만 견디면 ...</introduction>
+		<introduction>웨이팅만 견디면...</introduction>
 		<embed>https://place.map.kakao.com/926945652</embed>
 		<tags>
-			<tag>모듬회</tag>
-			<tag>광어회</tag>
-			<tag>청어회김말이</tag>
-			<tag>숙성도미회</tag>
+			모듬회
+			광어회
+			청어회김말이
+			숙성도미회
+			고등어봉초밥
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1791,9 +1792,9 @@
 		<introduction>양념갈비 본연의 맛에 충실한 맛집</introduction>
 		<embed>https://place.map.kakao.com/16231056</embed>
 		<tags>
-			<tag>돼지갈비</tag>
-			<tag>돌솥비빔밥</tag>
-			<tag>냉면</tag>
+			돼지갈비
+			돌솥비빔밥
+			냉면
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1805,7 +1806,7 @@
 		<introduction>비쥬얼 최고 모듬카츠</introduction>
 		<embed>https://place.map.kakao.com/1955141468</embed>
 		<tags>
-			<tag>모듬카츠</tag>
+			모듬카츠
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1817,11 +1818,11 @@
 		<introduction>하와이안 해산물 파스타 집</introduction>
 		<embed>https://place.map.kakao.com/127437544</embed>
 		<tags>
-			<tag>스테이크</tag>
-			<tag>파스타</tag>
-			<tag>쉬림프</tag>
-			<tag>갈비</tag>
-			<tag>샐러드</tag>
+			스테이크
+			파스타
+			쉬림프
+			갈비
+			샐러드
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1833,10 +1834,10 @@
 		<introduction>이탈리안 요리 전문점</introduction>
 		<embed>https://place.map.kakao.com/496242307</embed>
 		<tags>
-			<tag>파스타</tag>
-			<tag>샐러드</tag>
-			<tag>리조또</tag>
-			<tag>피자</tag>
+			파스타
+			샐러드
+			리조또
+			피자
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1848,10 +1849,10 @@
 		<introduction>멕시칸 요리 전문점</introduction>
 		<embed>https://place.map.kakao.com/11967394</embed>
 		<tags>
-			<tag>필라프</tag>
-			<tag>샐러드</tag>
-			<tag>타고라이스</tag>
-			<tag>핫칠리포크</tag>
+			필라프
+			샐러드
+			타고라이스
+			핫칠리포크
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1863,9 +1864,9 @@
 		<introduction>어느국밥집과 비교할수 없을정도의 맛</introduction>
 		<embed>https://place.map.kakao.com/16267168</embed>
 		<tags>
-			<tag>국밥</tag>
-			<tag>찐순대</tag>
-			<tag>수육</tag>
+			국밥
+			찐순대
+			수육
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1877,9 +1878,9 @@
 		<introduction>연어가 촉촉한 맛집</introduction>
 		<embed>https://place.map.kakao.com/326168449</embed>
 		<tags>
-			<tag>초밥</tag>
-			<tag>참돔</tag>
-			<tag>우동</tag>
+			초밥
+			참돔
+			우동
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1891,10 +1892,10 @@
 		<introduction>양이 가득한 집</introduction>
 		<embed>https://place.map.kakao.com/16458168</embed>
 		<tags>
-			<tag>찜닭</tag>
-			<tag>양념치킨</tag>
-			<tag>후라이드치킨</tag>
-			<tag>후라이드똥집</tag>
+			찜닭
+			양념치킨
+			후라이드치킨
+			후라이드똥집
 		</tags>
 	</restaurant>
 
@@ -1907,10 +1908,10 @@
 		<introduction>싱싱한 돼지고기 맛집</introduction>
 		<embed>https://place.map.kakao.com/19471519</embed>
 		<tags>
-			<tag>돼지고기</tag>
-			<tag>삼겹살</tag>
-			<tag>목살</tag>
-			<tag>뚝배기</tag>
+			돼지고기
+			삼겹살
+			목살
+			뚝배기
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -1922,8 +1923,8 @@
 		<introduction>탱글탱글하고 맛있는 초밥 맛집</introduction>
 		<embed>https://place.map.kakao.com/111833075</embed>
 		<tags>
-			<tag>초밥</tag>
-			<tag>스시</tag>
+			초밥
+			스시
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -1935,10 +1936,10 @@
 		<introduction>우리동네 양식 맛집!!</introduction>
 		<embed>https://place.map.kakao.com/366028233</embed>
 		<tags>
-			<tag>파스타</tag>
-			<tag>스테이크</tag>
-			<tag>리조또</tag>
-			<tag>까르보나라</tag>
+			파스타
+			스테이크
+			리조또
+			까르보나라
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -1950,9 +1951,9 @@
 		<introduction>따끈따끈한 빵과 커피</introduction>
 		<embed>https://place.map.kakao.com/193079786</embed>
 		<tags>
-			<tag>커피</tag>
-			<tag>빵</tag>
-			<tag>케이크</tag>
+			커피
+			빵
+			케이크
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -1964,8 +1965,8 @@
 		<introduction>수제버거 먹을땐 롤다운버거!</introduction>
 		<embed>https://place.map.kakao.com/1136362602</embed>
 		<tags>
-			<tag>버거</tag>
-			<tag>햄버거</tag>
+			버거
+			햄버거
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -1977,10 +1978,10 @@
 		<introduction>최고의 분위기에 최고의 맛!!</introduction>
 		<embed>https://place.map.kakao.com/214519426</embed>
 		<tags>
-			<tag>파스타</tag>
-			<tag>스테이크</tag>
-			<tag>리조또</tag>
-			<tag>피자</tag>
+			파스타
+			스테이크
+			리조또
+			피자
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -1992,8 +1993,8 @@
 		<introduction>고퀄리티 초밥을 맛보고 싶다면!</introduction>
 		<embed>https://place.map.kakao.com/1871443655</embed>
 		<tags>
-			<tag>스시</tag>
-			<tag>초밥</tag>
+			스시
+			초밥
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -2005,9 +2006,9 @@
 		<introduction>상인동 최고의 돈까스 맛집!!</introduction>
 		<embed>https://place.map.kakao.com/1262821370</embed>
 		<tags>
-			<tag>돈까스</tag>
-			<tag>라멘</tag>
-			<tag>카레</tag>
+			돈까스
+			라멘
+			카레
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -2019,9 +2020,9 @@
 		<introduction>깔끔하고 든든한 국밥 맛집!</introduction>
 		<embed>https://place.map.kakao.com/502362353</embed>
 		<tags>
-			<tag>국밥</tag>
-			<tag>수육</tag>
-			<tag>보쌈</tag>
+			국밥
+			수육
+			보쌈
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -2033,8 +2034,8 @@
 		<introduction> 동네사람들 다 아는 곱창 맛집! </introduction>
 		<embed>https://place.map.kakao.com/16465016</embed>
 		<tags>
-			<tag>곱창</tag>
-			<tag>삼겹살</tag>
+			곱창
+			삼겹살
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -2046,10 +2047,10 @@
 		<introduction>고급지고 낭만적인 맛집!</introduction>
 		<embed>https://place.map.kakao.com/21360189</embed>
 		<tags>
-			<tag>스테이크</tag>
-			<tag>파스타</tag>
-			<tag>피자</tag>
-			<tag>리조또</tag>
+			스테이크
+			파스타
+			피자
+			리조또
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -2061,9 +2062,9 @@
 		<introduction>최고의 가성비 스시집!</introduction>
 		<embed>https://place.map.kakao.com/190087912</embed>
 		<tags>
-			<tag>초밥</tag>
-			<tag>스시</tag>
-			<tag>우동</tag>
+			초밥
+			스시
+			우동
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -2075,8 +2076,8 @@
 		<introduction>감자탕의 자존심..!</introduction>
 		<embed>https://place.map.kakao.com/10854398</embed>
 		<tags>
-			<tag>해장국</tag>
-			<tag>감자탕</tag>
+			해장국
+			감자탕
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -2088,10 +2089,10 @@
 		<introduction>또먹고 싶은 김밥집!</introduction>
 		<embed>https://place.map.kakao.com/20373167</embed>
 		<tags>
-			<tag>김밥</tag>
-			<tag>떡볶이</tag>
-			<tag>쫄면</tag>
-			<tag>돈까스</tag>
+			김밥
+			떡볶이
+			쫄면
+			돈까스
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -2103,9 +2104,9 @@
 		<introduction>죽전동 소문난 고깃집!</introduction>
 		<embed>https://place.map.kakao.com/17164151</embed>
 		<tags>
-			<tag>소고기</tag>
-			<tag>갈비</tag>
-			<tag>등심</tag>
+			소고기
+			갈비
+			등심
 		</tags>
 	</restaurant>
 </data>

@@ -142,8 +142,8 @@
             
             // 출력부
             for(let i = 0; i < num.length; i++) {
-                if (name[i].childNodes[0].nodeValue == keyVal || category[i].childNodes[0].nodeValue == keyVal || 
-                address[i].childNodes[0].nodeValue == keyVal) {
+                if (name[i].childNodes[0].nodeValue.indexOf(keyVal) != -1 || category[i].childNodes[0].nodeValue == keyVal || 
+                address[i].childNodes[0].nodeValue == keyVal || tags[i].childNodes[0].nodeValue.indexOf(keyVal) != -1) {
                     // card 레이아웃
                     var card = document.createElement('div'); // div 태그 생성
                     card.className = "card"; // div 태그에 class 이름 설정
@@ -218,87 +218,6 @@
                     offcanvasEmbed.setAttribute("width", "100%");
                     offcanvasEmbed.setAttribute("height", "95%");
                     offcanvasBody.appendChild(offcanvasEmbed);
-                }
-                else {
-                    tag = tags[i].getElementsByTagName("tag");
-                    for(let j = 0; j < tag.length; j++) {
-                        if (tag[j].childNodes[0].nodeValue == keyVal) {
-                            // card 레이아웃
-                            var card = document.createElement('div'); // div 태그 생성
-                            card.className = "card"; // div 태그에 class 이름 설정
-                            card.setAttribute("data-bs-toggle", "offcanvas"); // 부트스트랩 설정
-                            card.setAttribute("data-bs-target", "#offcanvasRight" + i);
-                            card.setAttribute("aria-controls", "offcanvasRight");
-                            document.getElementById('cardArea').appendChild(card); // cardArea id 태그 아래쪽에 추가
-                            //document.body.appendChild(card); // 바디 태그 아래쪽에 추가
-                            
-                            var cropping = document.createElement('div'); // 사진 크기 조절용 태그
-                            cropping.className = "cropping";
-                            card.appendChild(cropping);
-                            
-                            var cardImg = document.createElement('img'); // 이미지 삽입 태그
-                            cardImg.src = img[i].childNodes[0].nodeValue;
-                            cardImg.alt = "...";
-                            cropping.appendChild(cardImg);
-                            
-                            var cardBody = document.createElement('div'); // 글자 부분 태그
-                            cardBody.className = "card-body";
-                            card.appendChild(cardBody);
-
-                            var cardTitle = document.createElement('h2'); // 음식점 이름 태그
-                            cardTitle.className = "card-title";
-                            var cardTitleText = document.createTextNode(name[i].childNodes[0].nodeValue); // xml에서 텍스트를 받아오기
-                            cardTitle.appendChild(cardTitleText);
-                            cardBody.appendChild(cardTitle);
-                            
-                            var cardCategory = document.createElement('p'); // 카테고리 태그
-                            cardCategory.className = "card-category";
-                            var cardCategoryText = document.createTextNode(category[i].childNodes[0].nodeValue);
-                            cardCategory.appendChild(cardCategoryText);
-                            cardBody.appendChild(cardCategory);
-
-                            var cardText = document.createElement('p'); // 설명 태그
-                            cardText.className = "card-text";
-                            var cardTextText = document.createTextNode(introduction[i].childNodes[0].nodeValue);
-                            cardText.appendChild(cardTextText);
-                            cardBody.appendChild(cardText);
-                            
-                            // offcanvas 레이아웃
-                            var offcanvas = document.createElement('div');
-                            offcanvas.classList.add("offcanvas", "offcanvas-end");
-                            offcanvas.id = "offcanvasRight" + i;
-                            offcanvas.setAttribute("tabindex", "-1");
-                            offcanvas.setAttribute("aria-labelledby", "offcanvasRightLabel");
-                            document.getElementById('offcanvasArea').appendChild(offcanvas);
-
-                            var offcanvasHeader = document.createElement('div');
-                            offcanvasHeader.className = "offcanvas-header";
-                            offcanvas.appendChild(offcanvasHeader);
-
-                            var offcanvasTitle = document.createElement('h5');
-                            offcanvasTitle.className = "offcanvas-title";
-                            offcanvasTitle.id = "offcanvasRightLabel";
-                            offcanvasTitle.innerText = name[i].childNodes[0].nodeValue;
-                            offcanvasHeader.appendChild(offcanvasTitle);
-
-                            var closeBtn = document.createElement('button');
-                            closeBtn.setAttribute("type", "button");
-                            closeBtn.className = "btn-close"
-                            closeBtn.setAttribute("data-bs-dismiss", "offcanvas");
-                            closeBtn.setAttribute("aria-label", "Close");
-                            offcanvasHeader.appendChild(closeBtn)
-
-                            var offcanvasBody = document.createElement('div');
-                            offcanvasBody.className = "offcanvas-body";
-                            offcanvas.appendChild(offcanvasBody);
-
-                            var offcanvasEmbed = document.createElement('embed');
-                            offcanvasEmbed.setAttribute("src", embed[i].childNodes[0].nodeValue);
-                            offcanvasEmbed.setAttribute("width", "100%");
-                            offcanvasEmbed.setAttribute("height", "95%");
-                            offcanvasBody.appendChild(offcanvasEmbed);
-                        }
-                    }
                 }
             }
         }

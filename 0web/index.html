@@ -38,7 +38,7 @@
             /*--------- 섹션 영역 끝 ---------*/
 
             /*--------- 풋터 영역 시작 ---------*/
-            footer{
+            footer {
                 display: flex;
                 justify-content: center;
                 position: relative;
@@ -51,48 +51,70 @@
             /*--------- 풋터 영역 끝 ---------*/
 
             /*--------- 퀵 메뉴 시작 ---------*/
-            #section_left{
+            #section_left {
                 position: relative;
                 padding-right: 100px;
                 justify-content: center;
                 padding-top: 10px;
             }
 
-            #logo_box{
+            #logo_box {
                 padding-top: 30px;
             }
 
-            #search_box{
+            #search_box {
                 padding-top: 30px;
                 text-align: center;
             }
 
-            #section_left_left{
+            #section_left_left {
                 float: left;
                 display: flex;
                 padding-top: 35px;
                 padding-right: 14px;
             }
 
-            #section_left_right{
+            #section_left_right {
                 float: left;
                 display: flex;
                 padding-right: 7px;
                 padding-top: 35px;
             }
 
-            #section_right{
+            #section_right {
                 padding-top: 50px;
                 width: 400px;
                 float: left;
+                position: relative;
             }
 
-            .popUp{
+            .popUp {
                 position: absolute;
-                top: 140px;
-                left: 1135px;
+                top: 50px;
+                left: 0px;
                 pointer-events: none;
             }
+
+            /* input */
+
+            .inputBox {
+                border: none;
+                background-color: #FFF8EE;
+                border-radius: 30px;
+                text-align: center;
+                color:rgb(105, 145, 185);
+                font-weight: bold;
+                
+            }
+
+            .inputBox::placeholder{
+                color:rgb(105, 145, 185);
+                font-weight: bold;
+            }
+
+            /* .inputBtn {
+                background-image: url('../images/confirm.gif');  
+            } */
         </style>
         
         <script>
@@ -139,7 +161,7 @@
             }
 
             function hideImg() {
-                document.getElementById("fig").src = ""
+                document.getElementById("fig").src = "src/NoImg.png"
             }
         </script>
     </head>
@@ -150,7 +172,7 @@
                 <li><a href="index.html" id="navLogo">
                     <img src="src/navLogo.png" width="60px"></a>
                 </li>
-                <li><a href="#">지역</a>
+                <li><a href="#" class="navSelect">지역</a>
                     <ul id="sub-menu">
                         <li><a href="javascript:a('달서구');" aria-label="subemnu" onclick="return false;">달서구</a></li>
                         <li><a href="javascript:a('북구')" aria-label="subemnu" onclick="return false;">북구</a></li>
@@ -164,12 +186,12 @@
                         <li><a href="javascript:a('하양')" aria-label="subemnu" onclick="return false;">하양</a></li>
                     </ul>
                 </li>
-                <li><a href="#">뭐먹지?</a></li>
-                <li><a href="DPcal.html">더치페이</a></li>
+                <li><a href="#" class="navSelect">뭐먹지?</a></li>
+                <li><a href="DPcal.html" class="navSelect">더치페이</a></li>
                 <li id="navSearch">
                     <form onsubmit="getKeyVal()" name="search" method="get">
-                        <label><input type="text" size="20" id="key" value="" placeholder="맛집 이름"></label>
-                        <input type="submit" value="찾기">
+                        <label><input type="text" class="inputBox" size="20" id="key" value="" placeholder=" 맛집 이름"></label>
+                        <input type="submit" class="inputBtn" value="찾기">
                     </form>
                 </li>
             </ul>
@@ -181,23 +203,25 @@
                 </div>
                 <div id="search_box">
                     <form name="search" method="get">
-                        <input type="text" size="20" value="" placeholder="맛집 이름" style="width:330px; height:30px; font-size:10px;">
+                        <input type="text" class="inputBox" size="50" value="" placeholder="맛집 이름" style="width:330px; height:30px; font-size:20px;">
                         <input type="submit" value="찾기">
                     </form>
                 </div>
                 <div>
                     <div id="section_left_left">
-                        <img src="src/button1.png">
+                        <a href="whateat.html">
+                            <img src="src/button1.png"></a>
                     </div>
                     <div id="section_left_right">
-                        <img src="src/butten2.png">
+                        <a href="DPcal.html">
+                            <img src="src/butten2.png"></a>
                     </div>
                 </div>
             </div>
             <div id="section_right">
                 <!-- Image Map Generated by http://www.image-map.net/ -->
                 <img src="src/map.png" usemap="#image-map">
-                <map name="image-map">
+                <map id="popMap" name="image-map">
                     <area onmouseover="showImg('대구대')" onmouseout="hideImg()" target="" alt="대구대" title="대구대" href="javascript:a('대구대');" coords="171,495,39" shape="circle">
                     <area onmouseover="showImg('하양')" onmouseout="hideImg()" target="" alt="하양" title="하양" href="javascript:a('하양');" coords="245,536,257,535,273,525,282,522,286,514,299,513,307,508,308,501,317,490,316,482,323,479,324,466,338,462,348,460,356,461,362,458,357,453,360,446,357,439,353,434,358,422,354,416,345,418,341,406,336,401,330,400,324,396,318,404,311,403,305,404,296,400,291,394,281,399,273,406,268,407,259,403,252,404,222,398,216,406,211,417,212,422,211,428,217,432,218,440,224,446,230,449,235,452,243,460,242,468,240,477,243,488,248,498,246,507,244,514,242,520,248,522,242,532" shape="poly">
                     <area onmouseover="showImg('북구')" onmouseout="hideImg()" target="" alt="북구" title="북구" href="javascript:a('북구');" coords="146,144,152,148,167,150,198,150,206,153,218,154,220,160,222,162,232,161,237,163,242,163,248,161,251,154,257,150,263,145,266,138,267,126,268,97,260,73,262,64,256,51,246,37,230,47,206,49,196,64,177,48,176,73,176,91,173,103,168,113,155,128" shape="poly">

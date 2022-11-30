@@ -13,16 +13,18 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: "Roboto", serif;
+            font-family: 'Gamja Flower';
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
-            overflow-x: hidden;  
+            overflow-x: hidden;
+            width: 1980;
+            height: 1080;
         }
 
         header {
-            margin: 2em 0 1.5em 0;
+            margin-top: 80px;
         }
 
         /* 섹션 */
@@ -32,18 +34,18 @@
             text-align: center;
         }
 
+        /* 카드 레이아웃 */
         #cardArea {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
         }
 
-        /* 카드 레이아웃 */
         .card {
             width: 300px;
-            border: 1px solid rgb(164, 177, 189);
+            border: 1px solid rgb(189, 184, 164);
             border-radius: 10px;
-            background-color:rgb(222, 252, 252);
+            background-color: #fff2e7;
             cursor: pointer;
             float: left;
             margin: 50px;
@@ -51,9 +53,9 @@
 
         .card-body {
             padding: 10px;
-            background-color:#cae7e7;
+            background-color: #fff2e7;
             border-radius: 10px;
-            text-align:left
+            text-align: left;
         }
 
         .cropping {
@@ -77,7 +79,7 @@
             margin-top: 0px;
             margin-bottom: 0px;
             font-size: 13px;
-            color: rgb(122, 122, 122);
+            color: rgb(189, 184, 164);
         }
 
         .card-text {
@@ -138,7 +140,7 @@
             img = xmlDoc.getElementsByTagName("img");
             introduction = xmlDoc.getElementsByTagName("introduction");
             embed = xmlDoc.getElementsByTagName("embed");
-            tag = xmlDoc.getElementsByTagName("tag");
+            tags = xmlDoc.getElementsByTagName("tags");
             
             // 출력부
             document.getElementById('header').innerText = lastRegion;
@@ -226,15 +228,15 @@
 
 <body>
     <header>
-        <h1 id="header">지역명</h1>
+        <h1 id="header"></h1>
     </header>
-    
+
     <nav role="navigation">
         <ul id="main-menu">
             <li><a href="index.html" id="navLogo">
                 <img src="src/navLogo.png" width="60px"></a>
             </li>
-            <li><a href="#">지역</a>
+            <li><a href="#" class="navSelect">지역</a>
                 <ul id="sub-menu">
                     <li><a href="javascript:a('달서구');" aria-label="subemnu" onclick="return false;">달서구</a></li>
                     <li><a href="javascript:a('북구')" aria-label="subemnu" onclick="return false;">북구</a></li>
@@ -248,12 +250,12 @@
                     <li><a href="javascript:a('하양')" aria-label="subemnu" onclick="return false;">하양</a></li>
                 </ul>
             </li>
-            <li><a href="#">뭐먹지?</a></li>
-            <li><a href="DPcal.html">더치페이</a></li>
+            <li><a href="whateat.html" class="navSelect">뭐먹지?</a></li>
+            <li><a href="DPcal.html" class="navSelect">더치페이</a></li>
             <li id="navSearch">
                 <form onsubmit="getKeyVal()" name="search" method="get">
-                    <label><input type="text" size="20" id="key" value="" placeholder="맛집 이름"></label>
-                    <input type="submit" value="찾기">
+                    <label><input type="text" class="inputBox" size="20" id="key" value="" placeholder=" 맛집 이름"></label>
+                    <input type="submit" class="inputBtn" value="찾기">
                 </form>
             </li>
         </ul>

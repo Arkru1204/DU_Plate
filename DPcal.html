@@ -1,12 +1,234 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>
-            N빵 계산기
-        </title>
-        <link href="css/nav.css" rel="stylesheet">
-        <style>
+<head>
+    <meta charset="utf-8">
+    <title>
+        N빵 계산기
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower:400" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;  
+            background-color: #FFF8EE;
+            font-family: Malgun Gothic;
+        }
+
+        header {
+            margin-top: 80px;
+        }
+    
+        /*--------- 섹션 영역 시작---------*/
+        section {
+            width: 90%;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /*--------- 섹션 영역 끝 ---------*/
+
+        /*--------- 풋터 영역 시작 ---------*/
+        footer {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            font-size: small;
+            width:100%;
+            height: 10%;
+            padding: 70px;
+            background-color:  #FFF8EE;
+            font-family: Malgun Gothic;
+            font-weight: bold;
+
+        }
+        
+        /*--------- 풋터 영역 끝 ---------*/
+        #cash{
+            border: none;
+            background-color: #F6D4CB;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            width:400px;
+            height:30px;
+        }
+        #ncash1{
+            border: none;
+            background-color: #F6D4CB;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            width:400px;
+            height:30px;
+        }
+        #ncash2{
+            border: none;
+            background-color: #F6D4CB;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            width:400px;
+            height:30px;
+        }
+        #ncash3{
+            border: none;
+            background-color: #F6D4CB;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            width:400px;
+            height:30px;
+        }
+        #ncash4{
+            border: none;
+            background-color: #F6D4CB;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            width:400px;
+            height:30px;
+        }
+        #ncash5{
+            border: none;
+            background-color: #F6D4CB;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            width:400px;
+            height:30px;
+        }
+        #ncash6{
+            border: none;
+            background-color: #F6D4CB;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            width:400px;
+            height:30px;
+        }
+        #peo{
+            border: none;
+            background-color: #F6D4CB;
+            border-radius: 30px;
+            text-align: center;
+            color:rgb(105, 145, 185);
+            font-weight: bold;
+            width:400px;
+            height:30px;
+        }
+        #cp{
+            background:none;
+            color:#2C5994;
+            font-size:30px;
+            border:none;
+            
+        }
+        #ncp1{
+            background:none;
+            color:#2C5994;
+            font-size:30px;
+            border:none;
+            
+        }
+        #ncp2{
+            background:none;
+            color:#2C5994;
+            font-size:30px;
+            border:none;
+            
+        }
+        #ncp3{
+            background:none;
+            color:#2C5994;
+            font-size:30px;
+            border:none;
+            
+        }
+        #ncp4{
+            background:none;
+            color:#2C5994;
+            font-size:30px;
+            border:none;
+            
+        }
+        #ncp5{
+            background:none;
+            color:#2C5994;
+            font-size:30px;
+            border:none;
+            
+        }
+        #ncm1{
+            background:none;
+            color:#2C5994;
+            font-size:50px;
+            border:none;
+            
+        }
+        #ncm2{
+            background:none;
+            color:#2C5994;
+            font-size:50px;
+            border:none;
+            
+        }
+        #ncm3{
+            background:none;
+            color:#2C5994;
+            font-size:50px;
+            border:none;
+            
+        }
+        #ncm4{
+            background:none;
+            color:#2C5994;
+            font-size:50px;
+            border:none;
+            
+        }
+        #ncm5{
+            background:none;
+            color:#2C5994;
+            font-size:50px;
+            border:none;
+            
+        }
+        #ncm6{
+            background:none;
+            color:#2C5994;
+            font-size:50px;
+            border:none;
+            
+        }
+        #dutchbtn{
+            background-color:#F6D4CB;
+            color:#2C5994;
+            font-size:18px;
+            border:none;
+            border-radius: 30px;
+            font-weight: bold;
+            width:60px;
+        }
+        #dutch{
+            color :#2C5994;
+            font-size:18px;
+            font-weight: bold;
+        }
+
         </style>
         <script type="text/javascript">
             // 로컬스토리지 읽기/저장
@@ -15,7 +237,7 @@
                 window.localStorage.setItem('region', value);
                 location.href = "region.html";
             }
-    
+
             // 검색 로컬스토리지 읽기/저장
             var keyVal = localStorage.getItem('search')
             function getKeyVal(value) {
@@ -27,218 +249,216 @@
                     alert("검색어를 입력하시오!");
                 }
             }
-        </script>
-    </head>
-    
-    <body>
-        <nav role="navigation">
-            <ul id="main-menu">
-                <li><a href="index.html" id="navLogo">
-                    <img src="src/navLogo.png" width="60px"></a>
-                </li>
-                <li><a href="#">지역</a>
-                    <ul id="sub-menu">
-                        <li><a href="javascript:a('달서구');" aria-label="subemnu" onclick="return false;">달서구</a></li>
-                        <li><a href="javascript:a('북구')" aria-label="subemnu" onclick="return false;">북구</a></li>
-                        <li><a href="javascript:a('수성구')" aria-label="subemnu" onclick="return false;">수성구</a></li>
-                        <li><a href="javascript:a('동구')" aria-label="subemnu" onclick="return false;">동구</a></li>
-                        <li><a href="javascript:a('달성군')" aria-label="subemnu" onclick="return false;">달성군</a></li>
-                        <li><a href="javascript:a('서구')" aria-label="subemnu" onclick="return false;">서구</a></li>
-                        <li><a href="javascript:a('남구')" aria-label="subemnu" onclick="return false;">남구</a></li>
-                        <li><a href="javascript:a('중구')" aria-label="subemnu" onclick="return false;">중구</a></li>
-                        <li><a href="javascript:a('대구대')" aria-label="subemnu" onclick="return false;">대구대</a></li>
-                        <li><a href="javascript:a('하양')" aria-label="subemnu" onclick="return false;">하양</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">뭐먹지?</a></li>
-                <li><a href="DPcal.html">더치페이</a></li>
-                <li id="navSearch">
-                    <form onsubmit="getKeyVal()" name="search" method="get">
-                        <label><input type="text" size="20" id="key" value="" placeholder="맛집 이름"></label>
-                        <input type="submit" value="찾기">
-                    </form>
-                </li>
-            </ul>
-        </nav>
-        <!--N빵 계산기 : 시작-->
-        <h1>
+    </script>
+    <script>
+        //금액 박스 생성
+        function addbox1(){
+            var box=document.getElementById("box");
+            var nbox=document.createElement('p');
+            nbox.innerHTML=
+            "<input type='text' id='ncash1' value='0'><br><input type='button' id='ncp1' value='+' onclick='addbox2()'><input type='button' id='ncm1' value='-' onclick='remove1(this)'>";
+            box.appendChild(nbox);
+            document.getElementById('cp').style.display='none';
+        }
+        function addbox2(){
+            var box=document.getElementById("box");
+            var nbox=document.createElement('p');
+            nbox.innerHTML=
+            "<input type='text' id='ncash2' value='0'><br><input type='button' id='ncp2' value='+' onclick='addbox3()'><input type='button' id='ncm2' value='-' onclick='remove2(this)'>";
+            box.appendChild(nbox);
+            document.getElementById('ncp1').style.display='none';
+            document.getElementById('ncm1').style.display='none';
+        }
+        function addbox3(){
+            var box=document.getElementById("box");
+            var nbox=document.createElement('p');
+            nbox.innerHTML=
+            "<input type='text' id='ncash3' value='0'><br><input type='button' id='ncp3' value='+' onclick='addbox4()'><input type='button' id='ncm3' value='-' onclick='remove3(this)'>";
+            box.appendChild(nbox);
+            document.getElementById('ncp2').style.display='none';
+            document.getElementById('ncm2').style.display='none';
+        }
+        function addbox4(){
+            var box=document.getElementById("box");
+            var nbox=document.createElement('p');
+            nbox.innerHTML=
+            "<input type='text' id='ncash4' value='0'><br><input type='button' id='ncp4' value='+' onclick='addbox5()'><input type='button' id='ncm4' value='-' onclick='remove4(this)'>";
+            box.appendChild(nbox);
+            document.getElementById('ncp3').style.display='none';
+            document.getElementById('ncm3').style.display='none';
+        }
+        function addbox5(){
+            var box=document.getElementById("box");
+            var nbox=document.createElement('p');
+            nbox.innerHTML=
+            "<input type='text' id='ncash5' value='0'><br><input type='button' id='ncp5' value='+' onclick='addbox6()'> <input type='button' id='ncm5' value='-' onclick='remove5(this)'>";
+            box.appendChild(nbox);
+            document.getElementById('ncp4').style.display='none';
+            document.getElementById('ncm4').style.display='none';
+        }
+        function addbox6(){
+            var box=document.getElementById("box");
+            var nbox=document.createElement('p');
+            nbox.innerHTML=
+            "<input type='text' id='ncash6' value='0'><br><input type='button' id='ncm6' value='-' onclick='remove6(this)'>";
+            box.appendChild(nbox);
+            document.getElementById('ncp5').style.display='none';
+            document.getElementById('ncm5').style.display='none';
+        }
+        //금액 박스 지우기
+        var remove1=(obj)=>{
+            document.getElementById('box').removeChild(obj.parentNode);
+            document.getElementById('cp').style.display='';
+        }
+        var remove2=(obj)=>{
+            document.getElementById('box').removeChild(obj.parentNode);
+            document.getElementById('ncp1').style.display='';
+            document.getElementById('ncm1').style.display='';
+        }
+        var remove3=(obj)=>{
+            document.getElementById('box').removeChild(obj.parentNode);
+            document.getElementById('ncp2').style.display='';
+            document.getElementById('ncm2').style.display='';
+        }
+        var remove4=(obj)=>{
+            document.getElementById('box').removeChild(obj.parentNode);
+            document.getElementById('ncp3').style.display='';
+            document.getElementById('ncm3').style.display='';
+        }
+        var remove5=(obj)=>{
+            document.getElementById('box').removeChild(obj.parentNode);
+            document.getElementById('ncp4').style.display='';
+            document.getElementById('ncm4').style.display='';
+        }
+        var remove6=(obj)=>{
+            document.getElementById('box').removeChild(obj.parentNode);
+            document.getElementById('ncp5').style.display='';
+            document.getElementById('ncm5').style.display='';
+        }
+        function getDutch(){
+            var cash = document.getElementById('cash').value;
+            var peo = document.getElementById('peo').value;
+            if(document.getElementById('ncash6')){
+                var ncash1 = document.getElementById('ncash1').value;
+                var ncash2 = document.getElementById('ncash2').value;
+                var ncash3 = document.getElementById('ncash3').value;
+                var ncash4 = document.getElementById('ncash4').value;
+                var ncash5 = document.getElementById('ncash5').value;
+                var ncash6 = document.getElementById('ncash6').value;
+                var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2)+parseInt(ncash3)+parseInt(ncash4)+parseInt(ncash5)+parseInt(ncash6);   
+            }
+            else if(document.getElementById('ncash5')){
+                var ncash1 = document.getElementById('ncash1').value;
+                var ncash2 = document.getElementById('ncash2').value;
+                var ncash3 = document.getElementById('ncash3').value;
+                var ncash4 = document.getElementById('ncash4').value;
+                var ncash5 = document.getElementById('ncash5').value;
+                var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2)+parseInt(ncash3)+parseInt(ncash4)+parseInt(ncash5);
+            }
+            else if(document.getElementById('ncash4')){
+                var ncash1 = document.getElementById('ncash1').value;
+                var ncash2 = document.getElementById('ncash2').value;
+                var ncash3 = document.getElementById('ncash3').value;
+                var ncash4 = document.getElementById('ncash4').value;
+                var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2)+parseInt(ncash3)+parseInt(ncash4);
+            }
+            else if(document.getElementById('ncash3')){
+                var ncash1 = document.getElementById('ncash1').value;
+                var ncash2 = document.getElementById('ncash2').value;
+                var ncash3 = document.getElementById('ncash3').value;
+                var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2)+parseInt(ncash3);
+            }
+            else if(document.getElementById('ncash2')){
+                var ncash1 = document.getElementById('ncash1').value;
+                var ncash2 = document.getElementById('ncash2').value;
+                var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2);
+            }
+            else if(document.getElementById('ncash1')){
+                var ncash1 = document.getElementById('ncash1').value;
+                var s= parseInt(cash)+parseInt(ncash1);
+            }
+            else{
+                var s=parseInt(cash);
+            }
+            
+            var d = Math.floor(s/peo);
+            var t = s%peo;
+        //정산 결과 값 출력
+            document.getElementById('dutch').innerHTML =
+            '총액 : ' + s +'원'+'<br>'+ '1인당 금액 : '+ d+'원'+'<br>'+'남는 값 : '+t+'원'
+        }
+    </script>
+</head>
+
+<body>
+    <nav role="navigation">
+        <ul id="main-menu">
+            <li><a href="index.html" id="navLogo">
+                <img src="src/navLogo.png" width="60px"></a>
+            </li>
+            <li><a href="#" class="navSelect">지역</a>
+                <ul id="sub-menu">
+                    <li><a href="javascript:a('달서구');" aria-label="subemnu" onclick="return false;">달서구</a></li>
+                    <li><a href="javascript:a('북구')" aria-label="subemnu" onclick="return false;">북구</a></li>
+                    <li><a href="javascript:a('수성구')" aria-label="subemnu" onclick="return false;">수성구</a></li>
+                    <li><a href="javascript:a('동구')" aria-label="subemnu" onclick="return false;">동구</a></li>
+                    <li><a href="javascript:a('달성군')" aria-label="subemnu" onclick="return false;">달성군</a></li>
+                    <li><a href="javascript:a('서구')" aria-label="subemnu" onclick="return false;">서구</a></li>
+                    <li><a href="javascript:a('남구')" aria-label="subemnu" onclick="return false;">남구</a></li>
+                    <li><a href="javascript:a('중구')" aria-label="subemnu" onclick="return false;">중구</a></li>
+                    <li><a href="javascript:a('대구대')" aria-label="subemnu" onclick="return false;">대구대</a></li>
+                    <li><a href="javascript:a('하양')" aria-label="subemnu" onclick="return false;">하양</a></li>
+                </ul>
+            </li>
+            <li><a href="whateat.html" class="navSelect">뭐먹지?</a></li>
+            <li><a href="DPcal.html" class="navSelect">더치페이</a></li>
+            <li id="navSearch">
+                <form onsubmit="getKeyVal()" name="search" method="get">
+                    <label><input type="text" class="inputBox" size="20" id="key" value="" placeholder=" 맛집 이름"></label>
+                    <input type="submit" class="inputBtn" value="찾기">
+                </form>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1 style="font-family: Malgun Gothic; color:#2C5994; font-weight: bold;">
             이제 정산하자!
         </h1>
-        <section>
-            <!--N빵 계산기 : 금액 input 칸 & 동적 생성-->
-        <p>
+    </header>
+    
+    <!--N빵 계산기 : 시작-->
+    <section id="Dutchpay">
+        <!--N빵 계산기 : 금액 input 칸 & 동적 생성-->
+        <p style="font-family: Malgun Gothic; color:#2C5994; font-weight: bold;">
             총액
             <br>
             <form>
                 <div id="box">
-                    <input type="text" id="cash" value="0">
+                    <input type="text" id="cash" value="0"><br>
                     <input type="button" id="cp" value="+" onclick="addbox1()">
-                 </div>
+                </div>
             </form>
         </p>
-            <!--N빵 계산기 : 인원수 지정-->
-        <p>
+        <!--N빵 계산기 : 인원수 지정-->
+        <p style="font-family: Malgun Gothic; color:#2C5994; font-weight: bold;">
             인원수
             <br>
-            <input type ="text" id="peo">
+            <input type ="text" id="peo" value="0">
         </p>
-            <!--N빵 계산기 : 정산 버튼-->
-        <p>
-            <input type="button" value="정산" onclick="getDutch()">
+        <!--N빵 계산기 : 정산 버튼-->
+        <p id="dutch_result">
+            <input type="button" id="dutchbtn" value="정산" onclick="getDutch()">
         </p>
-        <hr>
-            <!--N빵 계산기 : 정산 결과 표시-->
+        <hr style="width: 800px;">
+        <!--N빵 계산기 : 정산 결과 표시-->
         <p id="dutch">
         </p>
-        </section>
+    </section>
 
-        <script>
 
-            //금액 박스 생성
-            function addbox1(){
-                var box=document.getElementById("box");
-                var nbox=document.createElement('p');
-                nbox.innerHTML=
-                "<input type='text' id='ncash1' value='0'><input type='button' id='ncp1' value='+' onclick='addbox2()'><input type='button' id='ncm1' value='-' onclick='remove1(this)'>";
-                box.appendChild(nbox);
-                document.getElementById('cp').style.display='none';
-            }
-            function addbox2(){
-                var box=document.getElementById("box");
-                var nbox=document.createElement('p');
-                nbox.innerHTML=
-                "<input type='text' id='ncash2' value='0'><input type='button' id='ncp2' value='+' onclick='addbox3()'><input type='button' id='ncm2' value='-' onclick='remove2(this)'>";
-                box.appendChild(nbox);
-                document.getElementById('ncp1').style.display='none';
-                document.getElementById('ncm1').style.display='none';
-            }
-            function addbox3(){
-                var box=document.getElementById("box");
-                var nbox=document.createElement('p');
-                nbox.innerHTML=
-                "<input type='text' id='ncash3' value='0'><input type='button' id='ncp3' value='+' onclick='addbox4()'><input type='button' id='ncm3' value='-' onclick='remove3(this)'>";
-                box.appendChild(nbox);
-                document.getElementById('ncp2').style.display='none';
-                document.getElementById('ncm2').style.display='none';
-            }
-            function addbox4(){
-                var box=document.getElementById("box");
-                var nbox=document.createElement('p');
-                nbox.innerHTML=
-                "<input type='text' id='ncash4' value='0'><input type='button' id='ncp4' value='+' onclick='addbox5()'><input type='button' id='ncm4' value='-' onclick='remove4(this)'>";
-                box.appendChild(nbox);
-                document.getElementById('ncp3').style.display='none';
-                document.getElementById('ncm3').style.display='none';
-            }
-            function addbox5(){
-                var box=document.getElementById("box");
-                var nbox=document.createElement('p');
-                nbox.innerHTML=
-                "<input type='text' id='ncash5' value='0'><input type='button' id='ncp5' value='+' onclick='addbox6()'> <input type='button' id='ncm5' value='-' onclick='remove5(this)'>";
-                box.appendChild(nbox);
-                document.getElementById('ncp4').style.display='none';
-                document.getElementById('ncm4').style.display='none';
-            }
-            function addbox6(){
-                var box=document.getElementById("box");
-                var nbox=document.createElement('p');
-                nbox.innerHTML=
-                "<input type='text' id='ncash6' value='0'><input type='button' id='ncm6' value='-' onclick='remove6(this)'>";
-                box.appendChild(nbox);
-                document.getElementById('ncp5').style.display='none';
-                document.getElementById('ncm5').style.display='none';
-            }
-
-            //금액 박스 지우기
-            var remove1=(obj)=>{
-                document.getElementById('box').removeChild(obj.parentNode);
-                document.getElementById('cp').style.display='';
-            }
-            var remove2=(obj)=>{
-                document.getElementById('box').removeChild(obj.parentNode);
-                document.getElementById('ncp1').style.display='';
-                document.getElementById('ncm1').style.display='';
-            }
-            var remove3=(obj)=>{
-                document.getElementById('box').removeChild(obj.parentNode);
-                document.getElementById('ncp2').style.display='';
-                document.getElementById('ncm2').style.display='';
-            }
-            var remove4=(obj)=>{
-                document.getElementById('box').removeChild(obj.parentNode);
-                document.getElementById('ncp3').style.display='';
-                document.getElementById('ncm3').style.display='';
-            }
-            var remove5=(obj)=>{
-                document.getElementById('box').removeChild(obj.parentNode);
-                document.getElementById('ncp4').style.display='';
-                document.getElementById('ncm4').style.display='';
-            }
-            var remove6=(obj)=>{
-                document.getElementById('box').removeChild(obj.parentNode);
-                document.getElementById('ncp5').style.display='';
-                document.getElementById('ncm5').style.display='';
-            }
-
-            function getDutch(){
-                var cash = document.getElementById('cash').value;
-                var peo = document.getElementById('peo').value;
-                if(document.getElementById('ncash6')){
-                    var ncash1 = document.getElementById('ncash1').value;
-                    var ncash2 = document.getElementById('ncash2').value;
-                    var ncash3 = document.getElementById('ncash3').value;
-                    var ncash4 = document.getElementById('ncash4').value;
-                    var ncash5 = document.getElementById('ncash5').value;
-                    var ncash6 = document.getElementById('ncash6').value;
-
-                    var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2)+parseInt(ncash3)+parseInt(ncash4)+parseInt(ncash5)+parseInt(ncash6);   
-                }
-                else if(document.getElementById('ncash5')){
-                    var ncash1 = document.getElementById('ncash1').value;
-                    var ncash2 = document.getElementById('ncash2').value;
-                    var ncash3 = document.getElementById('ncash3').value;
-                    var ncash4 = document.getElementById('ncash4').value;
-                    var ncash5 = document.getElementById('ncash5').value;
-
-                    var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2)+parseInt(ncash3)+parseInt(ncash4)+parseInt(ncash5);
-                }
-                else if(document.getElementById('ncash4')){
-                    var ncash1 = document.getElementById('ncash1').value;
-                    var ncash2 = document.getElementById('ncash2').value;
-                    var ncash3 = document.getElementById('ncash3').value;
-                    var ncash4 = document.getElementById('ncash4').value;
-
-                    var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2)+parseInt(ncash3)+parseInt(ncash4);
-                }
-                else if(document.getElementById('ncash3')){
-                    var ncash1 = document.getElementById('ncash1').value;
-                    var ncash2 = document.getElementById('ncash2').value;
-                    var ncash3 = document.getElementById('ncash3').value;
-
-                    var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2)+parseInt(ncash3);
-                }
-                else if(document.getElementById('ncash2')){
-                    var ncash1 = document.getElementById('ncash1').value;
-                    var ncash2 = document.getElementById('ncash2').value;
-
-                    var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2);
-                }
-                else if(document.getElementById('ncash1')){
-                    var ncash1 = document.getElementById('ncash1').value;
-
-                    var s= parseInt(cash)+parseInt(ncash1);
-                }
-                else{
-                    var s=parseInt(cash);
-                }
-                
-                var d = Math.floor(s/peo);
-                var t = s%peo;
-            //정산 결과 값 출력
-                document.getElementById('dutch').innerHTML =
-                '총액 : ' + s +'원'+'<br>'+ '1인당 금액 : '+ d+'원'+'<br>'+'남는 값 : '+t+'원'
-            }
-            
-        </script>
-    </body>
+    <footer>
+        <p>웹프로그래밍 3조 부드다기 박경록 박솔규 박준현 서예원</p>
+    </footer>
+</body>
 </html>

@@ -13,7 +13,7 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: "Roboto", serif;
+            font-family: 'Gamja Flower';
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
@@ -234,7 +234,7 @@
             <li><a href="index.html" id="navLogo">
                 <img src="src/navLogo.png" width="60px"></a>
             </li>
-            <li><a href="#">지역</a>
+            <li><a href="#" class="navSelect">지역</a>
                 <ul id="sub-menu">
                     <li><a href="javascript:a('달서구');" aria-label="subemnu" onclick="return false;">달서구</a></li>
                     <li><a href="javascript:a('북구')" aria-label="subemnu" onclick="return false;">북구</a></li>
@@ -248,12 +248,12 @@
                     <li><a href="javascript:a('하양')" aria-label="subemnu" onclick="return false;">하양</a></li>
                 </ul>
             </li>
-            <li><a href="#">뭐먹지?</a></li>
-            <li><a href="DPcal.html">더치페이</a></li>
+            <li><a href="whateat.html" class="navSelect">뭐먹지?</a></li>
+            <li><a href="DPcal.html" class="navSelect">더치페이</a></li>
             <li id="navSearch">
                 <form onsubmit="getKeyVal()" name="search" method="get">
-                    <label><input type="text" size="20" id="key" value="" placeholder="맛집 이름"></label>
-                    <input type="submit" value="찾기">
+                    <label><input type="text" class="inputBox" size="20" id="key" value="" placeholder=" 맛집 이름"></label>
+                    <input type="submit" class="inputBtn" value="찾기">
                 </form>
             </li>
         </ul>

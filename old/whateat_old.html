@@ -4,28 +4,98 @@
     <meta charset="UTF-8">
     <title>DU PLATE</title>
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower:400" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link href="css/custom.css" rel="stylesheet">
-    <link href="css/nav.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Roboto');
 
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Gamja Flower';
+            font-family: "Roboto", serif;
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
-            overflow-x: hidden;
-            width: 1980;
-            height: 1080; 
+            overflow-x: hidden;  
         }
 
         header {
             margin: 2em 0 1.5em 0;
         }
+
+        /*--------- 네비게이션 바 영역 시작---------*/
+        nav {
+            position:fixed;
+            top:0%;
+            z-index: 2;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background: #1DDB16;
+        }
+
+        ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #main-menu > li {
+            float: left;
+            position: relative;
+        }
+
+        #main-menu > li > a {
+            font-size: 0.85rem;
+            color: rgba(0, 0, 0, 0.85);
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            display: block;
+            padding: 14px 36px;
+            border-right: 1px solid rgba(0,0,0,0.15);
+        }
+        #main-menu > li > form {
+            font-size: 0.85rem;
+            color: rgba(0, 0, 0, 0.85);
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            display: block;
+            padding: 11px 17px;
+            border-right: 1px solid rgba(0,0,0,0.15);
+        }
+
+        #main-menu > li:nth-child(1) > a {
+            border-left: 1px solid rgba(0,0,0,0.15);
+        }
+
+        #sub-menu {
+            position: absolute;
+            background: #1DDB16;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.15s ease-in;
+        }
+
+        #sub-menu > li {
+            padding: 16px 28px;
+            border-bottom: 1px solid rgba(0,0,0,0.15);
+        }
+
+        #sub-menu > li >  a {
+            color: rgba(0, 0, 0, 0.85);
+            text-decoration: none;
+        }
+
+        #main-menu > li:hover #sub-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #sub-menu > li >  a:hover {
+            text-decoration: underline;
+        }
+        /*--------- 네비게이션 바 영역 끝---------*/
 
         /* 섹션 */
         section {
@@ -38,6 +108,7 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            
         }
 
         /* 카드 레이아웃 */
@@ -86,22 +157,32 @@
             font-size: 14px;
         }
 
+
+        /* 버튼 */ 
+        .myButton {
+            background-color:#44c767;
+            border-radius:28px;
+            border:1px solid #18ab29;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:17px;
+            padding:16px 31px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #2f6627;
+        }
+        .myButton:hover {
+            background-color:#5cbf2a;
+        }
+        .myButton:active {
+            position:relative;
+            top:1px;
+        }
+
         /*테이블*/
-        table { 
-            margin-left:auto; margin-right:auto;
-        }
-
-        /*이미지*/
-        .imgBtn { 
-            width: 300px; height: 160px;
-        }
+        table { margin-left:auto; margin-right:auto;}
     </style>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous">
-        // 부트스트랩 삽입
-    </script>
 
     <script type="text/javascript">
         // 로컬스토리지 읽기/저장
@@ -111,12 +192,6 @@
             location.href = "region.html";
         }
 
-        var keyVal = localStorage.getItem('whateat')
-        function getKeyVal(value) {
-            window.localStorage.setItem('whateat', value);
-            
-        }
-
         // ajax
         let xhttp = new XMLHttpRequest(); //XML 통신을 하기 위한 객체 (요청)
         xhttp.onreadystatechange = function() { // xml 파싱을 위해 ajax 비동기식 처리
@@ -124,7 +199,6 @@
                 nodeValFunc(this);
             }
         }
-
         xhttp.open("GET", "xml/restaurant.xml", true);
         xhttp.send();
         
@@ -145,17 +219,18 @@
             img = xmlDoc.getElementsByTagName("img");
             introduction = xmlDoc.getElementsByTagName("introduction");
             embed = xmlDoc.getElementsByTagName("embed");
-            tags = xmlDoc.getElementsByTagName("tags");
+            tag = xmlDoc.getElementsByTagName("tag");
             
             // 출력부
+            document.getElementById('header').innerText = lastData;
             for(let i = 0; i < num.length; i++) {
-                if (tags[i].childNodes[0].nodeValue.indexOf(keyVal) != -1) {
+                if (address[i].childNodes[0].nodeValue == lastData && randNum == num[i].childNodes[0].nodeValue ) {
                     var card = document.createElement('div'); // div 태그 생성
                     card.className = "card"; // div 태그에 class 이름 설정
                     card.onclick = "location.href=''"; // onclick 함수 설정
                     //document.body.appendChild(card); // 바디 태그 아래쪽에 추가
                     document.getElementById('cardArea').appendChild(card); // cardArea id 태그 아래쪽에 추가
-                
+                    
                     var cropping = document.createElement('div'); // 사진 크기 조절용 태그
                     cropping.className = "cropping";
                     card.appendChild(cropping);
@@ -187,32 +262,49 @@
                     cardText.appendChild(cardTextText);
                     cardBody.appendChild(cardText);
                 }
-                 
             }
         }
+
+
+        const rList = ['북구','동구','서구','중구','남구','하양','달성군','수성구','달서구'];
 
         //지역 클릭시   
 
         function selectRegion(value){
             window.localStorage.setItem('region', value);
         }
-        function selectCate(value){
-            window.localStorage.setItem('ca')
-        }
 
         function setD(value){
-            getKeyVal(value);
+            
             if(document.getElementById("cardArea").style.display == "none")    //안보여지는지 확인
                 document.getElementById("cardArea").style.display = "";        //안보여지면 보이게
-            else{
-                location.href = "whateat(up).html";
-                document.getElementById("cardArea").style.display = "none";  //보여지면 안보이게
-            }
+            else
+                document.getElementById("cardArea").style.display = "none";   //보여지면 안보이게
+            
+            if(value==1)
+                selectRegion('북구');
+            else if(value==2)
+                selectRegion('동구');
+            else if(value==3)
+                selectRegion('서구');
+            else if(value==4)
+                selectRegion('중구');
+            else if(value==5)
+                selectRegion('남구');    
+            else if(value==6)
+                selectRegion('하양');
+            else if(value==7)
+                selectRegion('달성군');
+            else if(value==8)
+                selectRegion('수성구');
+            else
+                selectRegion('달서구');
 
-    
+            //location.href = "whateat.html";
+            //window.location.href = "whateat.html";
+            window.location.assign("whateat.html");
+            //window.location.replace("whateat.html");
         }
-
-
         //난수 생성
         var randNum = Math.floor((1+Math.random()*15))
 
@@ -226,10 +318,8 @@
     
     <nav role="navigation">
         <ul id="main-menu">
-            <li><a href="index.html" id="navLogo">
-                <img src="src/navLogo.png" width="60px"></a>
-            </li>
-            <li><a href="#" class="navSelect">지역</a>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">지역</a>
                 <ul id="sub-menu">
                     <li><a href="javascript:a('달서구');" aria-label="subemnu" onclick="return false;">달서구</a></li>
                     <li><a href="javascript:a('북구')" aria-label="subemnu" onclick="return false;">북구</a></li>
@@ -239,16 +329,15 @@
                     <li><a href="javascript:a('서구')" aria-label="subemnu" onclick="return false;">서구</a></li>
                     <li><a href="javascript:a('남구')" aria-label="subemnu" onclick="return false;">남구</a></li>
                     <li><a href="javascript:a('중구')" aria-label="subemnu" onclick="return false;">중구</a></li>
-                    <li><a href="javascript:a('대구대')" aria-label="subemnu" onclick="return false;">대구대</a></li>
-                    <li><a href="javascript:a('하양')" aria-label="subemnu" onclick="return false;">하양</a></li>
                 </ul>
             </li>
-            <li><a href="whateat.html" class="navSelect">뭐먹지?</a></li>
-            <li><a href="DPcal.html" class="navSelect">더치페이</a></li>
-            <li id="navSearch">
-                <form onsubmit="getKeyVal()" name="search" method="get">
-                    <label><input type="text" class="inputBox" size="20" id="key" value="" placeholder=" 맛집 이름"></label>
-                    <input type="submit" class="inputBtn" value="찾기">
+            <li><a href="#">뭐먹지?</a></li>
+            <li><a href="#">맛집순위</a></li>
+            <li><a href="#">더치페이계산</a></li>
+            <li>
+                <form name="search" method="get">
+                    <label><input type="text" size="20" value="" placeholder="맛집 이름"></label>
+                    <input type="submit" value="찾기">
                 </form>
             </li>
         </ul>
@@ -256,25 +345,32 @@
     
     <section id="section">
         <fieldset style="width: 800px; margin-left:auto; margin-right:auto;">
-        <legend> 믿고 보는 맛집 리스트</legend>
+        <legend> 먹을 지역은? </legend>
         <table class="tg">
             <thead>
               <tr>
-                <td class="tg-0pky"><button class="imButton" id="양식" onclick="setD('파스타')"><img class="imgBtn" src="https://sjnfzdfjrjgl1655541.cdn.ntruss.com/goods/3/2019/07/158_tmp_d0edbc1371ecb3575266e8215e5e16961570view.jpg"></a></td>
-                <td class="tg-0pky"><button class="imButton" id="중식" onclick="setD('짜장면')"><img class="imgBtn" src="https://t1.daumcdn.net/cfile/tistory/9928F7345DD5007724"></a></td>
-                <td class="tg-0pky"><button class="imButton" id="고기" onclick="setD('돼지고기')"><img class="imgBtn" src="https://post-phinf.pstatic.net/MjAxODAxMTZfMTk4/MDAxNTE2MDcwNTYyMTU2.11cOlXQAGScpVD7MZLhMQb8IMcKLqWgokLum0lcUt8gg.iJgGhd0sIYKwEl66wc8R-jUHfzn23zXPevk8-pqvsxUg.JPEG/GettyImages-jv10961134.jpg?type=w1200"></a></td>
+                <td class="tg-0pky"><button class="myButton" id="북구" onclick="setD(1)">북구</a></td>
+                <td class="tg-0pky"><button class="myButton" id="동구" onclick="setD(2)">동구</a></td>
+                <td class="tg-0pky"><button class="myButton" id="서구" onclick="setD(3)">서구</a></td>
+                <td class="tg-0pky"><button class="myButton" id="중구" onclick="setD(4)">중구</a></td>
+                <td class="tg-0pky"><button class="myButton" id="남구" onclick="setD(5)">남구</a></td>
+                <td class="tg-0pky"><button class="myButton" id="하양" onclick="setD(6)">하양</a></td>
               </tr>
+            </thead>
+        </table>
+        <table class="tg">
+            <thead>
               <tr>
-                <td class="tg-0pky"><button class="imButton" id="국밥" onclick="setD('국밥')"><img class="imgBtn" src="https://cdn.mindgil.com/news/photo/202008/69679_4073_1653.jpg"></a></td>
-                <td class="tg-0pky"><button class="imButton" id="한정식" onclick="setD('한정식')"><img class="imgBtn" src="https://s3.ap-northeast-2.amazonaws.com/event-localnaeil/FileData/Article/201710/c0b8c1b7-dbeb-45a4-bf79-d50d67ec78e9.JPG"></a></td>
-                <td class="tg-0pky"><button class="imButton" id="카페" onclick="setD('카페')"><img class="imgBtn" src="https://dimg.donga.com/wps/NEWS/IMAGE/2021/02/08/105325025.1.jpg"></a></td>
+                <td class="tg-0pky"><button class="myButton" id="달성군" onclick="setD(7)">달성군</a></td>
+                <td class="tg-0pky"><button class="myButton" id="수성구" onclick="setD(8)">수성구</a></td>
+                <td class="tg-0pky"><button class="myButton" id="달서구" onclick="setD(9)">달서구</a></td>
               </tr>
             </thead>
         </table>
         </fieldset>
-
+    
         <div id="cardArea" style="display: none;"></div>
-        <div id="offcanvasArea"></div>
+
     </section>
 
     <footer>

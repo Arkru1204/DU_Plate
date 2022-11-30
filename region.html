@@ -7,8 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="css/custom.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Roboto');
-
         body {
             margin: 0;
             padding: 0;
@@ -248,14 +246,14 @@
     </script>
 
     <script type="text/javascript">
-        // 로컬스토리지 읽기/저장
+        // 로컬스토리지 읽기/저장 (지역 선택)
         var lastRegion = localStorage.getItem('region')
         function a(value) {
             window.localStorage.setItem('region', value);
             location.href = "region.html";
         }
 
-        // 검색 로컬스토리지 읽기/저장
+        // 로컬스토리지 읽기/저장 (검색)
         var keyVal = localStorage.getItem('search')
         function getKeyVal(value) {
             svalue = document.getElementById('key').value;
@@ -279,10 +277,8 @@
         
         // 출력 함수
         function nodeValFunc(xml) {
-            let num, name, address, category, img, introduction, embed, tag;
-            let txt, nametxt, xmlDoc;
-            
-            txt = nametxt = '';
+            let num, name, address, category, img, introduction, embed, tags;
+            let xmlDoc;
             
             xmlDoc = xml.responseXML; // 위에서 this를 통해서 넘겨 받음
             
@@ -297,7 +293,7 @@
             tags = xmlDoc.getElementsByTagName("tags");
             
             // 출력부
-            if (lastRegion == "대구대") {
+            if (lastRegion == "대구대") { // 해당 지역 지도 출력
                 document.getElementById('regionMap').src = "src/대구지도 대구대.png"
             }
             else if (lastRegion == "하양") {
@@ -327,12 +323,12 @@
             else if (lastRegion == "달서구") {
                 document.getElementById('regionMap').src = "src/대구지도 달서구.png"
             }
-            for (let i = 0; i < num.length; i++) {
+            for (let i = 0; i < num.length; i++) { // 노드 전체 탐색
                 if (address[i].childNodes[0].nodeValue == lastRegion) { // 지역과 맞는 내용만 출력
                     // card 레이아웃
                     var card = document.createElement('div'); // div 태그 생성
                     card.className = "card"; // div 태그에 class 이름 설정
-                    card.setAttribute("data-bs-toggle", "offcanvas"); // 부트스트랩 설정
+                    card.setAttribute("data-bs-toggle", "offcanvas"); // 부트스트랩 설정(오프캔버스 출력 버튼)
                     card.setAttribute("data-bs-target", "#offcanvasRight" + i);
                     card.setAttribute("aria-controls", "offcanvasRight");
                     document.getElementById('cardArea').appendChild(card); // cardArea id 태그 아래쪽에 추가
@@ -370,35 +366,35 @@
                     cardBody.appendChild(cardText);
                     
                     // offcanvas 레이아웃
-                    var offcanvas = document.createElement('div');
+                    var offcanvas = document.createElement('div'); // 오프캔버스 태그
                     offcanvas.classList.add("offcanvas", "offcanvas-end");
                     offcanvas.id = "offcanvasRight" + i;
                     offcanvas.setAttribute("tabindex", "-1");
                     offcanvas.setAttribute("aria-labelledby", "offcanvasRightLabel");
                     document.getElementById('offcanvasArea').appendChild(offcanvas);
 
-                    var offcanvasHeader = document.createElement('div');
+                    var offcanvasHeader = document.createElement('div'); // 오프캔버스 헤더 구역
                     offcanvasHeader.className = "offcanvas-header";
                     offcanvas.appendChild(offcanvasHeader);
 
-                    var offcanvasTitle = document.createElement('h5');
+                    var offcanvasTitle = document.createElement('h5'); // 오프캔버스 음식점 이름
                     offcanvasTitle.className = "offcanvas-title";
                     offcanvasTitle.id = "offcanvasRightLabel";
                     offcanvasTitle.innerText = name[i].childNodes[0].nodeValue;
                     offcanvasHeader.appendChild(offcanvasTitle);
 
-                    var closeBtn = document.createElement('button');
+                    var closeBtn = document.createElement('button'); // 오프캔버스 나가기 버튼
                     closeBtn.setAttribute("type", "button");
                     closeBtn.className = "btn-close"
                     closeBtn.setAttribute("data-bs-dismiss", "offcanvas");
                     closeBtn.setAttribute("aria-label", "Close");
                     offcanvasHeader.appendChild(closeBtn)
 
-                    var offcanvasBody = document.createElement('div');
+                    var offcanvasBody = document.createElement('div'); // 오프캔버스 바디 구역
                     offcanvasBody.className = "offcanvas-body";
                     offcanvas.appendChild(offcanvasBody);
 
-                    var offcanvasEmbed = document.createElement('embed');
+                    var offcanvasEmbed = document.createElement('embed'); // 오프캔버스에 임베드
                     offcanvasEmbed.setAttribute("src", embed[i].childNodes[0].nodeValue);
                     offcanvasEmbed.setAttribute("width", "100%");
                     offcanvasEmbed.setAttribute("height", "95%");

@@ -266,7 +266,7 @@
         // 검색 로컬스토리지 읽기/저장
         var keyVal = localStorage.getItem('search')
         function getKeyVal(value) {
-            svalue = document.getElementById('key').value;
+            var svalue = document.getElementById('key').value;
             window.localStorage.setItem('search', svalue);
             location.href = "search.html";
             //임력 안했으면 alert message 뜨기

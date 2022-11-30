@@ -9,10 +9,9 @@
 		<introduction>대구 미즈컨테이너 본점</introduction>
 		<embed>https://place.map.kakao.com/27462086</embed>
 		<tags>
-			파스타
+			스파게티
 			스테이크
 			샐러드
-			스파게티
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -55,7 +54,6 @@
 			고기
 			해장국
 			감자탕
-			국밥
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -145,7 +143,6 @@
 			김치찌개
 			순두부찌개
 			백반
-			한정식
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -239,7 +236,6 @@
 			알리오올리오
 			파스타
 			리조또
-			스파게티
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -343,7 +339,6 @@
 			차돌박이
 			우삼겹
 			부채살
-			돼지고기
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -400,7 +395,6 @@
 		<tags>
 			그릭요거트
 			허비니
-			커피
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -524,7 +518,6 @@
             파스타
             스테이크
             피자
-			스파게티
         </tags>
     </restaurant>
     <restaurant>
@@ -563,7 +556,6 @@
         <tags>
             소고기
             육회
-			돼지고기
         </tags>
     </restaurant>
     <restaurant>
@@ -659,7 +651,8 @@
         <tags>
             보리굴비
             곤드레밥
-            한정식
+            정식
+			한정식
         </tags>
     </restaurant>
     <restaurant>
@@ -747,7 +740,6 @@
             와인
             돼지고기
             디저트
-			스파게티
         </tags>
     </restaurant>
     <restaurant>
@@ -790,7 +782,6 @@
             매생이죽
             계절식
             문어
-			한정식
         </tags>
     </restaurant>
     <restaurant>
@@ -855,7 +846,6 @@
             곱창
             대창
             막창
-			돼지고기
         </tags>
     </restaurant>
 
@@ -872,7 +862,6 @@
             돼지불고기
             미나리전
             수제비
-			한정식
         </tags>
     </restaurant>
     <restaurant>
@@ -892,7 +881,7 @@
     <restaurant>
         <num>3</num>
         <name>다사오르막석쇠불고기</name>
-        <category>한식</category>
+        <category>중식</category>
         <address>달성군</address>
         <img>https://img1.kakaocdn.net/cthumb/local/R0x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fplace%2F6F5AAC4B27EC43E6B3595DFDCE2FA886</img>
         <introduction>전통과 맛 모두 챙긴 맛집!!</introduction>
@@ -925,7 +914,6 @@
         <embed>https://place.map.kakao.com/390342581</embed>
         <tags>
             감자탕
-			국밥
         </tags>
     </restaurant>
     <restaurant>
@@ -1090,7 +1078,6 @@
             스테이크
             파스타
             리조토
-			스파게티
         </tags>
     </restaurant>
     <restaurant>
@@ -1147,7 +1134,6 @@
             스테이크
             파스타
             된장찌개
-			스파게티
         </tags>
     </restaurant>
     <restaurant>
@@ -1190,7 +1176,6 @@
             덮밥
             파스타
             연어
-			스파게티
         </tags>
     </restaurant>
     <restaurant>
@@ -1233,7 +1218,6 @@
             빙수
             스콘
             뱅쇼
-			커피
         </tags>
     </restaurant>
     <restaurant>
@@ -1305,7 +1289,6 @@
             돼지갈비
             소갈비
             맥주
-			돼지고기
         </tags>
     </restaurant>
     <restaurant>
@@ -1320,7 +1303,6 @@
             고등어정식
             김치볶음밥
             김밥
-			한정식
         </tags>
     </restaurant>
     <restaurant>
@@ -1363,7 +1345,6 @@
             딸기케이크
             오페라
             치즈케이크
-			커피
         </tags>
     </restaurant>
     <restaurant>
@@ -1378,7 +1359,6 @@
             푸딩빙수
             카페라떼
             아메리카노
-			커피
         </tags>
     </restaurant>
     <restaurant>
@@ -1407,7 +1387,6 @@
             샤오마이
             샤오룽바오
             탕수육
-			짜장면
         </tags>
     </restaurant>
     <restaurant>
@@ -1436,7 +1415,6 @@
             삼겹살
             목살
             항정살
-			돼지고기
         </tags>
     </restaurant>
     <restaurant>
@@ -1451,7 +1429,6 @@
             순두부찌개
             제육볶음
             낙지볶음
-			한정식
         </tags>
     </restaurant>
     <restaurant>
@@ -1494,7 +1471,6 @@
             스테이크
             리조토
             파스타
-			스파게티
         </tags>
     </restaurant>
 
@@ -1510,7 +1486,6 @@
 			파스타
 			필라프
 			돈가스
-			스파게티
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1763,7 +1738,6 @@
 			스테이크
 			파스타
 			필라프
-			스파게티
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1793,7 +1767,6 @@
 			파스타
 			샐러드
 			샌드위치
-			스파게티
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1824,7 +1797,6 @@
 			돼지갈비
 			돌솥비빔밥
 			냉면
-			돼지고기
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1853,7 +1825,6 @@
 			쉬림프
 			갈비
 			샐러드
-			스파게티
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1869,7 +1840,6 @@
 			샐러드
 			리조또
 			피자
-			스파게티
 		</tags>
 	</restaurant>
 	<restaurant>
@@ -1972,7 +1942,6 @@
 			스테이크
 			리조또
 			까르보나라
-			스파게티
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -2015,7 +1984,6 @@
 			스테이크
 			리조또
 			피자
-			스파게티
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -2070,7 +2038,6 @@
 		<tags>
 			곱창
 			삼겹살
-			돼지고기
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -2086,7 +2053,6 @@
 			파스타
 			피자
 			리조또
-			스파게티
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -2114,7 +2080,6 @@
 		<tags>
 			해장국
 			감자탕
-			국밥
 		</tags>
 	</restaurant>
  	<restaurant>
@@ -2144,7 +2109,6 @@
 			소고기
 			갈비
 			등심
-			돼지고기
 		</tags>
 	</restaurant>
 </data>

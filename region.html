@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>DU PLATE</title>
+    <!-- 폰트 -->
     <link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
+    <!-- 부트스트랩 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- css 분리 -->
     <link href="css/custom.css" rel="stylesheet">
+    <link href="css/card.css" rel="stylesheet">
     <style>
+        /*--------- body 초기화 ---------*/
         body {
             margin: 0;
             padding: 0;
@@ -19,12 +24,7 @@
             background-color: #FFF8EE;
         }
 
-        header {
-            margin-top: 80px;
-            margin-bottom: -40px;
-        }
-
-        /*--------- 네비게이션 바 영역 시작---------*/
+        /*--------- 네비게이션 바 영역 시작 ---------*/
         nav {
             position: fixed;
             top: 0%;
@@ -47,7 +47,7 @@
             position: relative;
         }
 
-        #main-menu > li > a {
+        #main-menu > li > a { /* 네비게이션 글자 */
             font-size: 1rem;
             font-family: 'Jua';
             font-weight: 700;
@@ -56,10 +56,10 @@
             text-decoration: none;
             display: block;
             padding: 14px 36px;
-            transition: all .5s ease-out;
+            transition: all .5s ease-out; /* 마우스 오버용 애니메이션 및 속도 */
         }
 
-        #main-menu > li > a:hover {
+        #main-menu > li > a:hover { /* 마우스 오버시 서서히 파란색 */
             color: #2C5994;
         }
 
@@ -87,7 +87,6 @@
 
         #sub-menu > li {
             padding: 15px 30px;
-            /* border: 1px solid #2C5994; */
             background: #F9E6E2;
         }
 
@@ -116,27 +115,27 @@
             margin-left: 130px;
         }
 
-        .navSelect {
-            position: relative;
+        .navSelect { /* 네비게이션 글자 색 바꿀 class */
+            position: relative; /* absolute 영역 설정 역할 */
             left: 70px;
             /* width: 170px; */
             min-width: 150px;
             max-height: 52px;
         }
 
-        .navSelect::after {
-            content: "";
-            position: absolute;
+        .navSelect::after {  /* 가상 콘텐츠 삽입 */
+            content: ""; /* 내용 없음 */
+            position: absolute; /* relative 부모 속성 안에서 자유롭게 배치 */
             bottom: 6px;
             height: 4px;
             left: 75px;
             transform: translateX(-50%);
             width: 0%;
             background: #2C5994;
-            transition: all .5s ease-out;
+            transition: all .5s ease-out; /* hover 애니메이션 */
         }
 
-        .navSelect:hover::after {
+        .navSelect:hover::after { /* 마우스 오버 시 작용 */
             width: 50%
         }
 
@@ -147,7 +146,6 @@
             text-align: center;
             color:rgb(105, 145, 185);
             font-weight: bold;
-            
         }
 
         .inputBox::placeholder{
@@ -164,69 +162,27 @@
             position: absolute;
             top:11px;
         }
-        /*--------- 네비게이션 바 영역 끝---------*/
+        /*--------- 네비게이션 바 영역 끝 ---------*/
 
-        /* 섹션 */
+        /*--------- 헤더 영역 시작 ---------*/
+        header {
+            position: relative;
+            margin-top: 80px;
+        }
+
+        .popUp { /* 지도 이미지 띄우기 */
+            position: absolute; /* 위치 자유롭게 배치 */
+            top: 0px;
+            left: 0px;
+            pointer-events: none; /* 마우스 무시 */
+        }
+        /*--------- 헤더 영역 종료 ---------*/
+
+        /*--------- 섹션 ---------*/
         section {
             width: 90%;
             padding: 30px;
             text-align: center;
-        }
-
-        /* 카드 레이아웃 */
-        #cardArea {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            width: 300px;
-            border: 1px solid rgb(189, 184, 164);
-            border-radius: 10px;
-            background-color: #F6D4CB;
-            cursor: pointer;
-            float: left;
-            margin: 50px;
-            box-shadow: 0px 0px 5px 5px rgba(204, 192, 192, 0.582);
-        }
-
-        .card-body {
-            padding: 10px;
-            background-color: #F6D4CB;
-            border-radius: 10px;
-            text-align: left;
-            font-family: 'Malgun Gothic';
-        }
-
-        .cropping {
-            height: 150px;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .cropping img {
-            width: 300px;
-            margin-top: -20px;
-        }
-
-        .card-title {
-            margin-top: 5px;
-            margin-bottom: 0px;
-            font-family: 'Jua';
-            color:#c9695c;
-        }
-
-        .card-category {
-            margin-top: 0px;
-            margin-bottom: 0px;
-            font-size: 13px;
-            color: #8d827a;
-            font-weight: 900px;
-        }
-
-        .card-text {
-            font-size: 14px;
         }
     </style>
 
@@ -238,10 +194,10 @@
 
     <script type="text/javascript">
         // 로컬스토리지 읽기/저장 (지역 선택)
-        var lastRegion = localStorage.getItem('region')
+        var lastRegion = localStorage.getItem('region') // 로컬스토리지에서 'region' 키에서 값 받아오기
         function a(value) {
-            window.localStorage.setItem('region', value);
-            location.href = "region.html";
+            window.localStorage.setItem('region', value); // 로컬스토리지 'region' 키에 인자 저장
+            location.href = "region.html"; // 페이지 이동
         }
 
         // 로컬스토리지 읽기/저장 (검색)
@@ -250,7 +206,7 @@
             svalue = document.getElementById('key').value;
             window.localStorage.setItem('search', svalue);
             location.href = "search.html";
-            //임력 안했으면 alert message 뜨기
+            // 임력 안했으면 alert message 뜨기
             if (svalue.length == 0) {
                 alert("검색어를 입력하시오!");
             }
@@ -268,7 +224,7 @@
         
         // 출력 함수
         function nodeValFunc(xml) {
-            let num, name, address, category, img, introduction, embed, tags;
+            let num, name, address, category, img, introduction, embed, tags, thumb;
             let xmlDoc;
             
             xmlDoc = xml.responseXML; // 위에서 this를 통해서 넘겨 받음
@@ -285,34 +241,34 @@
             
             // 출력부
             if (lastRegion == "대구대") { // 해당 지역 지도 출력
-                document.getElementById('regionMap').src = "src/대구지도 대구대.png"
+                document.getElementById('regionMap').src = "src/대구지도 대구대2.png"
             }
             else if (lastRegion == "하양") {
-                document.getElementById('regionMap').src = "src/대구지도 하양.png"
+                document.getElementById('regionMap').src = "src/대구지도 하양2.png"
             }
             else if (lastRegion == "북구") {
-                document.getElementById('regionMap').src = "src/대구지도 북구.png"
+                document.getElementById('regionMap').src = "src/대구지도 북구2.png"
             }
             else if (lastRegion == "동구") {
-                document.getElementById('regionMap').src = "src/대구지도 동구.png"
+                document.getElementById('regionMap').src = "src/대구지도 동구2.png"
             }
             else if (lastRegion == "남구") {
-                document.getElementById('regionMap').src = "src/대구지도 남구.png"
+                document.getElementById('regionMap').src = "src/대구지도 남구2.png"
             }
             else if (lastRegion == "서구") {
-                document.getElementById('regionMap').src = "src/대구지도 서구.png"
+                document.getElementById('regionMap').src = "src/대구지도 서구2.png"
             }
             else if (lastRegion == "중구") {
-                document.getElementById('regionMap').src = "src/대구지도 중구.png"
+                document.getElementById('regionMap').src = "src/대구지도 중구2.png"
             }
             else if (lastRegion == "수성구") {
-                document.getElementById('regionMap').src = "src/대구지도 수성구.png"
+                document.getElementById('regionMap').src = "src/대구지도 수성구2.png"
             }
             else if (lastRegion == "달성군") {
-                document.getElementById('regionMap').src = "src/대구지도 달성군.png"
+                document.getElementById('regionMap').src = "src/대구지도 달성군2.png"
             }
             else if (lastRegion == "달서구") {
-                document.getElementById('regionMap').src = "src/대구지도 달서구.png"
+                document.getElementById('regionMap').src = "src/대구지도 달서구2.png"
             }
             for (let i = 0; i < num.length; i++) { // 노드 전체 탐색
                 if (address[i].childNodes[0].nodeValue == lastRegion) { // 지역과 맞는 내용만 출력
@@ -320,17 +276,16 @@
                     var card = document.createElement('div'); // div 태그 생성
                     card.className = "card"; // div 태그에 class 이름 설정
                     card.setAttribute("data-bs-toggle", "offcanvas"); // 부트스트랩 설정(오프캔버스 출력 버튼)
-                    card.setAttribute("data-bs-target", "#offcanvasRight" + i);
+                    card.setAttribute("data-bs-target", "#offcanvasRight" + i); // 오프캔버스 타겟 id 설정
                     card.setAttribute("aria-controls", "offcanvasRight");
                     document.getElementById('cardArea').appendChild(card); // cardArea id 태그 아래쪽에 추가
-                    //document.body.appendChild(card); // 바디 태그 아래쪽에 추가
                     
                     var cropping = document.createElement('div'); // 사진 크기 조절용 태그
                     cropping.className = "cropping";
                     card.appendChild(cropping);
                     
                     var cardImg = document.createElement('img'); // 이미지 삽입 태그
-                    cardImg.src = img[i].childNodes[0].nodeValue;
+                    cardImg.src = img[i].childNodes[0].nodeValue; // src 속성에 xml의 이미지 삽입
                     cardImg.alt = "...";
                     cropping.appendChild(cardImg);
                     
@@ -341,13 +296,13 @@
                     var cardTitle = document.createElement('h2'); // 음식점 이름 태그
                     cardTitle.className = "card-title";
                     var cardTitleText = document.createTextNode(name[i].childNodes[0].nodeValue); // xml에서 텍스트를 받아오기
-                    cardTitle.appendChild(cardTitleText);
+                    cardTitle.appendChild(cardTitleText); // h2 태그에 텍스트 삽입
                     cardBody.appendChild(cardTitle);
                     
                     var cardCategory = document.createElement('p'); // 카테고리 태그
                     cardCategory.className = "card-category";
                     var cardCategoryText = document.createTextNode(category[i].childNodes[0].nodeValue);
-                    cardCategory.appendChild(cardCategoryText);
+                    cardCategory.appendChild(cardCategoryText); // p 태그에 텍스트 삽입
                     cardBody.appendChild(cardCategory);
 
                     var cardText = document.createElement('p'); // 설명 태그
@@ -359,9 +314,9 @@
                     // offcanvas 레이아웃
                     var offcanvas = document.createElement('div'); // 오프캔버스 태그
                     offcanvas.classList.add("offcanvas", "offcanvas-end");
-                    offcanvas.id = "offcanvasRight" + i;
+                    offcanvas.id = "offcanvasRight" + i; // 오프캔버스 타겟 id
                     offcanvas.setAttribute("tabindex", "-1");
-                    offcanvas.setAttribute("aria-labelledby", "offcanvasRightLabel");
+                    offcanvas.setAttribute("aria-labelledby", "offcanvasRightLabel"); // 부트스트랩 요소 연결
                     document.getElementById('offcanvasArea').appendChild(offcanvas);
 
                     var offcanvasHeader = document.createElement('div'); // 오프캔버스 헤더 구역
@@ -377,7 +332,7 @@
                     var closeBtn = document.createElement('button'); // 오프캔버스 나가기 버튼
                     closeBtn.setAttribute("type", "button");
                     closeBtn.className = "btn-close"
-                    closeBtn.setAttribute("data-bs-dismiss", "offcanvas");
+                    closeBtn.setAttribute("data-bs-dismiss", "offcanvas"); // 오프캔버스 나가기 속성
                     closeBtn.setAttribute("aria-label", "Close");
                     offcanvasHeader.appendChild(closeBtn)
 
@@ -386,19 +341,64 @@
                     offcanvas.appendChild(offcanvasBody);
 
                     var offcanvasEmbed = document.createElement('embed'); // 오프캔버스에 임베드
-                    offcanvasEmbed.setAttribute("src", embed[i].childNodes[0].nodeValue);
+                    offcanvasEmbed.setAttribute("src", embed[i].childNodes[0].nodeValue); // 임베드 주소 설정
                     offcanvasEmbed.setAttribute("width", "100%");
                     offcanvasEmbed.setAttribute("height", "95%");
                     offcanvasBody.appendChild(offcanvasEmbed);
                 }
             }
         }
+
+        // 마우스 오버 위치에 맞게 이미지 설정
+        function showImg(region) {
+            if (region == '대구대') {
+                document.getElementById("fig").src = "src/대구지도 대구대2.png"
+            } else if (region == '하양') {
+                document.getElementById("fig").src = "src/대구지도 하양2.png"
+            } else if (region == '북구') {
+                document.getElementById("fig").src = "src/대구지도 북구2.png"
+            } else if (region == '서구') {
+                document.getElementById("fig").src = "src/대구지도 서구2.png"
+            } else if (region == '중구') {
+                document.getElementById("fig").src = "src/대구지도 중구2.png"
+            } else if (region == '남구') {
+                document.getElementById("fig").src = "src/대구지도 남구2.png"
+            } else if (region == '달성군') {
+                document.getElementById("fig").src = "src/대구지도 달성군2.png"
+            } else if (region == '달서구') {
+                document.getElementById("fig").src = "src/대구지도 달서구2.png"
+            } else if (region == '동구') {
+                document.getElementById("fig").src = "src/대구지도 동구2.png"
+            } else if (region == '수성구') {
+                document.getElementById("fig").src = "src/대구지도 수성구2.png"
+            }
+        }
+        
+        // 마우스 오버 해제 시
+        function hideImg() {
+            document.getElementById("fig").src = "src/NoImg.png" // 시스템 속도로 인한 엑박 사진 방지용 투명 그림
+        }
     </script>
 </head>
 
 <body>
     <header>
-        <img src="src/map.png" id="regionMap" width="300px">
+        <!-- Image Map Generated by http://www.image-map.net/ -->
+        <img src="src/map.png" id="regionMap" usemap="#image-map">
+        <map id="popMap" name="image-map">
+            <area onmouseover="showImg('대구대')" onmouseout="hideImg()" target="" alt="대구대" title="대구대" href="javascript:a('대구대');" coords="171,495,39" shape="circle">
+            <area onmouseover="showImg('하양')" onmouseout="hideImg()" target="" alt="하양" title="하양" href="javascript:a('하양');" coords="245,536,257,535,273,525,282,522,286,514,299,513,307,508,308,501,317,490,316,482,323,479,324,466,338,462,348,460,356,461,362,458,357,453,360,446,357,439,353,434,358,422,354,416,345,418,341,406,336,401,330,400,324,396,318,404,311,403,305,404,296,400,291,394,281,399,273,406,268,407,259,403,252,404,222,398,216,406,211,417,212,422,211,428,217,432,218,440,224,446,230,449,235,452,243,460,242,468,240,477,243,488,248,498,246,507,244,514,242,520,248,522,242,532" shape="poly">
+            <area onmouseover="showImg('북구')" onmouseout="hideImg()" target="" alt="북구" title="북구" href="javascript:a('북구');" coords="146,144,152,148,167,150,198,150,206,153,218,154,220,160,222,162,232,161,237,163,242,163,248,161,251,154,257,150,263,145,266,138,267,126,268,97,260,73,262,64,256,51,246,37,230,47,206,49,196,64,177,48,176,73,176,91,173,103,168,113,155,128" shape="poly">
+            <area onmouseover="showImg('서구')" onmouseout="hideImg()" target="" alt="서구" title="서구" href="javascript:a('서구');" coords="169,151,165,160,161,165,161,173,171,180,179,185,186,187,200,187,214,185,215,176,221,163,220,160,217,155,205,154,198,151" shape="poly">
+            <area onmouseover="showImg('중구')" onmouseout="hideImg()" target="" alt="중구" title="중구" href="javascript:a('중구');" coords="215,184,216,175,222,162,231,161,238,163,243,163,249,161,260,177,257,182,254,186,252,193,243,193,232,192,224,190,218,189" shape="poly">
+            <area onmouseover="showImg('남구')" onmouseout="hideImg()" target="" alt="남구" title="남구" href="javascript:a('남구');" coords="251,194,248,201,249,214,244,229,240,240,233,248,211,227,204,216,211,203,216,195,219,190,233,193" shape="poly">
+            <area onmouseover="showImg('달성군')" onmouseout="hideImg()" target="" alt="달성군" title="달성군" href="javascript:a('달성군');" coords="146,144,133,142,121,140,122,129,125,116,119,98,106,86,92,89,81,95,66,109,57,122,51,138,47,152,41,167,34,178,33,187,38,192,49,193,62,195,80,198,100,205,110,211,118,220,123,226,119,212,117,199,117,192,121,178,130,176,137,178,144,176,154,172,160,172,160,165,166,158,168,150,150,148" shape="poly">
+            <area onmouseover="showImg('달서구')" onmouseout="hideImg()" target="" alt="달서구" title="달서구" href="javascript:a('달서구');" coords="123,226,120,212,117,194,122,178,130,177,136,179,154,173,160,173,179,186,185,188,198,188,215,185,218,190,203,216,211,228,232,248,217,257,212,262,208,272,201,279,192,284,178,271,166,259,153,246,143,236,137,232" shape="poly">
+            <area onmouseover="showImg('달성군')" onmouseout="hideImg()" target="" alt="달성군" title="달성군" href="javascript:a('달성군');" coords="123,226,124,232,117,241,98,241,84,243,70,244,62,250,54,262,47,274,39,291,36,306,40,316,46,324,54,330,66,339,75,349,79,355,78,362,68,369,60,372,46,370,31,367,14,362,5,363,2,371,3,380,9,388,20,402,30,418,41,437,43,446,40,451,33,459,27,469,24,478,32,480,47,475,64,469,79,462,90,455,102,452,125,450,141,447,151,443,158,437,159,427,160,414,163,403,172,394,179,384,181,368,180,356,185,344,195,338,208,333,224,328,242,326,249,332,251,342,254,353,257,361,263,367,270,368,284,363,300,354,314,342,327,332,332,317,333,297,333,284,327,273,318,269,301,259,291,254,271,250,255,248,234,248,219,257,212,262,209,272,201,280,192,284,177,270,154,247,142,235,130,229" shape="poly">
+            <area onmouseover="showImg('수성구')" onmouseout="hideImg()" target="" alt="수성구" title="수성구" href="javascript:a('수성구');" coords="234,248,240,240,249,214,249,200,252,192,260,176,276,171,293,167,309,166,318,173,324,180,330,184,342,185,352,186,364,195,370,199,361,211,353,228,350,242,348,252,343,260,335,264,331,266,324,271,316,267,301,258,289,253,255,247" shape="poly">
+            <area onmouseover="showImg('동구')" onmouseout="hideImg()" target="" alt="동구" title="동구" href="javascript:a('동구');" coords="249,160,252,154,263,146,266,139,268,97,261,73,262,63,256,50,246,36,252,22,260,16,275,9,291,4,309,2,326,3,339,4,348,10,360,22,375,37,382,51,382,62,379,75,374,91,373,103,375,109,382,116,389,124,392,137,397,153,398,167,396,181,387,193,380,197,370,198,352,185,330,183,323,178,319,173,309,165,298,166,289,167,273,172,259,175" shape="poly">
+        </map>
+        <div class="popUp"><img id="fig" src=""></div> <!-- 마우스 오버 시 지도 출력 위치 -->
     </header>
 
     <nav role="navigation">
@@ -407,7 +407,7 @@
                 <img src="src/navLogo.png" width="60px"></a>
             </li>
             <li><a href="#" class="navSelect">지역</a>
-                <ul id="sub-menu">
+                <ul id="sub-menu"> <!-- 리스트 클릭 시 a함수 호출로 페이지 이동 -->
                     <li><a href="javascript:a('달서구');" aria-label="subemnu" onclick="return false;">달서구</a></li>
                     <li><a href="javascript:a('북구')" aria-label="subemnu" onclick="return false;">북구</a></li>
                     <li><a href="javascript:a('수성구')" aria-label="subemnu" onclick="return false;">수성구</a></li>
@@ -423,7 +423,7 @@
             <li><a href="whateat.html" class="navSelect">뭐먹지?</a></li>
             <li><a href="DPcal.html" class="navSelect">더치페이</a></li>
             <li id="navSearch">
-                <form onsubmit="setKeyVal()" name="search" method="get" action="search.html">
+                <form onsubmit="setKeyVal()" name="search" method="get" action="search.html"> <!-- 검색 바 -->
                     <label><input type="text" class="inputBox" size="20" id="key" value="" placeholder=" 맛집 이름" style="width:200px; height: 30px;"></label>
                     <input type="image" id="navSearchBtn" src="src/searchBtn.png" width="32px">
                 </form>
@@ -432,8 +432,8 @@
     </nav>
     
     <section id="section">
-        <div id="cardArea"></div>
-        <div id="offcanvasArea"></div>
+        <div id="cardArea"></div> <!-- 카드 레이아웃 출력 위치 -->
+        <div id="offcanvasArea"></div> <!-- 오프캔버스 레이아웃 출력 위치 --> 
     </section>
 
     <footer>

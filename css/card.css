@@ -1,0 +1,60 @@
+/*--------- 카드 레이아웃 ---------*/
+#cardArea {
+    display: flex; /* flex 배치 형식 */
+    justify-content: center; /* 가로축 중심 */
+    flex-wrap: wrap; /* 가로 넓이 넘어가면 요소를 다음 줄로 */
+}
+
+.card {
+    width: 300px;
+    border: 1px solid rgb(189, 184, 164);
+    border-radius: 10px;
+    background-color: #F6D4CB;
+    cursor: pointer; /* 마우스 오버 시 손가락 선택 모양 변환 */
+    float: left;
+    margin: 50px;
+    box-shadow: 0px 0px 5px 3px rgba(204, 192, 192, 0.582); /* 그림자 */
+    transition: all 0.15s ease-in; /* 마우스 오버에 사용할 애니메이션과 속도 */
+}
+
+.card:hover { /* 마우스 오버 효과 */
+    box-shadow: 0px 0px 20px 5px rgba(204, 192, 192, 1); /* 서서히 그림자가 진해짐 */
+}
+
+.card-body {
+    padding: 10px;
+    background-color: #F6D4CB;
+    border-radius: 10px; /* 모서리 둥글게 */
+    text-align: left; /* 중앙 정렬 */
+    font-family: 'Malgun Gothic'; /* 맑은 고딕 폰트 */
+}
+
+.cropping { /* 파싱 받은 사진 자르기용 */
+    height: 150px;
+    overflow: hidden; /* 영역을 벗어난 내용은 가리기 */
+    border-radius: 10px;
+}
+
+.cropping img { /* 사진 조절 및 배치 */
+    width: 300px;
+    margin-top: -20px;
+}
+
+.card-title { /* 음식점 이름 */
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-family: 'Jua'; /* Jua 폰트 */
+    color:#c9695c;
+}
+
+.card-category { /* 음식점 카테고리 */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 13px;
+    color: #8d827a;
+    font-weight: 900px;
+}
+
+.card-text { /* 음식점 내용 */
+    font-size: 14px;
+}

@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="css/custom.css" rel="stylesheet">
+    <link href="css/card.css" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -170,62 +171,6 @@
             text-align: center;
         }
 
-        /* 카드 레이아웃 */
-        #cardArea {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            width: 300px;
-            border: 1px solid rgb(189, 184, 164);
-            border-radius: 10px;
-            background-color: #F6D4CB;
-            cursor: pointer;
-            float: left;
-            margin: 50px;
-            box-shadow: 0px 0px 5px 5px rgba(204, 192, 192, 0.582);
-        }
-
-        .card-body {
-            padding: 10px;
-            background-color: #F6D4CB;
-            border-radius: 10px;
-            text-align: left;
-            font-family: 'Malgun Gothic';
-        }
-
-        .cropping {
-            height: 150px;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .cropping img {
-            width: 300px;
-            margin-top: -20px;
-        }
-
-        .card-title {
-            margin-top: 5px;
-            margin-bottom: 0px;
-            font-family: 'Jua';
-            color:#c9695c;
-        }
-
-        .card-category {
-            margin-top: 0px;
-            margin-bottom: 0px;
-            font-size: 13px;
-            color: #8d827a;
-            font-weight: 900px;
-        }
-
-        .card-text {
-            font-size: 14px;
-        }
-
         /* 테이블 */
         .tg { 
             margin: auto;
@@ -290,7 +235,7 @@
 
     <script type="text/javascript">
         // 로컬스토리지 읽기/저장
-        var lastData = localStorage.getItem('region')
+        var lastData = localStorage.getItem('region'); 
         function a(value) {
             window.localStorage.setItem('region', value);
             delKey();
@@ -310,36 +255,34 @@
             }
         }
         
-        var suggestKey = localStorage.getItem('whateat')
-        function setSuggest(value) {
-            window.localStorage.setItem('whateat', value);
+        var suggestKey = localStorage.getItem('whateat')  // 로컬 스토리지에 맛집리스트 읽기
+
+        function setSuggest(value) {  // 로컬 스토리지에 해당 맛집리스트 저장
+            window.localStorage.setItem('whateat', value); 
             delregion("null");
             location.href = "whateat.html";
         }
 
-        var getRegion = localStorage.getItem('wregion');
-        function setR(value) {
+        var getRegion = localStorage.getItem('wregion'); // 로컬 스토리지에 지역 읽기
+
+        function setRegion(value) {  // 로컬스토리지에 해당 지역 저장
             window.localStorage.setItem('wregion', value);
             location.href = "whateat.html";
         }
 
-        function delKey() {
-            window.localStorage.removeItem('whateat');
+        function delKey() {  // 로컬 리스트 맛집리스트 값를 null로 초기화
+            window.localStorage.removeItem('whateat'); 
             delregion("null");
             
         }
-        function delregion(value){
+        function delregion(value){ // 로컬 리스트 해당 지역 값을 null로 초기화
             window.localStorage.setItem('wregion', value);
-            location.href = "whateat.html";
+            location.href = "whateat.html"; 
         }
 
-        function out(link) {
+        function out(link) {  // 메뉴로 인해 설정된 지역값을 삭제
             delKey();
             location.href = link;
-        }
-
-        function setD(value) {
-            setSuggest(value);
         }
 
         // ajax
@@ -403,8 +346,10 @@
             else if (getRegion == "달서구") {
                 document.getElementById("달서구").setAttribute("style", "background-color:#c9695c; color:#ffffff;");
             }
+
+            // 로컬 스토리지 값에 따라 출력되는 카드들이 변하게 설정 
             for(let i = 0; i < num.length; i++) {
-                if (tags[i].childNodes[0].nodeValue.indexOf(suggestKey) != -1 && getRegion == "null") {
+                if (tags[i].childNodes[0].nodeValue.indexOf(suggestKey) != -1 && getRegion == "null") { // 맛집 리스트에 해당하는 태그값이 있고 지역이 설정이 안되있을떄 해당하는 xml값 호출 
                     var card = document.createElement('div'); // div 태그 생성
                     card.className = "card"; // div 태그에 class 이름 설정
                     card.setAttribute("data-bs-toggle", "offcanvas"); // 부트스트랩 설정(오프캔버스 출력 버튼)
@@ -479,7 +424,7 @@
                     offcanvasEmbed.setAttribute("height", "95%");
                     offcanvasBody.appendChild(offcanvasEmbed);
                 }
-                else if(tags[i].childNodes[0].nodeValue.indexOf(suggestKey) != -1 && address[i].childNodes[0].nodeValue == getRegion){
+                else if(tags[i].childNodes[0].nodeValue.indexOf(suggestKey) != -1 && address[i].childNodes[0].nodeValue == getRegion){ // 맛집리스트에 해당하는 태그값이 있고 지역설정이 되있을때 해당하는 xml값 호출
                     var card = document.createElement('div'); // div 태그 생성
                     card.className = "card"; // div 태그에 class 이름 설정
                     card.setAttribute("data-bs-toggle", "offcanvas"); // 부트스트랩 설정(오프캔버스 출력 버튼)
@@ -601,70 +546,71 @@
             <thead>
                 <tr>
                     <td class="tg-0pky">
-                        <button class="imButton" id="양식" onclick="setD('파스타')">
+                        <button class="imButton" id="양식" onclick="setSuggest('파스타')"> <!-- 클릭시 로컬 스토리지의 맛집 리스트 값을 '파스타 로 변환'  -->
                             <img class="imgBtn" src="src/파스타.png">
                         </button>
                     </td>
                     <td class="tg-0pky">
-                        <button class="imButton" id="중식" onclick="setD('짜장면')">
+                        <button class="imButton" id="중식" onclick="setSuggest('짜장면')">
                             <img class="imgBtn" src="src/짜장면.png">
                         </button>
                     </td>
                     <td class="tg-0pky">
-                        <button class="imButton" id="고기" onclick="setD('돼지고기')">
+                        <button class="imButton" id="고기" onclick="setSuggest('돼지고기')">
                             <img class="imgBtn" src="src/돼지고기.png">
                         </button>
                     </td>
                 </tr>
                 <tr>
                     <td class="tg-0pky">
-                        <button class="imButton" id="국밥" onclick="setD('국밥')">
+                        <button class="imButton" id="국밥" onclick="setSuggest('국밥')">
                             <img class="imgBtn" src="src/국밥.png">
                         </button>
                     </td>
                     <td class="tg-0pky">
-                        <button class="imButton" id="한정식" onclick="setD('한정식')">
+                        <button class="imButton" id="한정식" onclick="setSuggest('한정식')">
                             <img class="imgBtn" src="src/한정식.png">
                         </button>
                     </td>
                     <td class="tg-0pky">
-                        <button class="imButton" id="커피" onclick="setD('커피')">
+                        <button class="imButton" id="커피" onclick="setSuggest('커피')">
                             <img class="imgBtn" src="src/커피.png">
                         </button>
                     </td>
                 </tr>
             </thead>
         </table>
-
+         
         <fieldset>
             <legend> 먹을 지역은? </legend>
             <table class="tg1" >
                 <thead>
                   <tr>
-                    <td class="tg-0pky"><button class="myButton" id="북구" onclick="setR('북구')">북구</a></td>
-                    <td class="tg-0pky"><button class="myButton" id="동구" onclick="setR('동구')">동구</a></td>
-                    <td class="tg-0pky"><button class="myButton" id="서구" onclick="setR('서구')">서구</a></td>
-                    <td class="tg-0pky"><button class="myButton" id="중구" onclick="setR('중구')">중구</a></td>
-                    <td class="tg-0pky"><button class="myButton" id="남구" onclick="setR('남구')">남구</a></td>
-                    <td class="tg-0pky"><button class="myButton" id="수성구" onclick="setR('수성구')">수성구</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="북구" onclick="setRegion('북구')">북구</a></td> <!-- 클릭시 로컬스토리지의 지역값을 '북구'로 설정 -->
+                    <td class="tg-0pky"><button class="myButton" id="동구" onclick="setRegion('동구')">동구</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="서구" onclick="setRegion('서구')">서구</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="중구" onclick="setRegion('중구')">중구</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="남구" onclick="setRegion('남구')">남구</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="수성구" onclick="setRegion('수성구')">수성구</a></td>
                   </tr>
                 </thead>
             </table>
             <table class="tg1">
                 <thead>
                   <tr>
-                    <td class="tg-0pky"><button class="myButton" id="달서구" onclick="setR('달서구')">달서구</a></td>
-                    <td class="tg-0pky"><button class="myButton" id="달성군" onclick="setR('달성군')">달성군</a></td>
-                    <td class="tg-0pky"><button class="myButton" id="대구대" onclick="setR('대구대')">대구대</a></td>
-                    <td class="tg-0pky"><button class="myButton" id="하양" onclick="setR('하양')">하양</a></td>
-                    <td class="tg-0pky"><button class="myButton" id="초기화" onclick="delregion('null')">초기화</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="달서구" onclick="setRegion('달서구')">달서구</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="달성군" onclick="setRegion('달성군')">달성군</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="대구대" onclick="setRegion('대구대')">대구대</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="하양" onclick="setRegion('하양')">하양</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="초기화" onclick="delregion('null')">초기화</a></td> <!-- 클릭시 로컬스토리지의 지역값을 null값으로 초기화-->
                   </tr>
                 </thead>
             </table>
         </fieldset> 
 
-        <div id="cardArea"></div>
-        <div id="offcanvasArea"></div>
+        <div id="cardArea"></div> <!--카드 출력부-->
+        <div id="offcanvasArea"></div> <!-- 오프캠퍼스 출력부-->
+
     </section>
 
     <footer>

@@ -16,9 +16,8 @@
             justify-content: center;
             align-items: center;
             overflow-x: hidden;
-            width: 1980;
-            height: 1080; 
             background-color: #FFF8EE;
+            color:#c9695c;
         }
 
         header {
@@ -55,7 +54,6 @@
             color: rgb(88, 90, 92);
             text-align: center;
             text-decoration: none;
-            /* letter-spacing: 0.1em; */
             display: block;
             padding: 14px 36px;
             transition: all .5s ease-out;
@@ -73,12 +71,7 @@
             letter-spacing: 0.05em;
             display: block;
             padding: 11px 17px;
-            /* border-right: 1px solid #F6D4CB */
         }
-
-        /* #main-menu > li:nth-child(1) > a {
-
-        } */
 
         #sub-menu {
             position: absolute;
@@ -94,7 +87,6 @@
 
         #sub-menu > li {
             padding: 15px 30px;
-            /* border: 1px solid #2C5994; */
             background: #F9E6E2;
         }
 
@@ -126,7 +118,6 @@
         .navSelect {
             position: relative;
             left: 70px;
-            /* width: 170px; */
             min-width: 150px;
             max-height: 52px;
         }
@@ -154,7 +145,6 @@
             text-align: center;
             color:rgb(105, 145, 185);
             font-weight: bold;
-            
         }
 
         .inputBox::placeholder{
@@ -178,12 +168,6 @@
             width: 90%;
             padding: 30px;
             text-align: center;
-        }
-
-        #cardArea {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
         }
 
         /* 카드 레이아웃 */
@@ -228,7 +212,6 @@
             margin-bottom: 0px;
             font-family: 'Jua';
             color:#c9695c;
-     
         }
 
         .card-category {
@@ -243,14 +226,59 @@
             font-size: 14px;
         }
 
-        /*테이블*/
-        table { 
-            margin-left: -75px;
+        /* 테이블 */
+        .tg { 
+            margin: auto;
+            margin-bottom: 80px;
         }
 
-        /*이미지*/
+        .tg1 { 
+            margin: auto;
+        }
+
+        /* 이미지 */
+        .imButton {
+            border:none;
+            background-color: rgba(255, 248, 238, 0.0);
+            border-radius: 10px;
+            margin-bottom: 8px;
+        }
+
         .imgBtn { 
-            width: 300px; height: 160px;
+            width: 300px;
+            height: 160px;
+            border-radius: 10px;
+        }
+
+        /* 버튼 */
+        .myButton {
+            background-color:#F6D4CB;
+            font-family: "Jua";
+            border-radius:28px;
+            display:inline-block;
+            cursor:pointer;
+            color:#c9695c;
+            font-size:20px;
+            padding:16px 31px;
+            width:120px;
+            text-decoration:none;
+            border:none;
+            transition: all 0.15s ease-in;
+        }
+
+        .myButton:hover {
+            background-color:#c9695c;
+            color:#ffffff;
+        }
+
+        .myButton:active {
+            position:relative;
+            top:1px;
+        }
+
+        /* footer */
+        footer {
+            margin-top: 120px;
         }
     </style>
 
@@ -268,10 +296,10 @@
             delKey();
             location.href = "region.html";
         }
-
+        
         // 검색 로컬스토리지 읽기/저장
         var keyVal = localStorage.getItem('search')
-        function getKeyVal(value) {
+        function setKeyVal(value) {
             var svalue = document.getElementById('key').value;
             window.localStorage.setItem('search', svalue);
             delKey();
@@ -281,15 +309,28 @@
                 alert("검색어를 입력하시오!");
             }
         }
-
+        
         var suggestKey = localStorage.getItem('whateat')
-        function getSuggest(value) {
+        function setSuggest(value) {
             window.localStorage.setItem('whateat', value);
+            delregion("null");
+            location.href = "whateat.html";
+        }
+
+        var getRegion = localStorage.getItem('wregion');
+        function setR(value) {
+            window.localStorage.setItem('wregion', value);
             location.href = "whateat.html";
         }
 
         function delKey() {
             window.localStorage.removeItem('whateat');
+            delregion("null");
+            
+        }
+        function delregion(value){
+            window.localStorage.setItem('wregion', value);
+            location.href = "whateat.html";
         }
 
         function out(link) {
@@ -298,7 +339,7 @@
         }
 
         function setD(value) {
-            getSuggest(value);
+            setSuggest(value);
         }
 
         // ajax
@@ -332,13 +373,45 @@
             tags = xmlDoc.getElementsByTagName("tags");
             
             // 출력부
+            if (getRegion == "대구대") {
+                document.getElementById("대구대").setAttribute("style", "background-color:#c9695c; color:#ffffff;");
+            }
+            else if (getRegion == "하양") {
+                document.getElementById("하양").setAttribute("style", "background-color:#c9695c; color:#ffffff;");
+            }
+            else if (getRegion == "북구") {
+                document.getElementById("북구").setAttribute("style", "background-color:#c9695c; color:#ffffff;");
+            }
+            else if (getRegion == "동구") {
+                document.getElementById("동구").setAttribute("style", "background-color:#c9695c; color:#ffffff;");
+            }
+            else if (getRegion == "서구") {
+                document.getElementById("서구").setAttribute("style", "background-color:#c9695c; color:#ffffff;");
+            }
+            else if (getRegion == "중구") {
+                document.getElementById("중구").setAttribute("style", "background-color:#c9695c; color:#ffffff;");
+            }
+            else if (getRegion == "남구") {
+                document.getElementById("남구").setAttribute("style", "background-color:#c9695c; color:#ffffff;");
+            }
+            else if (getRegion == "달성군") {
+                document.getElementById("달성군").setAttribute("style", "background-color:#c9695c; color:#ffffff;");
+            }
+            else if (getRegion == "수성구") {
+                document.getElementById("수성구").setAttribute("style", "background-color:#c9695c; color:#ffffff;");
+            }
+            else if (getRegion == "달서구") {
+                document.getElementById("달서구").setAttribute("style", "background-color:#c9695c; color:#ffffff;");
+            }
             for(let i = 0; i < num.length; i++) {
-                if (tags[i].childNodes[0].nodeValue.indexOf(suggestKey) != -1) {
+                if (tags[i].childNodes[0].nodeValue.indexOf(suggestKey) != -1 && getRegion == "null") {
                     var card = document.createElement('div'); // div 태그 생성
                     card.className = "card"; // div 태그에 class 이름 설정
-                    card.onclick = "location.href=''"; // onclick 함수 설정
-                    //document.body.appendChild(card); // 바디 태그 아래쪽에 추가
+                    card.setAttribute("data-bs-toggle", "offcanvas"); // 부트스트랩 설정(오프캔버스 출력 버튼)
+                    card.setAttribute("data-bs-target", "#offcanvasRight" + i);
+                    card.setAttribute("aria-controls", "offcanvasRight");
                     document.getElementById('cardArea').appendChild(card); // cardArea id 태그 아래쪽에 추가
+                    //document.body.appendChild(card); // 바디 태그 아래쪽에 추가
                 
                     var cropping = document.createElement('div'); // 사진 크기 조절용 태그
                     cropping.className = "cropping";
@@ -370,8 +443,117 @@
                     var cardTextText = document.createTextNode(introduction[i].childNodes[0].nodeValue);
                     cardText.appendChild(cardTextText);
                     cardBody.appendChild(cardText);
+
+                    // offcanvas 레이아웃
+                    var offcanvas = document.createElement('div'); // 오프캔버스 태그
+                    offcanvas.classList.add("offcanvas", "offcanvas-end");
+                    offcanvas.id = "offcanvasRight" + i;
+                    offcanvas.setAttribute("tabindex", "-1");
+                    offcanvas.setAttribute("aria-labelledby", "offcanvasRightLabel");
+                    document.getElementById('offcanvasArea').appendChild(offcanvas);
+                
+                    var offcanvasHeader = document.createElement('div'); // 오프캔버스 헤더 구역
+                    offcanvasHeader.className = "offcanvas-header";
+                    offcanvas.appendChild(offcanvasHeader);
+                
+                    var offcanvasTitle = document.createElement('h5'); // 오프캔버스 음식점 이름
+                    offcanvasTitle.className = "offcanvas-title";
+                    offcanvasTitle.id = "offcanvasRightLabel";
+                    offcanvasTitle.innerText = name[i].childNodes[0].nodeValue;
+                    offcanvasHeader.appendChild(offcanvasTitle);
+                
+                    var closeBtn = document.createElement('button'); // 오프캔버스 나가기 버튼
+                    closeBtn.setAttribute("type", "button");
+                    closeBtn.className = "btn-close"
+                    closeBtn.setAttribute("data-bs-dismiss", "offcanvas");
+                    closeBtn.setAttribute("aria-label", "Close");
+                    offcanvasHeader.appendChild(closeBtn)
+                
+                    var offcanvasBody = document.createElement('div'); // 오프캔버스 바디 구역
+                    offcanvasBody.className = "offcanvas-body";
+                    offcanvas.appendChild(offcanvasBody);
+                
+                    var offcanvasEmbed = document.createElement('embed'); // 오프캔버스에 임베드
+                    offcanvasEmbed.setAttribute("src", embed[i].childNodes[0].nodeValue);
+                    offcanvasEmbed.setAttribute("width", "100%");
+                    offcanvasEmbed.setAttribute("height", "95%");
+                    offcanvasBody.appendChild(offcanvasEmbed);
                 }
-                 
+                else if(tags[i].childNodes[0].nodeValue.indexOf(suggestKey) != -1 && address[i].childNodes[0].nodeValue == getRegion){
+                    var card = document.createElement('div'); // div 태그 생성
+                    card.className = "card"; // div 태그에 class 이름 설정
+                    card.setAttribute("data-bs-toggle", "offcanvas"); // 부트스트랩 설정(오프캔버스 출력 버튼)
+                    card.setAttribute("data-bs-target", "#offcanvasRight" + i);
+                    card.setAttribute("aria-controls", "offcanvasRight");
+                    document.getElementById('cardArea').appendChild(card); // cardArea id 태그 아래쪽에 추가
+                    //document.body.appendChild(card); // 바디 태그 아래쪽에 추가
+                
+                    var cropping = document.createElement('div'); // 사진 크기 조절용 태그
+                    cropping.className = "cropping";
+                    card.appendChild(cropping);
+                    
+                    var cardImg = document.createElement('img'); // 이미지 삽입 태그
+                    cardImg.src = img[i].childNodes[0].nodeValue;
+                    cardImg.alt = "...";
+                    cropping.appendChild(cardImg);
+                    
+                    var cardBody = document.createElement('div'); // 글자 부분 태그
+                    cardBody.className = "card-body";
+                    card.appendChild(cardBody);
+
+                    var cardTitle = document.createElement('h2'); // 음식점 이름 태그
+                    cardTitle.className = "card-title";
+                    var cardTitleText = document.createTextNode(name[i].childNodes[0].nodeValue); // xml에서 텍스트를 받아오기
+                    cardTitle.appendChild(cardTitleText);
+                    cardBody.appendChild(cardTitle);
+                    
+                    var cardCategory = document.createElement('p'); // 카테고리 태그
+                    cardCategory.className = "card-category";
+                    var cardCategoryText = document.createTextNode(category[i].childNodes[0].nodeValue);
+                    cardCategory.appendChild(cardCategoryText);
+                    cardBody.appendChild(cardCategory);
+
+                    var cardText = document.createElement('p'); // 설명 태그
+                    cardText.className = "card-text";
+                    var cardTextText = document.createTextNode(introduction[i].childNodes[0].nodeValue);
+                    cardText.appendChild(cardTextText);
+                    cardBody.appendChild(cardText);
+
+                    // offcanvas 레이아웃
+                    var offcanvas = document.createElement('div'); // 오프캔버스 태그
+                    offcanvas.classList.add("offcanvas", "offcanvas-end");
+                    offcanvas.id = "offcanvasRight" + i;
+                    offcanvas.setAttribute("tabindex", "-1");
+                    offcanvas.setAttribute("aria-labelledby", "offcanvasRightLabel");
+                    document.getElementById('offcanvasArea').appendChild(offcanvas);
+                
+                    var offcanvasHeader = document.createElement('div'); // 오프캔버스 헤더 구역
+                    offcanvasHeader.className = "offcanvas-header";
+                    offcanvas.appendChild(offcanvasHeader);
+                
+                    var offcanvasTitle = document.createElement('h5'); // 오프캔버스 음식점 이름
+                    offcanvasTitle.className = "offcanvas-title";
+                    offcanvasTitle.id = "offcanvasRightLabel";
+                    offcanvasTitle.innerText = name[i].childNodes[0].nodeValue;
+                    offcanvasHeader.appendChild(offcanvasTitle);
+                
+                    var closeBtn = document.createElement('button'); // 오프캔버스 나가기 버튼
+                    closeBtn.setAttribute("type", "button");
+                    closeBtn.className = "btn-close"
+                    closeBtn.setAttribute("data-bs-dismiss", "offcanvas");
+                    closeBtn.setAttribute("aria-label", "Close");
+                    offcanvasHeader.appendChild(closeBtn)
+                
+                    var offcanvasBody = document.createElement('div'); // 오프캔버스 바디 구역
+                    offcanvasBody.className = "offcanvas-body";
+                    offcanvas.appendChild(offcanvasBody);
+                
+                    var offcanvasEmbed = document.createElement('embed'); // 오프캔버스에 임베드
+                    offcanvasEmbed.setAttribute("src", embed[i].childNodes[0].nodeValue);
+                    offcanvasEmbed.setAttribute("width", "100%");
+                    offcanvasEmbed.setAttribute("height", "95%");
+                    offcanvasBody.appendChild(offcanvasEmbed);
+                }  
             }
         }
     </script>
@@ -404,7 +586,7 @@
             <li><a href="javascript:out('whateat.html')" class="navSelect">뭐먹지?</a></li>
             <li><a href="javascript:out('DPcal.html')" class="navSelect">더치페이</a></li>
             <li id="navSearch">
-                <form onsubmit="getKeyVal()" name="search" method="get" action="search.html">
+                <form onsubmit="setKeyVal()" name="search" method="get" action="search.html">
                     <label><input type="text" class="inputBox" size="20" id="key" value="" placeholder=" 맛집 이름" style="width:200px; height: 30px;"></label>
                     <input type="image" id="navSearchBtn" src="src/searchBtn.png" width="32px">
                 </form>
@@ -413,49 +595,74 @@
     </nav>
     
     <section id="section">
-        <fieldset style="width: 800px; margin-left:auto; margin-right:auto;">
+        <fieldset>
         <legend> 믿고 보는 맛집 리스트</legend>
         <table class="tg">
             <thead>
                 <tr>
                     <td class="tg-0pky">
                         <button class="imButton" id="양식" onclick="setD('파스타')">
-                            <img class="imgBtn" src="https://sjnfzdfjrjgl1655541.cdn.ntruss.com/goods/3/2019/07/158_tmp_d0edbc1371ecb3575266e8215e5e16961570view.jpg">
+                            <img class="imgBtn" src="src/파스타.png">
                         </button>
                     </td>
                     <td class="tg-0pky">
                         <button class="imButton" id="중식" onclick="setD('짜장면')">
-                            <img class="imgBtn" src="https://t1.daumcdn.net/cfile/tistory/9928F7345DD5007724">
+                            <img class="imgBtn" src="src/짜장면.png">
                         </button>
                     </td>
                     <td class="tg-0pky">
                         <button class="imButton" id="고기" onclick="setD('돼지고기')">
-                            <img class="imgBtn" src="https://post-phinf.pstatic.net/MjAxODAxMTZfMTk4/MDAxNTE2MDcwNTYyMTU2.11cOlXQAGScpVD7MZLhMQb8IMcKLqWgokLum0lcUt8gg.iJgGhd0sIYKwEl66wc8R-jUHfzn23zXPevk8-pqvsxUg.JPEG/GettyImages-jv10961134.jpg?type=w1200">
+                            <img class="imgBtn" src="src/돼지고기.png">
                         </button>
                     </td>
                 </tr>
                 <tr>
                     <td class="tg-0pky">
                         <button class="imButton" id="국밥" onclick="setD('국밥')">
-                            <img class="imgBtn" src="https://cdn.mindgil.com/news/photo/202008/69679_4073_1653.jpg">
+                            <img class="imgBtn" src="src/국밥.png">
                         </button>
                     </td>
                     <td class="tg-0pky">
                         <button class="imButton" id="한정식" onclick="setD('한정식')">
-                            <img class="imgBtn" src="https://s3.ap-northeast-2.amazonaws.com/event-localnaeil/FileData/Article/201710/c0b8c1b7-dbeb-45a4-bf79-d50d67ec78e9.JPG">
+                            <img class="imgBtn" src="src/한정식.png">
                         </button>
                     </td>
                     <td class="tg-0pky">
-                        <button class="imButton" id="카페" onclick="setD('카페')"
-                        ><img class="imgBtn" src="https://dimg.donga.com/wps/NEWS/IMAGE/2021/02/08/105325025.1.jpg">
+                        <button class="imButton" id="커피" onclick="setD('커피')">
+                            <img class="imgBtn" src="src/커피.png">
                         </button>
                     </td>
                 </tr>
             </thead>
         </table>
-        </fieldset>
 
-        <!--<div id="cardArea" style="display: none;"></div>-->
+        <fieldset>
+            <legend> 먹을 지역은? </legend>
+            <table class="tg1" >
+                <thead>
+                  <tr>
+                    <td class="tg-0pky"><button class="myButton" id="북구" onclick="setR('북구')">북구</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="동구" onclick="setR('동구')">동구</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="서구" onclick="setR('서구')">서구</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="중구" onclick="setR('중구')">중구</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="남구" onclick="setR('남구')">남구</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="수성구" onclick="setR('수성구')">수성구</a></td>
+                  </tr>
+                </thead>
+            </table>
+            <table class="tg1">
+                <thead>
+                  <tr>
+                    <td class="tg-0pky"><button class="myButton" id="달서구" onclick="setR('달서구')">달서구</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="달성군" onclick="setR('달성군')">달성군</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="대구대" onclick="setR('대구대')">대구대</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="하양" onclick="setR('하양')">하양</a></td>
+                    <td class="tg-0pky"><button class="myButton" id="초기화" onclick="delregion('null')">초기화</a></td>
+                  </tr>
+                </thead>
+            </table>
+        </fieldset> 
+
         <div id="cardArea"></div>
         <div id="offcanvasArea"></div>
     </section>

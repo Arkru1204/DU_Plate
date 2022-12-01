@@ -6,9 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Roboto');
-        /*body 초기화*/
-        /**/
+        /* body 초기화 */
         body {
             margin: 0;
             padding: 0;
@@ -18,9 +16,9 @@
             justify-content: center;
             align-items: center;
             overflow-x: hidden;
-            width: 1980;
             height: 1080px;
         }
+
         /*--------- 네비게이션 바 영역 시작---------*/
         nav {
             position: fixed;
@@ -51,7 +49,6 @@
             color: rgb(88, 90, 92);
             text-align: center;
             text-decoration: none;
-            /* letter-spacing: 0.1em; */
             display: block;
             padding: 14px 36px;
             transition: all .5s ease-out;
@@ -69,12 +66,7 @@
             letter-spacing: 0.05em;
             display: block;
             padding: 11px 17px;
-            /* border-right: 1px solid #F6D4CB */
         }
-
-        /* #main-menu > li:nth-child(1) > a {
-
-        } */
 
         #sub-menu {
             position: absolute;
@@ -90,7 +82,6 @@
 
         #sub-menu > li {
             padding: 15px 30px;
-            /* border: 1px solid #2C5994; */
             background: #F9E6E2;
         }
 
@@ -117,7 +108,6 @@
 
         #navSearch {
             margin-left: 130px;
-            
         }
 
         .navSelect {
@@ -151,7 +141,6 @@
             text-align: center;
             color:rgb(105, 145, 185);
             font-weight: bold;
-            
         }
 
         .inputBox::placeholder{
@@ -169,6 +158,7 @@
             top:11px;
         }
         /*--------- 네비게이션 바 영역 끝---------*/
+
         /*--------- 섹션 영역 시작---------*/
         section {
             width: 100%;
@@ -182,6 +172,7 @@
             background-color:  #F4D3CB;
         }
         /*--------- 섹션 영역 끝 ---------*/
+
         /*--------- 풋터 영역 시작 ---------*/
         footer {
             display: flex;
@@ -194,6 +185,7 @@
             background-color:  #F4D3CB;
         }
         /*--------- 풋터 영역 끝 ---------*/
+
         /*--------- 퀵 메뉴 시작 ---------*/
         #section_left {
             position: relative;
@@ -242,8 +234,8 @@
             left: 0px;
             pointer-events: none;
         }
-        /* input */
 
+        /* input */
         #serchBtn {
             margin-top: -500px;
         }
@@ -258,17 +250,26 @@
 
         // 검색 로컬스토리지 읽기/저장
         var keyVal = localStorage.getItem('search')
-            function getKeyVal(value) {
-                navVal = document.getElementById('key').value;
-                mainVal = document.getElementById('keyMain').value;
-                window.localStorage.setItem('search', navVal);
-                window.localStorage.setItem('search', mainVal);
-                window.location.href = "ajilna.html";
-                //입력 안했으면 alert message 뜨기
-                if (svalue.length == 0){
-                    alert("검색어를 입력하시오!");
-                }
+        function setKeyVal(value) {
+            //window.localStorage.clear();
+            navVal = document.getElementById('key').value;
+            window.localStorage.setItem('search', navVal);
+            window.location.href = "search.html";
+            // 입력 안했으면 alert message 뜨기
+            if (navVal.length == 0){
+                alert("검색어를 입력하시오!");
             }
+        }
+        function setMainKeyVal(value) {
+            mainVal = document.getElementById('keyMain').value;
+            window.localStorage.setItem('search', mainVal);
+            window.location.href = "search.html";
+            // 입력 안했으면 alert message 뜨기
+            if (mainVal.length == 0){
+                alert("검색어를 입력하시오!");
+            }
+        }
+
         function showImg(region) {
             if (region == '대구대') {
                 document.getElementById("fig").src = "src/대구지도 대구대.png"
@@ -320,8 +321,8 @@
             <li><a href="whateat.html" class="navSelect">뭐먹지?</a></li>
             <li><a href="DPcal.html" class="navSelect">더치페이</a></li>
             <li id="navSearch">
-                <form onsubmit="getKeyVal()" id="navForm" name="search" method="post" action="search.html">
-                    <label><input type="text" class="inputBox" size="20" id="key" value="" placeholder="맛집 이름" style="width:200px; height: 30px;"></label>
+                <form onsubmit="setKeyVal()" id="navForm" name="search" method="post" action="search.html">
+                    <label><input type="text" class="inputBox" size="20" id="key" value="" placeholder="맛집 이름" style="width:200px; height:30px;"></label>
                     <input type="image" id="navSearchBtn" src="src/searchBtn.png" width="32px">
                 </form>
             </li>
@@ -333,7 +334,7 @@
                 <img src="src/Logo.png" width="400px">
             </div>
             <div id="search_box">
-                <form onsubmit="getKeyVal()" name="search" method="post" action="search.html">
+                <form onsubmit="setMainKeyVal()" name="search" method="post" action="search.html">
                     <label><input type="text" class="inputBox" size="50" id="keyMain" value="" placeholder="음식점 이름" style="width:330px; height:30px; font-size:20px;"></label>
                 </form>
             </div>

@@ -6,10 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="css/custom.css" rel="stylesheet">
-    <link href="css/nav.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Roboto');
-
         body {
             margin: 0;
             padding: 0;
@@ -19,8 +16,6 @@
             justify-content: center;
             align-items: center;
             overflow-x: hidden;
-            width: 1980;
-            height: 1080;
             background-color: #FFF8EE;  
         }
 
@@ -91,12 +86,7 @@
             letter-spacing: 0.05em;
             display: block;
             padding: 11px 17px;
-            /* border-right: 1px solid #F6D4CB */
         }
-
-        /* #main-menu > li:nth-child(1) > a {
-
-        } */
 
         #sub-menu {
             position: absolute;
@@ -112,7 +102,6 @@
 
         #sub-menu > li {
             padding: 15px 30px;
-            /* border: 1px solid #2C5994; */
             background: #F9E6E2;
         }
 
@@ -233,7 +222,6 @@
             margin-bottom: 0px;
             font-family: 'Jua';
             color:#c9695c;
-     
         }
 
         .card-category {
@@ -265,10 +253,10 @@
 
         // 검색 로컬스토리지 읽기/저장
         var keyVal = localStorage.getItem('search')
-        function getKeyVal(value) {
+        function setKeyVal(value) {
             var svalue = document.getElementById('key').value;
             window.localStorage.setItem('search', svalue);
-            location.href = "search.html";
+            location.replace("search.html");
             //임력 안했으면 alert message 뜨기
             if (svalue.length == 0) {
                 alert("검색어를 입력하시오!");
@@ -416,7 +404,7 @@
             <li><a href="whateat.html" class="navSelect">뭐먹지?</a></li>
             <li><a href="DPcal.html" class="navSelect">더치페이</a></li>
             <li id="navSearch">
-                <form onsubmit="getKeyVal()" name="search" method="get" action="search.html">
+                <form onsubmit="setKeyVal()" name="search" method="get" action="search.html">
                     <label><input type="text" class="inputBox" size="20" id="key" value="" placeholder=" 맛집 이름" style="width:200px; height: 30px;"></label>
                     <input type="image" id="navSearchBtn" src="src/searchBtn.png" width="32px">
                 </form>

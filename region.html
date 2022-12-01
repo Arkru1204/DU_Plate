@@ -16,8 +16,6 @@
             justify-content: center;
             align-items: center;
             overflow-x: hidden;
-            width: 1980;
-            height: 1080;
             background-color: #FFF8EE;
         }
 
@@ -56,7 +54,6 @@
             color: rgb(88, 90, 92);
             text-align: center;
             text-decoration: none;
-            /* letter-spacing: 0.1em; */
             display: block;
             padding: 14px 36px;
             transition: all .5s ease-out;
@@ -74,12 +71,7 @@
             letter-spacing: 0.05em;
             display: block;
             padding: 11px 17px;
-            /* border-right: 1px solid #F6D4CB */
         }
-
-        /* #main-menu > li:nth-child(1) > a {
-
-        } */
 
         #sub-menu {
             position: absolute;
@@ -223,7 +215,6 @@
             margin-bottom: 0px;
             font-family: 'Jua';
             color:#c9695c;
-     
         }
 
         .card-category {
@@ -255,7 +246,7 @@
 
         // 로컬스토리지 읽기/저장 (검색)
         var keyVal = localStorage.getItem('search')
-        function getKeyVal(value) {
+        function setKeyVal(value) {
             svalue = document.getElementById('key').value;
             window.localStorage.setItem('search', svalue);
             location.href = "search.html";
@@ -432,7 +423,7 @@
             <li><a href="whateat.html" class="navSelect">뭐먹지?</a></li>
             <li><a href="DPcal.html" class="navSelect">더치페이</a></li>
             <li id="navSearch">
-                <form onsubmit="getKeyVal()" name="search" method="get" action="search.html">
+                <form onsubmit="setKeyVal()" name="search" method="get" action="search.html">
                     <label><input type="text" class="inputBox" size="20" id="key" value="" placeholder=" 맛집 이름" style="width:200px; height: 30px;"></label>
                     <input type="image" id="navSearchBtn" src="src/searchBtn.png" width="32px">
                 </form>

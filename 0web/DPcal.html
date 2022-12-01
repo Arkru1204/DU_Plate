@@ -6,9 +6,8 @@
         N빵 계산기
     </title>
     <link href="https://fonts.googleapis.com/css?family=Jua:400" rel="stylesheet">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
-    <link href="css/nav.css" rel="stylesheet">
     <style>
+        /*페이지 기본 body CSS 스타일*/
         body {
             margin: 0;
             padding: 0;
@@ -19,8 +18,6 @@
             overflow-x: hidden;  
             background-color: #FFF8EE;
             font-family: 'Jua';
-            width: 1980;
-            height: 1080;
         }
 
         header {
@@ -75,12 +72,7 @@
             letter-spacing: 0.05em;
             display: block;
             padding: 11px 17px;
-            /* border-right: 1px solid #F6D4CB */
         }
-
-        /* #main-menu > li:nth-child(1) > a {
-
-        } */
 
         #sub-menu {
             position: absolute;
@@ -96,7 +88,6 @@
 
         #sub-menu > li {
             padding: 15px 30px;
-            /* border: 1px solid #2C5994; */
             background: #F9E6E2;
         }
 
@@ -157,7 +148,6 @@
             color:rgb(105, 145, 185);
             font-weight: bold;
             height:18px;
-            
         }
 
         .inputBox::placeholder{
@@ -197,9 +187,10 @@
             background-color:  #FFF8EE;
             font-family: 'Jua';
         }
-        
         /*--------- 풋터 영역 끝 ---------*/
-        #cash{
+        
+        /* 1번째 금액 입력칸 CSS스타일 */
+        #cash {
             border: none;
             background-color: #F6D4CB;
             border-radius: 30px;
@@ -209,7 +200,9 @@
             width:400px;
             height:30px;
         }
-        #ncash1{
+
+        /* 2번째(신규생성) 금액 입력칸 CSS스타일 */
+        #ncash1 {
             border: none;
             background-color: #F6D4CB;
             border-radius: 30px;
@@ -219,7 +212,9 @@
             width:400px;
             height:30px;
         }
-        #ncash2{
+
+        /* 3번째(신규생성) 금액 입력칸 CSS스타일 */
+        #ncash2 {
             border: none;
             background-color: #F6D4CB;
             border-radius: 30px;
@@ -229,7 +224,9 @@
             width:400px;
             height:30px;
         }
-        #ncash3{
+
+        /* 4번째(신규생성) 금액 입력칸 CSS스타일 */
+        #ncash3 {
             border: none;
             background-color: #F6D4CB;
             border-radius: 30px;
@@ -239,7 +236,9 @@
             width:400px;
             height:30px;
         }
-        #ncash4{
+
+        /* 5번째(신규생성) 금액 입력칸 CSS스타일 */
+        #ncash4 {
             border: none;
             background-color: #F6D4CB;
             border-radius: 30px;
@@ -249,7 +248,9 @@
             width:400px;
             height:30px;
         }
-        #ncash5{
+
+        /* 6번째(신규생성) 금액 입력칸 CSS스타일 */
+        #ncash5 {
             border: none;
             background-color: #F6D4CB;
             border-radius: 30px;
@@ -259,7 +260,9 @@
             width:400px;
             height:30px;
         }
-        #ncash6{
+
+        /* 7번째(신규생성) 금액 입력칸 CSS스타일 */
+        #ncash6 {
             border: none;
             background-color: #F6D4CB;
             border-radius: 30px;
@@ -269,7 +272,9 @@
             width:400px;
             height:30px;
         }
-        #peo{
+
+        /* 인원수 입력 칸 CSS 스타일 */
+        #peo {
             border: none;
             background-color: #F6D4CB;
             border-radius: 30px;
@@ -279,106 +284,130 @@
             width:400px;
             height:30px;
         }
-        #cp{
+
+        /*------입력칸 신규 생성 버튼 ('+') CSS 스타일------ (시작)*/
+        #cp {
             background:none;
             color:#2C5994;
             font-size:30px;
             border:none;
             
         }
-        #ncp1{
+
+        #ncp1 {
             background:none;
             color:#2C5994;
             font-size:30px;
             border:none;
             
         }
-        #ncp2{
+        
+        #ncp2 {
             background:none;
             color:#2C5994;
             font-size:30px;
             border:none;
             
         }
-        #ncp3{
+
+        #ncp3 {
             background:none;
             color:#2C5994;
             font-size:30px;
             border:none;
             
         }
-        #ncp4{
+
+        #ncp4 {
             background:none;
             color:#2C5994;
             font-size:30px;
             border:none;
             
         }
-        #ncp5{
+
+        #ncp5 {
             background:none;
             color:#2C5994;
             font-size:30px;
             border:none;
             
         }
-        #ncm1{
+        /*------입력칸 신규 생성 버튼 ('+') CSS 스타일------ (끝)*/
+        
+
+        /*------입력칸 삭제 버튼 ('-') CSS 스타일------ (시작)*/
+        #ncm1 {
             background:none;
             color:#2C5994;
             font-size:50px;
             border:none;
             
         }
-        #ncm2{
+
+        #ncm2 {
             background:none;
             color:#2C5994;
             font-size:50px;
             border:none;
             
         }
-        #ncm3{
+
+        #ncm3 {
             background:none;
             color:#2C5994;
             font-size:50px;
             border:none;
             
         }
-        #ncm4{
+
+        #ncm4 {
             background:none;
             color:#2C5994;
             font-size:50px;
             border:none;
             
         }
-        #ncm5{
+
+        #ncm5 {
             background:none;
             color:#2C5994;
             font-size:50px;
             border:none;
             
         }
-        #ncm6{
+
+        #ncm6 {
             background:none;
             color:#2C5994;
             font-size:50px;
             border:none;
             
         }
-        #dutchbtn{
+        /*------입력칸 삭제 버튼 ('-') CSS 스타일------ (끝)*/
+
+        /*------정산 결과 CSS 스타일------ (시작)*/
+        /*정산 버튼 CSS스타일*/
+        #dutchbtn {
             background-color:#F6D4CB;
             color:#2C5994;
             font-size:18px;
             border:none;
             border-radius: 30px;
-            font-weight: bold;
             width:60px;
+            font-family: Jua;
         }
-        #dutch{
+
+        /*정산 결과 표시 CSS스타일*/
+        #dutch {
             color :#2C5994;
             font-size:18px;
             font-weight: bold;
         }
-
+        /*------정산 결과 CSS 스타일------ (끝)*/
         </style>
+
+
         <script type="text/javascript">
             // 로컬스토리지 읽기/저장
             var lastRegion = localStorage.getItem('region')
@@ -389,7 +418,7 @@
 
             // 검색 로컬스토리지 읽기/저장
             var keyVal = localStorage.getItem('search')
-            function getKeyVal(value) {
+            function setKeyVal(value) {
                 svalue = document.getElementById('key').value;
                 window.localStorage.setItem('search', svalue);
                 location.href = "search.html";
@@ -398,146 +427,204 @@
                     alert("검색어를 입력하시오!");
                 }
             }
-    </script>
-    <script>
-        //금액 박스 생성
-        function addbox1(){
-            var box=document.getElementById("box");
-            var nbox=document.createElement('p');
-            nbox.innerHTML=
-            "<input type='text' id='ncash1' value='0'><br><input type='button' id='ncp1' value='+' onclick='addbox2()'><input type='button' id='ncm1' value='-' onclick='remove1(this)'>";
-            box.appendChild(nbox);
-            document.getElementById('cp').style.display='none';
-        }
-        function addbox2(){
-            var box=document.getElementById("box");
-            var nbox=document.createElement('p');
-            nbox.innerHTML=
-            "<input type='text' id='ncash2' value='0'><br><input type='button' id='ncp2' value='+' onclick='addbox3()'><input type='button' id='ncm2' value='-' onclick='remove2(this)'>";
-            box.appendChild(nbox);
-            document.getElementById('ncp1').style.display='none';
-            document.getElementById('ncm1').style.display='none';
-        }
-        function addbox3(){
-            var box=document.getElementById("box");
-            var nbox=document.createElement('p');
-            nbox.innerHTML=
-            "<input type='text' id='ncash3' value='0'><br><input type='button' id='ncp3' value='+' onclick='addbox4()'><input type='button' id='ncm3' value='-' onclick='remove3(this)'>";
-            box.appendChild(nbox);
-            document.getElementById('ncp2').style.display='none';
-            document.getElementById('ncm2').style.display='none';
-        }
-        function addbox4(){
-            var box=document.getElementById("box");
-            var nbox=document.createElement('p');
-            nbox.innerHTML=
-            "<input type='text' id='ncash4' value='0'><br><input type='button' id='ncp4' value='+' onclick='addbox5()'><input type='button' id='ncm4' value='-' onclick='remove4(this)'>";
-            box.appendChild(nbox);
-            document.getElementById('ncp3').style.display='none';
-            document.getElementById('ncm3').style.display='none';
-        }
-        function addbox5(){
-            var box=document.getElementById("box");
-            var nbox=document.createElement('p');
-            nbox.innerHTML=
-            "<input type='text' id='ncash5' value='0'><br><input type='button' id='ncp5' value='+' onclick='addbox6()'> <input type='button' id='ncm5' value='-' onclick='remove5(this)'>";
-            box.appendChild(nbox);
-            document.getElementById('ncp4').style.display='none';
-            document.getElementById('ncm4').style.display='none';
-        }
-        function addbox6(){
-            var box=document.getElementById("box");
-            var nbox=document.createElement('p');
-            nbox.innerHTML=
-            "<input type='text' id='ncash6' value='0'><br><input type='button' id='ncm6' value='-' onclick='remove6(this)'>";
-            box.appendChild(nbox);
-            document.getElementById('ncp5').style.display='none';
-            document.getElementById('ncm5').style.display='none';
-        }
-        //금액 박스 지우기
-        var remove1=(obj)=>{
-            document.getElementById('box').removeChild(obj.parentNode);
-            document.getElementById('cp').style.display='';
-        }
-        var remove2=(obj)=>{
-            document.getElementById('box').removeChild(obj.parentNode);
-            document.getElementById('ncp1').style.display='';
-            document.getElementById('ncm1').style.display='';
-        }
-        var remove3=(obj)=>{
-            document.getElementById('box').removeChild(obj.parentNode);
-            document.getElementById('ncp2').style.display='';
-            document.getElementById('ncm2').style.display='';
-        }
-        var remove4=(obj)=>{
-            document.getElementById('box').removeChild(obj.parentNode);
-            document.getElementById('ncp3').style.display='';
-            document.getElementById('ncm3').style.display='';
-        }
-        var remove5=(obj)=>{
-            document.getElementById('box').removeChild(obj.parentNode);
-            document.getElementById('ncp4').style.display='';
-            document.getElementById('ncm4').style.display='';
-        }
-        var remove6=(obj)=>{
-            document.getElementById('box').removeChild(obj.parentNode);
-            document.getElementById('ncp5').style.display='';
-            document.getElementById('ncm5').style.display='';
-        }
-        function getDutch(){
-            var cash = document.getElementById('cash').value;
-            var peo = document.getElementById('peo').value;
-            if(document.getElementById('ncash6')){
-                var ncash1 = document.getElementById('ncash1').value;
-                var ncash2 = document.getElementById('ncash2').value;
-                var ncash3 = document.getElementById('ncash3').value;
-                var ncash4 = document.getElementById('ncash4').value;
-                var ncash5 = document.getElementById('ncash5').value;
-                var ncash6 = document.getElementById('ncash6').value;
-                var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2)+parseInt(ncash3)+parseInt(ncash4)+parseInt(ncash5)+parseInt(ncash6);   
-            }
-            else if(document.getElementById('ncash5')){
-                var ncash1 = document.getElementById('ncash1').value;
-                var ncash2 = document.getElementById('ncash2').value;
-                var ncash3 = document.getElementById('ncash3').value;
-                var ncash4 = document.getElementById('ncash4').value;
-                var ncash5 = document.getElementById('ncash5').value;
-                var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2)+parseInt(ncash3)+parseInt(ncash4)+parseInt(ncash5);
-            }
-            else if(document.getElementById('ncash4')){
-                var ncash1 = document.getElementById('ncash1').value;
-                var ncash2 = document.getElementById('ncash2').value;
-                var ncash3 = document.getElementById('ncash3').value;
-                var ncash4 = document.getElementById('ncash4').value;
-                var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2)+parseInt(ncash3)+parseInt(ncash4);
-            }
-            else if(document.getElementById('ncash3')){
-                var ncash1 = document.getElementById('ncash1').value;
-                var ncash2 = document.getElementById('ncash2').value;
-                var ncash3 = document.getElementById('ncash3').value;
-                var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2)+parseInt(ncash3);
-            }
-            else if(document.getElementById('ncash2')){
-                var ncash1 = document.getElementById('ncash1').value;
-                var ncash2 = document.getElementById('ncash2').value;
-                var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2);
-            }
-            else if(document.getElementById('ncash1')){
-                var ncash1 = document.getElementById('ncash1').value;
-                var s= parseInt(cash)+parseInt(ncash1);
-            }
-            else{
-                var s=parseInt(cash);
-            }
+            </script>
             
-            var d = Math.floor(s/peo);
-            var t = s%peo;
-        //정산 결과 값 출력
-            document.getElementById('dutch').innerHTML =
-            '총액 : ' + s +'원'+'<br>'+ '1인당 금액 : '+ d+'원'+'<br>'+'남는 값 : '+t+'원'
-        }
-    </script>
-</head>
+            <script type="text/javascript">
+            //금액 박스 생성 스크립트 ----------*시작*
+            //최소 추가 생성 가능 입력칸 : 0개 (전체 입력칸 1개)
+            //최대 추가 생성 가능 입력칸 : 6개 (전체 입력칸 7개)
+            //각각의 금액 입력칸과 추가/제거 버튼의 ID를 다르게 지정하기 위해서 스크립트를 각각 작성
+            //버튼마다 각각 작성한 스크립트를 하나씩 적용
+
+            //입력창의 id가 'ncash1'이고, id가 각각 'ncp1',ncm1'인 추가/제거 버튼 생성
+            //기존에 있던 id가 'cp'인 버튼 모습 감추기
+            function addbox1(){
+                var box=document.getElementById("box");
+                var nbox=document.createElement('p');
+                nbox.innerHTML=
+                "<input type='text' id='ncash1' value='0'><br><input type='button' id='ncp1' value='+' onclick='addbox2()'><input type='button' id='ncm1' value='-' onclick='remove1(this)'>";
+                box.appendChild(nbox);
+                document.getElementById('cp').style.display='none';
+            }
+            //입력창의 id가 'ncash2'이고, id가 각각 'ncp2',ncm2'인 추가/제거 버튼 생성
+            //기존에 있던 id가 'ncp1','ncm1'인 버튼 모습 감추기
+            function addbox2(){
+                var box=document.getElementById("box");
+                var nbox=document.createElement('p');
+                nbox.innerHTML=
+                "<input type='text' id='ncash2' value='0'><br><input type='button' id='ncp2' value='+' onclick='addbox3()'><input type='button' id='ncm2' value='-' onclick='remove2(this)'>";
+                box.appendChild(nbox);
+                document.getElementById('ncp1').style.display='none';
+                document.getElementById('ncm1').style.display='none';
+            }
+            //입력창의 id가 'ncash3'이고, id가 각각 'ncp3',ncm3'인 추가/제거 버튼 생성
+            //기존에 있던 id가 'ncp2','ncm2'인 버튼 모습 감추기
+            function addbox3(){
+                var box=document.getElementById("box");
+                var nbox=document.createElement('p');
+                nbox.innerHTML=
+                "<input type='text' id='ncash3' value='0'><br><input type='button' id='ncp3' value='+' onclick='addbox4()'><input type='button' id='ncm3' value='-' onclick='remove3(this)'>";
+                box.appendChild(nbox);
+                document.getElementById('ncp2').style.display='none';
+                document.getElementById('ncm2').style.display='none';
+            }
+            //입력창의 id가 'ncash4'이고, id가 각각 'ncp4',ncm4'인 추가/제거 버튼 생성
+            //기존에 있던 id가 'ncp3','ncm3'인 버튼 모습 감추기
+            function addbox4(){
+                var box=document.getElementById("box");
+                var nbox=document.createElement('p');
+                nbox.innerHTML=
+                "<input type='text' id='ncash4' value='0'><br><input type='button' id='ncp4' value='+' onclick='addbox5()'><input type='button' id='ncm4' value='-' onclick='remove4(this)'>";
+                box.appendChild(nbox);
+                document.getElementById('ncp3').style.display='none';
+                document.getElementById('ncm3').style.display='none';
+            }
+            //입력창의 id가 'ncash5'이고, id가 각각 'ncp5',ncm5'인 추가/제거 버튼 생성
+            //기존에 있던 id가 'ncp4','ncm4'인 버튼 모습 감추기
+            function addbox5(){
+                var box=document.getElementById("box");
+                var nbox=document.createElement('p');
+                nbox.innerHTML=
+                "<input type='text' id='ncash5' value='0'><br><input type='button' id='ncp5' value='+' onclick='addbox6()'> <input type='button' id='ncm5' value='-' onclick='remove5(this)'>";
+                box.appendChild(nbox);
+                document.getElementById('ncp4').style.display='none';
+                document.getElementById('ncm4').style.display='none';
+            }
+            //입력창의 id가 'ncash6'이고, id가 각각 'ncm6'인 추가/제거 버튼 생성
+            // 추가 입력칸을 총 6개만 만들 수 있음 (입력칸 최대 7개 이용 가능)
+            //기존에 있던 id가 'ncp5','ncm5'인 버튼 모습 감추기
+            function addbox6(){
+                var box=document.getElementById("box");
+                var nbox=document.createElement('p');
+                nbox.innerHTML=
+                "<input type='text' id='ncash6' value='0'><br><input type='button' id='ncm6' value='-' onclick='remove6(this)'>";
+                box.appendChild(nbox);
+                document.getElementById('ncp5').style.display='none';
+                document.getElementById('ncm5').style.display='none';
+            }
+
+            //금액 박스 생성 스크립트 ----------*끝*
+            
+            //금액 박스 지우기 스크립트 ----------*시작*
+            //버튼 ID마다 각각 작성한 스크립트를 하나씩 적용
+
+            // 함수가 적용되는 입력칸 삭제 및 ID가 'cp'인 버튼 모습 드러내기
+            // 'ncm1'에 적용
+            var remove1=(obj)=>{
+                document.getElementById('box').removeChild(obj.parentNode);
+                document.getElementById('cp').style.display='';
+            }
+            // 함수가 적용되는 입력칸 삭제 및 ID가 'ncp1','ncm1'인 버튼 모습 드러내기
+            // 'ncm2'에 적용
+            var remove2=(obj)=>{
+                document.getElementById('box').removeChild(obj.parentNode);
+                document.getElementById('ncp1').style.display='';
+                document.getElementById('ncm1').style.display='';
+            }
+            // 함수가 적용되는 입력칸 삭제 및 ID가 'ncp2','ncm2'인 버튼 모습 드러내기
+            // 'ncm3'에 적용
+            var remove3=(obj)=>{
+                document.getElementById('box').removeChild(obj.parentNode);
+                document.getElementById('ncp2').style.display='';
+                document.getElementById('ncm2').style.display='';
+            }
+            // 함수가 적용되는 입력칸 삭제 및 ID가 'ncp3','ncm3'인 버튼 모습 드러내기
+            // 'ncm4'에 적용
+            var remove4=(obj)=>{
+                document.getElementById('box').removeChild(obj.parentNode);
+                document.getElementById('ncp3').style.display='';
+                document.getElementById('ncm3').style.display='';
+            }
+            // 함수가 적용되는 입력칸 삭제 및 ID가 'ncp4','ncm4'인 버튼 모습 드러내기
+            // 'ncm5'에 적용
+            var remove5=(obj)=>{
+                document.getElementById('box').removeChild(obj.parentNode);
+                document.getElementById('ncp4').style.display='';
+                document.getElementById('ncm4').style.display='';
+            }
+            // 함수가 적용되는 입력칸 삭제 및 ID가 'ncp5','ncm5'인 버튼 모습 드러내기
+            // 'ncm6'에 적용
+            var remove6=(obj)=>{
+                document.getElementById('box').removeChild(obj.parentNode);
+                document.getElementById('ncp5').style.display='';
+                document.getElementById('ncm5').style.display='';
+            }
+            //금액 박스 지우기 스크립트 ----------*끝*
+
+            //정산 결과 계산 스크립트 ---------*시작*
+            //더하기의 경우 값에 들어간 숫자를 문자와 구분을 하기 위해 'parseInt'를 사용하여 계산
+            function getDutch(){
+                var cash = document.getElementById('cash').value;
+                var peo = document.getElementById('peo').value;
+
+                //7번째 입력칸이 존재한다면 다음을 계산하여 도출
+                //7번째 입력칸이 존재한다면 2~7번째 입력칸의 값을 각각 ncash1~ncash6에 차례대로 적용
+                if(document.getElementById('ncash6')){
+                    var ncash1 = document.getElementById('ncash1').value;
+                    var ncash2 = document.getElementById('ncash2').value;
+                    var ncash3 = document.getElementById('ncash3').value;
+                    var ncash4 = document.getElementById('ncash4').value;
+                    var ncash5 = document.getElementById('ncash5').value;
+                    var ncash6 = document.getElementById('ncash6').value;
+                    var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2)+parseInt(ncash3)+parseInt(ncash4)+parseInt(ncash5)+parseInt(ncash6);   
+                }
+                //7번째 입력칸이 존재하지 않고 6번째 입력칸이 존재한다면 다음을 계산하여 도출
+                //7번째 입력칸이 존재한다면 2~6번째 입력칸의 값을 각각 ncash1~ncash5에 차례대로 적용
+                else if(document.getElementById('ncash5')){
+                    var ncash1 = document.getElementById('ncash1').value;
+                    var ncash2 = document.getElementById('ncash2').value;
+                    var ncash3 = document.getElementById('ncash3').value;
+                    var ncash4 = document.getElementById('ncash4').value;
+                    var ncash5 = document.getElementById('ncash5').value;
+                    var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2)+parseInt(ncash3)+parseInt(ncash4)+parseInt(ncash5);
+                }
+                //6번째 입력칸이 존재하지 않고 5번째 입력칸이 존재한다면 다음을 계산하여 도출
+                //7번째 입력칸이 존재한다면 2~5번째 입력칸의 값을 각각 ncash1~ncash4에 차례대로 적용
+                else if(document.getElementById('ncash4')){
+                    var ncash1 = document.getElementById('ncash1').value;
+                    var ncash2 = document.getElementById('ncash2').value;
+                    var ncash3 = document.getElementById('ncash3').value;
+                    var ncash4 = document.getElementById('ncash4').value;
+                    var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2)+parseInt(ncash3)+parseInt(ncash4);
+                }
+                //5번째 입력칸이 존재하지 않고 4번째 입력칸이 존재한다면 다음을 계산하여 도출
+                //7번째 입력칸이 존재한다면 2~4번째 입력칸의 값을 각각 ncash1~ncash3에 차례대로 적용
+                else if(document.getElementById('ncash3')){
+                    var ncash1 = document.getElementById('ncash1').value;
+                    var ncash2 = document.getElementById('ncash2').value;
+                    var ncash3 = document.getElementById('ncash3').value;
+                    var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2)+parseInt(ncash3);
+                }
+                //4번째 입력칸이 존재하지 않고 3번째 입력칸이 존재한다면 다음을 계산하여 도출
+                //7번째 입력칸이 존재한다면 2~3번째 입력칸의 값을 각각 ncash1~ncash2에 차례대로 적용
+                else if(document.getElementById('ncash2')){
+                    var ncash1 = document.getElementById('ncash1').value;
+                    var ncash2 = document.getElementById('ncash2').value;
+                    var s= parseInt(cash)+parseInt(ncash1)+parseInt(ncash2);
+                }
+                //3번째 입력칸이 존재하지 않고 2번째 입력칸이 존재한다면 다음을 계산하여 도출
+                //7번째 입력칸이 존재한다면 2번째 입력칸의 값을 ncash1에 적용
+                else if(document.getElementById('ncash1')){
+                    var ncash1 = document.getElementById('ncash1').value;
+                    var s= parseInt(cash)+parseInt(ncash1);
+                }
+                //추가 생성된 입력칸이 없을 경우 다음을 도출
+                else{
+                    var s=parseInt(cash);
+                }
+                
+                // 전체값/인원수 몫 도출 
+                var d = Math.floor(s/peo);
+                // 전체값/인원수 나머지 도출
+                var t = s%peo;
+            //정산 결과 도출 스크립트 ---------*끝*
+
+            //정산 결과 값 출력 스크립트
+                document.getElementById('dutch').innerHTML =
+                '총액 : ' + s +'원'+'<br>'+ '1인당 금액 : '+ d+'원'+'<br>'+'남는 값 : '+t+'원'
+            }
+        </script>
+    </head>
 
 <body>
     <nav role="navigation">
@@ -562,7 +649,7 @@
             <li><a href="whateat.html" class="navSelect">뭐먹지?</a></li>
             <li><a href="DPcal.html" class="navSelect">더치페이</a></li>
             <li id="navSearch">
-                <form onsubmit="getKeyVal()" name="search" method="get" action="search.html">
+                <form onsubmit="setKeyVal()" name="search" method="get" action="search.html">
                     <label><input type="text" class="inputBox" size="20" id="key" value="" placeholder=" 맛집 이름" style="height:25px;"></label>
                     <input type="image" id="navSearchBtn" src="src/searchBtn.png" width="28px">
                 </form>
@@ -606,7 +693,6 @@
         <p id="dutch">
         </p>
     </section>
-
 
     <footer>
         <p>웹프로그래밍 3조 부드다기 박경록 박솔규 박준현 서예원</p>
